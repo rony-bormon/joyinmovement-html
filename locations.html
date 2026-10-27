@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations | J.I.M - Joy In Movement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="locations.css">
+</head>
+<body class="locations-page-body">
+
+  <!-- =========================================================================
+       1. Top Header Bar (1:1 with Figma node 1332:2)
+       ========================================================================= -->
+  <header class="jim-header" id="header">
+    <div class="content-container header-inner">
+      <a href="index.html" class="header-brand" aria-label="J.I.M Home">
+        <img src="assets/jim_logo_script.png" alt="J.I.M" class="logo-script-img">
+      </a>
+
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="locations.html" class="nav-link active">Locations</a></li>
+          <li><a href="infrared.html" class="nav-link">Infrared Workouts</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="own-a-jim.html" class="nav-link">Own A J.I.M</a></li>
+          <li><a href="#store" class="nav-link">Store</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <a href="#locations-search" class="header-btn-get-started">GET STARTED</a>
+        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         2. Find Your Nearest Studio + Studios Near You (Pure Black #000000)
+         ========================================================================= -->
+    <section class="section-locations-main" id="locations-search">
+      <div class="content-container">
+        
+        <!-- Heading: FIND YOUR NEAREST J.I.M STUDIO -->
+        <div class="find-nearest-block">
+          <h1 class="title-nearest-line1">FIND YOUR NEAREST</h1>
+          <div class="title-nearest-line2">
+            <img src="assets/jim_logo_script.png" alt="J.I.M" class="locations-script-logo">
+            <span class="title-studio-text">STUDIO</span>
+          </div>
+        </div>
+
+        <!-- Search Bar Row -->
+        <form class="search-bar-row" onsubmit="event.preventDefault();">
+          <div class="search-input-pill">
+            <input type="text" class="input-postcode" placeholder="Search your postcode or suburb" id="suburbInput">
+          </div>
+          <button type="submit" class="btn-find-location">FIND A LOCATION</button>
+          <button type="button" class="btn-current-location" id="useLocationBtn">USE MY CURRENT LOCATION</button>
+        </form>
+
+        <!-- Heading: STUDIOS NEAR YOU -->
+        <div class="studios-near-heading-wrap">
+          <h2 class="heading-studios-near-you">STUDIOS<br>NEAR YOU</h2>
+        </div>
+
+        <!-- 3 White Studio Cards -->
+        <div class="studios-three-grid">
+          <!-- Card 1: Mosman -->
+          <article class="studio-white-card">
+            <div class="studio-card-photo-wrap">
+              <img src="assets/location_mosman.png" alt="J.I.M Mosman" class="studio-card-photo">
+            </div>
+            <div class="studio-card-details">
+              <h3 class="studio-card-name">J.I.M MOSMAN</h3>
+              <p class="studio-card-addr">Mosman, NSW<br>T1, Level 1, 640 Military Rd</p>
+              <a href="#schedule" class="btn-view-studio-black">VIEW STUDIO</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Bondi Junction -->
+          <article class="studio-white-card">
+            <div class="studio-card-photo-wrap">
+              <img src="assets/location_bondi.png" alt="J.I.M Bondi Junction" class="studio-card-photo">
+            </div>
+            <div class="studio-card-details">
+              <h3 class="studio-card-name">J.I.M BONDI JUNCTION</h3>
+              <p class="studio-card-addr">350 Oxford St,<br>Bondi Junction NSW 2022</p>
+              <a href="#schedule" class="btn-view-studio-black">VIEW STUDIO</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Paddington -->
+          <article class="studio-white-card">
+            <div class="studio-card-photo-wrap">
+              <img src="assets/location_paddington.png" alt="J.I.M Paddington" class="studio-card-photo">
+            </div>
+            <div class="studio-card-details">
+              <h3 class="studio-card-name">J.I.M PADDINGTON</h3>
+              <p class="studio-card-addr">24 Oxford St,<br>Paddington NSW 2021</p>
+              <a href="#schedule" class="btn-view-studio-black">VIEW STUDIO</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Left-aligned Red Button: VIEW ALL LOCATIONS -->
+        <div class="view-all-locations-left">
+          <a href="#all" class="btn-view-all-red">VIEW ALL LOCATIONS</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. REVIEWS Section (Full Bleed Dark Gray Band #242424)
+         ========================================================================= -->
+    <section class="section-locations-reviews-band">
+      <div class="content-container">
+        <!-- Header -->
+        <div class="reviews-header-flex">
+          <div class="reviews-left-group">
+            <img src="assets/jim_logo_script.png" alt="J.I.M" class="reviews-script-logo">
+            <h2 class="title-reviews">REVIEWS</h2>
+          </div>
+          <div class="reviews-right-group">
+            <p class="tag-hear-members">HEAR FROM<br>OUR MEMBERS</p>
+          </div>
+        </div>
+
+        <!-- 4 Peach Cards Track (Figma exact 478x277px, gap 42px) -->
+        <div class="reviews-track-wrapper">
+          <div class="reviews-four-grid">
+            <!-- Card 1: Amanda Davis -->
+            <article class="review-peach-box">
+              <div class="review-box-top">
+                <h4 class="review-author-name">AMANDA DAVIS</h4>
+                <p class="review-body-quote">I tried the infrared class today and loved it! Felt great moving and stretching in the heat. Would highly recommend!</p>
+              </div>
+              <div class="review-stars-row">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+            </article>
+
+            <!-- Card 2: Tegan Whitelegg -->
+            <article class="review-peach-box">
+              <div class="review-box-top">
+                <h4 class="review-author-name">TEGAN WHITELEGG</h4>
+                <p class="review-body-quote">Have been attending the Infrared workouts for several months now, and absolutely love them! They're a great option if you're looking for a less intense workout, but still want to sweat and feel a burn.</p>
+              </div>
+              <div class="review-stars-row">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+            </article>
+
+            <!-- Card 3: Craig Ross -->
+            <article class="review-peach-box">
+              <div class="review-box-top">
+                <h4 class="review-author-name">CRAIG ROSS</h4>
+                <p class="review-body-quote">Infrared classes have been great on tired, sore muscles. Always sleep well and feel refreshed by the heat and small amounts of movement in each class.</p>
+              </div>
+              <div class="review-stars-row">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+            </article>
+
+            <!-- Card 4: Junior Talipeau -->
+            <article class="review-peach-box">
+              <div class="review-box-top">
+                <h4 class="review-author-name">JUNIOR TALIPEAU</h4>
+                <p class="review-body-quote">Great experiences! Great training! Great sessions! Infrared sessions are great and is a different type of fitness.</p>
+              </div>
+              <div class="review-stars-row">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E37"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+            </article>
+          </div>
+        </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       4. Global Footer (1:1 with Figma)
+       ========================================================================= -->
+  <footer class="jim-footer">
+    <div class="content-container">
+      <div class="footer-divider-red"></div>
+      <div class="footer-layout-flex">
+        <!-- Red Brand Badge -->
+        <div class="footer-badge-wrap">
+          <img src="assets/footer_badge_logo.png" alt="JOY IN MOVEMENT" class="footer-badge-img">
+        </div>
+
+        <!-- Links Column 1 -->
+        <div class="footer-nav-col">
+          <ul class="footer-links">
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="infrared.html">Infrared Workouts</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="articles.html">Articles</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2 -->
+        <div class="footer-nav-col">
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="own-a-jim.html">Franchise</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="classes.html#classes-faqs">FAQ’s</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Icons & Copyright -->
+        <div class="footer-meta-col">
+          <div class="footer-social-icons">
+            <a href="#instagram" class="social-icon-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F04E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#facebook" class="social-icon-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E36">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+          <p class="footer-copy-text">© JOY IN MOVEMENT 2025.<br>ALL RIGHTS RESERVED</p>
+          <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

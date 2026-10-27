@@ -1,0 +1,264 @@
+/* ==========================================================================
+   J.I.M - How It Works Page Specific Styles (Pixel Perfect Figma node 1306:2)
+   ========================================================================== */
+
+/* 1. Hero Section */
+.how-hero-section {
+  width: 100%;
+  max-width: 1693px;
+  margin: 0 auto;
+  padding: 24px 20px 0;
+  box-sizing: border-box;
+}
+
+.how-hero-frame {
+  position: relative;
+  width: 100%;
+  height: 742px;
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  background-color: #0d0d0d;
+}
+
+.how-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.how-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 0 60px 57px;
+  max-width: 1100px;
+}
+
+.how-hero-title {
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 75px;
+  line-height: 80px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: -0.01em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.inline-jim-hero-script {
+  height: 90px;
+  width: auto;
+}
+
+/* 2. Intro Section */
+.intro-how-section {
+  padding: 90px 0 80px;
+}
+
+.how-intro-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.how-intro-left {
+  flex: 1 1 55%;
+}
+
+.how-big-start-title {
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 64px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.how-jim-inline-badge {
+  height: 90px;
+  width: auto;
+}
+
+.how-intro-right {
+  flex: 1 1 40%;
+}
+
+/* 3. Steps Flow */
+.how-steps-section {
+  padding: 20px 0 80px;
+}
+
+.how-step-card {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  min-height: 500px;
+}
+
+.how-step-peach-col {
+  flex: 1 1 50%;
+  background-color: #F8B5B2;
+  border-radius: 24px;
+  padding: 50px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+}
+
+.step-num-pill {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.step-main-title {
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 52px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.step-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0 20px;
+}
+
+.step-action-heading {
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.step-jim-script {
+  height: 60px;
+  width: auto;
+}
+
+.step-desc-text {
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0 0 24px;
+  max-width: 440px;
+}
+
+.step-app-badges {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.store-badge-img {
+  height: 48px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.how-step-photo-col {
+  flex: 1 1 50%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.how-step-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 4. Guide Video */
+.how-video-guide-section {
+  padding: 60px 0 120px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.guide-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1372px;
+  height: 680px;
+  margin: 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.guide-video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .how-hero-title {
+    font-size: 56px;
+    line-height: 60px;
+  }
+  .guide-video-wrapper {
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .how-intro-split {
+    flex-direction: column;
+  }
+  .how-step-card {
+    flex-direction: column;
+  }
+  .reverse-card {
+    flex-direction: column;
+  }
+  .how-hero-frame {
+    height: 480px;
+  }
+  .how-hero-title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .guide-video-wrapper {
+    height: 380px;
+  }
+}
+

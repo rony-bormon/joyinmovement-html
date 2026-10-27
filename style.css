@@ -1,0 +1,1301 @@
+/* ==========================================================================
+   Joy In Movement (J.I.M) - "OWN A J.I.M" Franchise Page
+   1:1 Pixel-Perfect Match with Figma Frame 866:11
+   ========================================================================== */
+
+:root {
+  --color-red: #F04E36;
+  --color-red-hover: #ff5f47;
+  --color-peach: #F8B5B2;
+  --color-peach-hover: #ffd0ce;
+  --color-black: #000000;
+  --color-dark-gray: #242424;
+  --color-white: #FFFFFF;
+  --color-text-gray: #D9D9D9;
+  --color-dim-gray: #A6A6A6;
+
+  --font-figma: 'Futura', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --max-content-width: 1693px; /* 1653px content + 20px + 20px padding */
+  --transition: all 0.22s ease-in-out;
+}
+
+/* Reset & Basics */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-figma);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+button, input {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Container & Layout Helpers */
+.jim-container,
+.content-container {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-black {
+  background-color: var(--color-black);
+  padding: 90px 0;
+}
+
+.section-dark-gray {
+  background-color: var(--color-dark-gray);
+  padding: 90px 0;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-20 { margin-bottom: 20px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-50 { margin-bottom: 50px; }
+.mb-60 { margin-bottom: 60px; }
+.mt-40 { margin-top: 40px; }
+.mt-60 { margin-top: 60px; }
+.mt-90 { margin-top: 90px; }
+
+/* Typography */
+.section-heading-60, .hero-heading {
+  font-size: clamp(2rem, 3.6vw, 60px);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.subtitle-30 {
+  font-size: clamp(1.3rem, 1.8vw, 30px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.subtitle-24 {
+  font-size: clamp(1.2rem, 1.5vw, 24px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.body-15, .body-text-15 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--color-text-gray);
+}
+
+.inline-jim-script {
+  display: inline-block;
+  height: clamp(38px, 3.5vw, 62px);
+  width: auto;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+/* Button Presets */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 100px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.btn-red {
+  background-color: var(--color-red);
+  color: var(--color-black);
+  height: 46px;
+  padding: 0 32px;
+}
+
+.btn-red:hover {
+  background-color: var(--color-red-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(240, 78, 54, 0.4);
+}
+
+.btn-peach {
+  background-color: var(--color-peach);
+  color: var(--color-black);
+  height: 46px;
+  padding: 0 32px;
+}
+
+.btn-peach:hover {
+  background-color: var(--color-peach-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(248, 181, 178, 0.35);
+}
+
+.btn-fixed-174 {
+  width: 174px;
+  height: 46px;
+  margin-top: 24px;
+}
+
+.btn-fixed-252 {
+  width: 252px;
+  height: 46px;
+}
+
+/* Play Button Overlay */
+.play-btn-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+}
+
+.play-btn-circle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: #FFFFFF;
+}
+
+/* ==========================================================================
+   1. Top Navigation Bar
+   ========================================================================== */
+.top-nav-bar {
+  width: 100%;
+  height: 90px;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-red);
+}
+
+.script-logo-header {
+  height: 50px;
+  width: auto;
+}
+
+/* Mobile Hamburger Toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  z-index: 1100;
+}
+
+.mobile-nav-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-toggle.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+  background-color: #F04E36;
+}
+
+.mobile-nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.mobile-nav-toggle.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+  background-color: #F04E36;
+}
+
+/* Mobile Fullscreen Drawer */
+.mobile-menu-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu-drawer.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.mobile-nav-link {
+  font-family: var(--font-figma);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: #F04E36;
+  transform: scale(1.05);
+}
+
+.mobile-btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 48px;
+  border-radius: 100px;
+  background-color: #F04E36;
+  color: #000000;
+  font-family: var(--font-figma);
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 12px;
+  transition: transform 0.2s ease;
+}
+
+.mobile-btn-get-started:hover {
+  transform: scale(1.03);
+}
+
+.btn-header-cta {
+  height: 42px;
+  padding: 0 24px;
+}
+
+/* ==========================================================================
+   2. Hero Section (Amber Silhouettes)
+   ========================================================================== */
+.page-hero-section {
+  padding: 0 20px 40px;
+}
+
+.hero-frame-container {
+  position: relative;
+  width: 100%;
+  max-width: var(--max-content-width);
+  height: 812px;
+  margin: 0 auto;
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-amber-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.hero-floating-elements {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px clamp(20px, 5.5vw, 95px);
+}
+
+.hero-script-watermark {
+  height: clamp(50px, 6vw, 90px);
+  width: auto;
+  margin-bottom: 24px;
+  align-self: flex-start;
+}
+
+.hero-title-main {
+  font-size: clamp(2.5rem, 5.2vw, 84px);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  max-width: 1150px;
+}
+
+.hero-apply-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 245px;
+  height: 46px;
+}
+
+/* ==========================================================================
+   3. Quote Section
+   ========================================================================== */
+.franchise-quote-section {
+  padding: 80px 0 60px;
+  background-color: var(--color-black);
+}
+
+.quote-text-large {
+  font-size: clamp(1.8rem, 3.2vw, 54px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-white);
+  text-transform: uppercase;
+  max-width: 1050px;
+  margin-bottom: 20px;
+}
+
+.quote-author-never {
+  font-size: clamp(1.6rem, 2.8vw, 44px);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+/* ==========================================================================
+   4. Red Stats Container (#F04E36)
+   ========================================================================== */
+.stats-red-section {
+  padding-bottom: 80px;
+  background-color: var(--color-black);
+}
+
+.red-stats-box {
+  background-color: var(--color-red);
+  color: var(--color-black);
+  border-radius: 22px;
+  padding: 60px 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+}
+
+.stat-col {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 24px;
+  border-right: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.stat-col:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.stat-category-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 30px;
+  min-height: 40px;
+}
+
+.stat-number {
+  font-size: clamp(2.4rem, 3.8vw, 64px);
+  font-weight: 800;
+  line-height: 1.0;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.stat-icon-space {
+  font-size: 52px;
+}
+
+.stat-subhead {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 14px;
+}
+
+.stat-desc {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+/* ==========================================================================
+   5. Banners
+   ========================================================================== */
+.banner-strip-section {
+  background-color: var(--color-black);
+}
+
+.rounded-wide-card {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.full-media-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   6. Where Fitness Meets Infrared Wellness
+   ========================================================================== */
+.split-header-row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.video-preview-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.video-cover-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   7. WHY J.I.M?
+   ========================================================================== */
+.tri-peach-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.peach-feature-card {
+  background-color: var(--color-peach);
+  color: var(--color-black);
+  border-radius: 24px;
+  padding: 40px 32px;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.peach-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: var(--color-black);
+}
+
+.peach-card-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+.big-red-callout-box {
+  background-color: var(--color-red);
+  color: var(--color-black);
+  border-radius: 24px;
+  padding: 60px 48px;
+  text-align: center;
+}
+
+.callout-quote-text {
+  font-size: clamp(1.4rem, 2.4vw, 36px);
+  font-weight: 800;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+/* ==========================================================================
+   8. Owner Models Section
+   ========================================================================== */
+.manifesto-title {
+  font-size: clamp(1.4rem, 2.5vw, 38px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-white);
+  text-transform: uppercase;
+  max-width: 1250px;
+}
+
+.tri-owner-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.owner-model-card {
+  background-color: var(--color-black);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.model-photo-frame {
+  height: 280px;
+  overflow: hidden;
+}
+
+.model-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.model-peach-info {
+  background-color: var(--color-peach);
+  color: var(--color-black);
+  padding: 32px 24px;
+  flex-grow: 1;
+}
+
+.model-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.model-desc {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   9. Secure Your Territory
+   ========================================================================== */
+.territory-red-note {
+  font-size: clamp(1.1rem, 1.8vw, 24px);
+  font-weight: 700;
+  color: var(--color-red);
+}
+
+/* ==========================================================================
+   10. Meet Our Partners
+   ========================================================================== */
+.partner-videos-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.partner-video-box {
+  position: relative;
+  height: 380px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.video-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partner-quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.partner-red-card {
+  background-color: var(--color-red);
+  color: var(--color-black);
+  border-radius: 24px;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.partner-quote-body {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.partner-meta strong {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.partner-meta span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   11. 4 Steps (Stepped Cards)
+   ========================================================================== */
+.stepped-cards-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.step-card {
+  border-radius: 24px;
+  padding: 40px 28px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.step-peach {
+  background-color: var(--color-peach);
+  color: var(--color-black);
+}
+
+.step-red {
+  background-color: var(--color-red);
+  color: var(--color-black);
+}
+
+.step-badge {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.step-instruction {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* ==========================================================================
+   12. Ticker Strip
+   ========================================================================== */
+.ticker-strip-wrap {
+  width: 100%;
+  background-color: var(--color-black);
+  overflow: hidden;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.marquee-text-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: clamp(1.4rem, 2.5vw, 36px);
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   14. Download the Prospectus
+   ========================================================================== */
+.eyebrow-accent {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-red);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.prospectus-peach-box {
+  background-color: var(--color-peach);
+  color: var(--color-black);
+  border-radius: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 48px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.prospectus-title {
+  font-size: clamp(2rem, 3.2vw, 48px);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.prospectus-desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+
+.prospectus-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 440px;
+  margin: 0 auto 30px;
+}
+
+.form-field-pill {
+  width: 100%;
+  height: 48px;
+  border-radius: 100px;
+  padding: 0 24px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.btn-submit-form {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+}
+
+.prospectus-included {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* ==========================================================================
+   15. LEARN MORE (3 Video Cards)
+   ========================================================================== */
+.learn-videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.learn-video-card {
+  position: relative;
+  height: 300px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.learn-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   16. FAQ'S Section
+   ========================================================================== */
+.faq-layout-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.faq-photo-col {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.faq-man-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  background-color: #1a1a1a;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: var(--transition);
+}
+
+.faq-item[open] {
+  border-radius: 24px;
+  background-color: #222222;
+  border-color: var(--color-red);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-white);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-arrow {
+  font-size: 12px;
+  color: var(--color-red);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-arrow {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 28px 20px;
+  font-size: 14px;
+  color: var(--color-text-gray);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   17. Why Members Are Obsessed
+   ========================================================================== */
+.obsessed-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.obsessed-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.obsessed-card-title {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.obsessed-inner-box {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   18. Site Footer (1:1 with Figma)
+   ========================================================================== */
+.site-bottom-footer,
+.jim-footer {
+  background-color: #000000;
+  padding: 0 0 85px;
+  width: 100%;
+}
+
+.footer-divider-hairline,
+.footer-divider-red {
+  width: 100%;
+  height: 2px;
+  background-color: #F04E36;
+  margin-bottom: 75px;
+}
+
+.footer-grid-layout,
+.footer-layout-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-badge-brand,
+.footer-badge-img {
+  width: 309px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-link-list,
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link-list li a,
+.footer-links a {
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #F04E36;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-link-list li a:hover,
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.social-round,
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #F04E36;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-round:hover,
+.social-icon-link:hover {
+  transform: scale(1.1);
+}
+
+.footer-legal-copy,
+.footer-copy-text {
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #F04E36;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0 0 16px;
+}
+
+.footer-privacy-text,
+.footer-policy-link {
+  font-family: 'Futura', 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #F04E36;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s ease;
+}
+
+.footer-privacy-text:hover,
+.footer-policy-link:hover {
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .red-stats-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-col:nth-child(2) {
+    border-right: none;
+  }
+  .stepped-cards-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .obsessed-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-left, .nav-right .nav-link {
+    display: none;
+  }
+  .mobile-nav-toggle {
+    display: flex;
+  }
+  .split-header-row,
+  .faq-layout-grid,
+  .partner-videos-row,
+  .tri-peach-cards-grid,
+  .tri-owner-cards-grid,
+  .partner-quotes-grid,
+  .learn-videos-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .red-stats-box {
+    grid-template-columns: 1fr;
+    padding: 36px 24px;
+  }
+  .stat-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 24px;
+  }
+  .stepped-cards-layout {
+    grid-template-columns: 1fr;
+  }
+  .obsessed-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid-layout {
+    grid-template-columns: 1fr;
+  }
+  .hero-apply-btn {
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+  }
+}
+
+/* Universal Cinematic Video Modal / Lightbox Player */
+.jim-video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.jim-video-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.jim-video-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  cursor: pointer;
+}
+
+.jim-video-modal-dialog {
+  position: relative;
+  z-index: 10;
+  width: 92%;
+  max-width: 1240px;
+  background-color: #000000;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(240, 78, 54, 0.4);
+  transform: scale(0.92);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.jim-video-modal.open .jim-video-modal-dialog {
+  transform: scale(1);
+}
+
+.jim-video-modal-video {
+  width: 100%;
+  height: auto;
+  max-height: 82vh;
+  display: block;
+  outline: none;
+  background-color: #000000;
+}
+
+.jim-video-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.22s ease;
+  padding: 0;
+}
+
+.jim-video-modal-close:hover {
+  background-color: #F04E36;
+  border-color: #F04E36;
+  color: #000000;
+  transform: rotate(90deg) scale(1.1);
+}
+
+.jim-video-modal-close svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}
