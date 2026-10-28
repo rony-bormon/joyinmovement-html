@@ -1,0 +1,121 @@
+/* ==========================================================================
+   J.I.M - Press (Figma frame 1309:495, 1728 x 6023)
+   Article cards, sweaty band and "obsessed" videos come from articles.css.
+   ========================================================================== */
+
+/* 3. Quote card (1654x500, red, r30) */
+.press-quote-section {
+  padding-top: 95px;
+}
+
+.press-quote-card {
+  position: relative;
+  width: calc(100% + 1px);
+  height: 500px;
+  border-radius: 30px;
+  background-color: #f04e36;
+  color: #000000;
+}
+
+.press-quote-text {
+  position: absolute;
+  left: 60.5px;
+  top: 95px;
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+
+.press-quote-logo {
+  position: absolute;
+  left: 60.5px;
+  top: 349px;
+  width: 206px;
+  height: 52px;
+}
+
+.press-quote-dots {
+  position: absolute;
+  left: 791.5px;
+  top: 444px;
+  display: flex;
+  gap: 4px;
+}
+
+.press-quote-dots span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+
+.press-quote-dots span.is-active {
+  background-color: #000000;
+}
+
+/* 4. Logo ticker band (full bleed #242424, 365px tall) */
+.press-ticker-band {
+  height: 365px;
+  margin-top: 95px;
+  padding-top: 115px;
+  background-color: #242424;
+  overflow: hidden;
+}
+
+.press-ticker-img {
+  display: block;
+  width: 1728px;
+  max-width: none;
+  height: 135px;
+  margin-left: max(3px, calc(50% - 861px));
+}
+
+/* 5-7. Offsets vs. the articles page */
+.press-grid-section {
+  padding-top: 120px;
+}
+
+/* Footer: x=17 variant (home.css) */
+.jim-footer--press {
+  margin-top: 231px;
+  padding-bottom: 83px;
+}
+
+@media (max-width: 992px) {
+  .press-quote-card {
+    width: 100%;
+    height: auto;
+    padding: 48px 32px 40px;
+  }
+  .press-quote-text,
+  .press-quote-logo,
+  .press-quote-dots {
+    position: static;
+  }
+  .press-quote-text {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .press-quote-logo {
+    margin-top: 24px;
+  }
+  .press-quote-dots {
+    margin-top: 32px;
+    justify-content: center;
+  }
+  .press-ticker-band {
+    height: 200px;
+    padding-top: 60px;
+  }
+  .press-ticker-img {
+    height: 80px;
+    width: auto;
+    margin-left: 0;
+  }
+  .jim-footer--press {
+    margin-top: 80px;
+  }
+}

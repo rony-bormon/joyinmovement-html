@@ -1,0 +1,348 @@
+/* ==========================================================================
+   J.I.M - Classes (Figma frame 1269:441, 1728 x 9927)
+   Built on home.css (header, footer, page hero, sweaty row).
+   ========================================================================== */
+
+/* 2. Hero sits 30px under the header, no LOCATIONS pill */
+.cls-hero {
+  margin-top: 30px;
+}
+
+.cls-hero-title {
+  top: 418px;
+  max-width: 955px;
+}
+
+/* 3. Intro - reuses the home "sweaty" row */
+.cls-intro {
+  padding: 83px 0 120px;
+}
+
+.cls-intro .sweaty-right {
+  padding-top: 0;
+}
+
+.cls-intro-body p {
+  margin: 0;
+}
+
+.cls-intro-body p + p {
+  margin-top: 17px;
+}
+
+.cls-intro .btn-red-pill {
+  margin-top: 45px;
+}
+
+/* 4. Class formats band (#242424) */
+.cls-catalog-band {
+  padding-top: 94px;
+  background-color: #242424;
+}
+
+.cls-filter-row {
+  display: flex;
+  gap: 40px;
+  padding-left: 315.5px;
+}
+
+.filter-pill {
+  width: 174px;
+  height: 46px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #f04e36;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-bold);
+  cursor: pointer;
+  opacity: 0.49;
+  transition: opacity 0.2s ease;
+}
+
+.filter-pill:first-child {
+  margin-right: -8px;
+}
+
+.filter-pill.active,
+.filter-pill:hover {
+  opacity: 1;
+}
+
+/* 4 columns (titles at Figma x=95 / 505 / 918 / 1328), 7 rows */
+.cls-grid {
+  display: grid;
+  grid-template-columns: 410px 413px 410px 1fr;
+  grid-template-rows: 570px 570px 585px 585px 585px 585px 568px;
+  margin-top: 89px;
+  padding-left: 57.5px;
+}
+
+.class-card-item {
+  position: relative;
+}
+
+.class-card-icon {
+  position: absolute;
+  left: var(--icon-x);
+  top: var(--icon-y);
+  display: block;
+  pointer-events: none;
+}
+
+.class-card-title {
+  position: absolute;
+  left: 0;
+  top: 356px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.class-card-desc {
+  position: absolute;
+  left: 0;
+  top: 413px;
+  max-width: var(--desc-w, 337px);
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-medium);
+  color: #d9d9d9;
+  margin: 0;
+}
+
+/* 5. Daily schedule (black, 5643 - 7450px) */
+.cls-schedule-inner {
+  /* absolute children are offset from the padding box (container padding 20px) */
+  position: relative;
+  height: 1110px;
+}
+
+.cls-schedule-logo {
+  position: absolute;
+  left: 91.5px;
+  top: 149px;
+  width: 182px;
+  height: auto;
+}
+
+.cls-schedule-title {
+  position: absolute;
+  left: 87.5px;
+  top: 250px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cls-schedule-days {
+  position: absolute;
+  left: 87.5px;
+  top: 403px;
+  width: 327px;
+  height: 51px;
+  padding: 10px 0 0 9px;
+  border-radius: 10px;
+  background-color: #f04e36;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.cls-schedule-cols {
+  position: absolute;
+  left: 78.5px;
+  top: 547px;
+  display: flex;
+}
+
+.cls-schedule-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  width: 283px;
+}
+
+.cls-schedule-col:last-child {
+  width: 229px;
+}
+
+.cls-schedule-col-title {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0 0 19px;
+}
+
+.cls-time-pill {
+  display: block;
+  width: 229px;
+  height: 51px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background-color: #f8b5b2;
+  color: #000000;
+  text-align: center;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.cls-schedule-photo {
+  position: absolute;
+  left: 961.5px;
+  top: 153px;
+  width: 665px;
+  height: 852px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.cls-schedule-banner {
+  display: block;
+  width: 1548px;
+  max-width: 100%;
+  height: 601px;
+  margin-left: 58.5px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+/* 6. FAQ's band (#242424, 7450 - 9452px) */
+.cls-faqs-band {
+  margin-top: 96px;
+  padding: 83px 0 92px;
+  background-color: #242424;
+}
+
+/* Footer: divider at Figma x=36 */
+.jim-footer--classes {
+  margin-top: 154px;
+  padding-bottom: 119px;
+}
+
+.jim-footer--classes .content-container {
+  padding: 0 21.5px 0 18.5px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1500px) {
+  .cls-filter-row {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .cls-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    gap: 64px 32px;
+    padding: 0 0 96px;
+  }
+  .class-card-item {
+    min-height: 480px;
+  }
+  .class-card-icon {
+    position: static;
+    width: 240px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  .class-card-title,
+  .class-card-desc {
+    position: static;
+  }
+  .class-card-desc {
+    margin-top: 24px;
+  }
+  .cls-schedule-photo {
+    left: auto;
+    right: 0;
+    width: 40%;
+    height: 760px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cls-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cls-schedule-inner {
+    height: auto;
+    padding: 64px 0;
+  }
+  .cls-schedule-logo,
+  .cls-schedule-title,
+  .cls-schedule-days,
+  .cls-schedule-cols,
+  .cls-schedule-photo {
+    position: static;
+  }
+  .cls-schedule-title,
+  .cls-schedule-days,
+  .cls-schedule-cols {
+    margin-top: 24px;
+  }
+  .cls-schedule-photo {
+    display: block;
+    width: 100%;
+    height: 520px;
+    margin-top: 48px;
+  }
+  .cls-schedule-banner {
+    margin-left: 0;
+    height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cls-intro {
+    padding: 56px 0;
+  }
+  .cls-filter-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .filter-pill:first-child {
+    margin-right: 0;
+  }
+  .cls-grid {
+    grid-template-columns: 1fr;
+  }
+  .cls-schedule-cols {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .jim-footer--classes {
+    margin-top: 80px;
+  }
+  .jim-footer--classes .content-container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .cls-schedule-banner {
+    margin-left: 0;
+  }
+}

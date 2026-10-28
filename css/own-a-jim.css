@@ -1,0 +1,1219 @@
+/* ==========================================================================
+   J.I.M - Own A J.I.M / Franchise (Figma frame 866:11, 1728 x 16246)
+   Built on home.css; reuses faq.css, articles.css ("obsessed"), press.css (ticker)
+   and about.css (video band).
+   ========================================================================== */
+
+/* 1. Franchise header (Figma: centred-logo nav on #111111, 144px) */
+.jim-header--own {
+  height: 144px;
+  background-color: #111111;
+}
+
+@media (min-width: 1501px) {
+  .jim-header--own .header-inner {
+    position: relative;
+    height: 100%;
+    padding: 0;
+  }
+  .jim-header--own .header-nav {
+    margin: 0;
+    padding: 0;
+  }
+  .jim-header--own .nav-links-list li {
+    position: absolute;
+    left: var(--x);
+    top: 68px;
+  }
+  .jim-header--own .nav-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+  .jim-header--own .header-logo {
+    position: absolute;
+    left: 764.4px;
+    top: 49.4px;
+    margin: 0;
+  }
+  .jim-header--own .logo-script-img {
+    width: 105.2px;
+  }
+  .jim-header--own .header-action {
+    position: absolute;
+    left: 1328px;
+    top: 59px;
+  }
+}
+
+.own-nav-caret {
+  position: absolute;
+  left: 82px;
+  top: 7px;
+  color: #cfcfcf;
+}
+
+.jim-header--own .header-btn-get-started {
+  width: 217px;
+  height: 42px;
+  justify-content: flex-start;
+  gap: 21px;
+  padding-left: 32px;
+  border-radius: 21px;
+  background-color: #f03933;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+/* Shared red pill (APPLY NOW / MORE INFORMATION) */
+.own-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 245px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #f04e36;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: var(--ls-futura-bold);
+  text-decoration: none;
+}
+
+/* 2. Apply bar + hero (hero 1653x812 at y=269) */
+.own-apply-bar {
+  height: 87px;
+  padding-top: 38px;
+}
+
+.own-hero {
+  margin-top: 38px;
+}
+
+.own-hero .hero-frame {
+  height: 812px;
+}
+
+.own-hero-logo {
+  left: 60.5px;
+  top: 372.5px;
+  width: 173.4px;
+}
+
+.own-hero-title {
+  top: 495px;
+}
+
+.own-pill--hero {
+  position: absolute;
+  right: 40.5px;
+  bottom: 44px;
+  z-index: 3;
+}
+
+/* 3. Forbes quote */
+.own-quote {
+  padding: 108px 0 0 60.5px;
+}
+
+.own-quote-text {
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.own-quote-logo {
+  display: block;
+  width: 206px;
+  height: 52px;
+  margin-top: 6px;
+}
+
+/* 4. Key numbers (red card, 4 columns divided by 2px rules) */
+.own-stats {
+  padding-top: 116px;
+}
+
+.own-stats-card {
+  position: relative;
+  height: 669px;
+  border-radius: 30px;
+  background-color: #f04e36;
+  color: #000000;
+}
+
+.own-stat {
+  position: absolute;
+  top: 70px;
+  height: 515px;
+  width: 400px;
+  border-left: 2px solid #000000;
+}
+
+.own-stat:nth-child(1) {
+  left: 44px;
+}
+
+.own-stat:nth-child(2) {
+  left: 448px;
+}
+
+.own-stat:nth-child(3) {
+  left: 848px;
+}
+
+.own-stat:nth-child(4) {
+  left: 1258px;
+  width: 360px;
+}
+
+.own-stat.is-dim {
+  border-left-color: rgba(0, 0, 0, 0.21);
+  color: rgba(0, 0, 0, 0.21);
+}
+
+.own-stat > * {
+  position: absolute;
+  left: 28px;
+  margin: 0;
+}
+
+.own-stat-head,
+.own-stat-label {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.own-stat-head {
+  top: 6px;
+}
+
+.own-stat-num {
+  top: 253px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 72px;
+}
+
+.own-stat:nth-child(2) .own-stat-num {
+  top: 182px;
+}
+
+.own-stat:nth-child(3) .own-stat-num {
+  top: 257px;
+}
+
+.own-stat-label {
+  top: 362px;
+  max-width: 242px;
+}
+
+.own-stat:nth-child(2) .own-stat-label {
+  max-width: 183px;
+}
+
+.own-stat:nth-child(3) .own-stat-label {
+  max-width: 191px;
+}
+
+.own-stat-desc {
+  top: 467px;
+  max-width: 343px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-medium);
+}
+
+.own-stat:nth-child(2) .own-stat-desc {
+  max-width: 319px;
+}
+
+.own-stat:nth-child(3) .own-stat-desc {
+  max-width: 340px;
+}
+
+.own-stat:nth-child(4) .own-stat-desc {
+  max-width: 308px;
+}
+
+/* 5. Poster banner */
+.own-poster {
+  margin-top: 51px;
+}
+
+/* 6. Video band (about.css component) */
+.own-video-band {
+  margin-top: 45px;
+}
+
+/* 7. WHY J.I.M? */
+.own-why {
+  padding-top: 116px;
+}
+
+.own-why-head {
+  height: 215px;
+}
+
+.own-why-desc {
+  margin-top: 27px;
+}
+
+.own-why-cards {
+  display: grid;
+  grid-template-columns: 520px 521px 520px;
+  column-gap: 52px;
+  margin-left: -0.5px;
+}
+
+.own-why-card {
+  position: relative;
+  height: 282px;
+  border-radius: 30px;
+  background-color: #f8b5b2;
+  color: #000000;
+}
+
+.own-why-card-title {
+  position: absolute;
+  left: 61px;
+  top: 63px;
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.own-why-card-desc {
+  position: absolute;
+  left: 61px;
+  top: 154px;
+  max-width: 387px;
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-medium);
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.own-why-card:nth-child(2) .own-why-card-desc {
+  left: 57px;
+  max-width: 408px;
+}
+
+.own-why-card:nth-child(3) .own-why-card-desc {
+  left: 54px;
+  max-width: 388px;
+}
+
+.own-why-card:nth-child(2) .own-why-card-title {
+  left: 57px;
+}
+
+.own-why-card:nth-child(3) .own-why-card-title {
+  left: 54px;
+}
+
+/* 8. Founder question (red card) */
+.own-founder {
+  padding-top: 61px;
+}
+
+.own-founder-card {
+  position: relative;
+  height: 669px;
+  border-radius: 30px;
+  background-color: #f04e36;
+  color: #000000;
+}
+
+.own-founder-card > * {
+  position: absolute;
+  left: 61px;
+  margin: 0;
+}
+
+.own-founder-intro,
+.own-founder-answer {
+  font-family: "Futura", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.own-founder-intro {
+  top: 66px;
+  max-width: 471px;
+  font-weight: 700;
+  letter-spacing: var(--ls-futura-bold);
+}
+
+.own-founder-quote {
+  top: 216px;
+  max-width: 1328px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+
+.own-founder-answer {
+  top: 552px;
+  max-width: 497px;
+  font-weight: 500;
+  letter-spacing: var(--ls-futura-medium);
+}
+
+/* 9. Ownership band (#242424) */
+.own-ownership-band {
+  margin-top: 65px;
+  padding: 46px 0 61px;
+  background-color: #242424;
+}
+
+.own-ownership-hero {
+  position: relative;
+  height: 633px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.own-ownership-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.own-ownership-kicker,
+.own-ownership-quote {
+  position: absolute;
+  left: 61px;
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.own-ownership-kicker {
+  top: 47px;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.own-ownership-quote {
+  top: 202px;
+  max-width: 1505px;
+  font-size: 60px;
+  line-height: 62px;
+}
+
+.own-owner-cards {
+  display: grid;
+  grid-template-columns: 520px 521px 508px;
+  column-gap: 52px;
+  margin: 50px 0 0 -0.5px;
+}
+
+.own-owner-card {
+  position: relative;
+  height: 734px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #f8b5b2;
+  color: #000000;
+}
+
+.own-owner-img {
+  display: block;
+  width: 100%;
+  height: 376px;
+  object-fit: cover;
+}
+
+.own-owner-card > h3,
+.own-owner-card > p,
+.own-owner-card > div {
+  position: absolute;
+  left: 61px;
+  margin: 0;
+}
+
+.own-owner-title {
+  top: 426px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.own-owner-sub {
+  top: 467px;
+  max-width: 356px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.own-owner-desc {
+  top: 566px;
+  max-width: 404px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-medium);
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.own-owner-card:nth-child(3) .own-owner-desc {
+  max-width: 414px;
+}
+
+.own-owner-desc p,
+.own-owner-desc ul {
+  margin: 0;
+}
+
+.own-owner-desc ul {
+  margin-top: 17px;
+  padding-left: 22px;
+}
+
+.own-owner-card:nth-child(2) > h3,
+.own-owner-card:nth-child(2) > div {
+  left: 57px;
+}
+
+.own-owner-card:nth-child(2) > .own-owner-sub {
+  left: 59px;
+}
+
+.own-owner-card:nth-child(3) > h3,
+.own-owner-card:nth-child(3) > p,
+.own-owner-card:nth-child(3) > div {
+  left: 54px;
+}
+
+/* 10. Secure your territory */
+.own-territory {
+  padding-top: 217px;
+  text-align: center;
+}
+
+.own-territory-title {
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.own-territory-text {
+  max-width: 859px;
+  margin: 59px auto 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  letter-spacing: var(--ls-futura-bold);
+  color: #f04e36;
+}
+
+.own-territory-text p {
+  margin: 0;
+}
+
+.own-territory-text p + p {
+  margin-top: 27px;
+}
+
+.own-pill--center {
+  margin-top: 66px;
+}
+
+/* 11. Meet our partners (#242424) */
+.own-partners-band {
+  margin-top: 217px;
+  padding: 108px 0 100px;
+  background-color: #242424;
+}
+
+.own-partners-head {
+  position: relative;
+  padding-left: 63.5px;
+}
+
+.own-partners-title {
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.own-partners-logo {
+  position: absolute;
+  left: 392.6px;
+  top: -13.9px;
+  width: 161.3px;
+}
+
+.own-partner-videos {
+  position: relative;
+  height: 605px;
+  margin-top: 101px;
+  overflow: hidden;
+}
+
+.own-partner-video {
+  position: absolute;
+  top: 0;
+  width: 1089px;
+  height: 605px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.own-partner-video:nth-child(1) {
+  left: 3.5px;
+}
+
+.own-partner-video:nth-child(2) {
+  left: 1144.5px;
+}
+
+.own-partner-play {
+  position: absolute;
+  left: 519px;
+  top: 248px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.own-partner-play svg,
+.own-learn-play svg {
+  display: block;
+}
+
+.own-partner-quotes {
+  display: grid;
+  grid-template-columns: 520px 521px 506px;
+  column-gap: 52px;
+  margin: 49px 0 0 -0.5px;
+}
+
+.own-partner-quote {
+  position: relative;
+  height: 468px;
+  margin: 0;
+  border-radius: 30px;
+  background-color: #f04e36;
+  color: #000000;
+}
+
+.own-partner-quote blockquote,
+.own-partner-quote figcaption {
+  position: absolute;
+  left: 64px;
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-size: 25px;
+}
+
+.own-partner-quote blockquote {
+  top: 55px;
+  max-width: 420px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: var(--ls-futura-medium);
+}
+
+.own-partner-quote:nth-child(2) blockquote {
+  left: 51px;
+  top: 59px;
+  max-width: 414px;
+}
+
+.own-partner-quote:nth-child(3) blockquote {
+  left: 51px;
+  top: 49px;
+  max-width: 387px;
+}
+
+.own-partner-quote figcaption {
+  top: 366px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.own-partner-quote:nth-child(n + 2) figcaption {
+  left: 51px;
+}
+
+.own-partner-quote figcaption strong {
+  font-weight: 700;
+}
+
+/* 12. 4 steps (overlapping 643x397 cards) */
+.own-steps {
+  padding-top: 144px;
+}
+
+.own-steps-head {
+  position: relative;
+  padding-left: 63.5px;
+}
+
+.own-steps-title {
+  position: relative;
+  height: 124px;
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.own-steps-studio {
+  position: absolute;
+  left: 174px;
+  top: 81px;
+}
+
+.own-steps-logo {
+  position: absolute;
+  left: 59.6px;
+  top: 84.1px;
+  width: 161.8px;
+}
+
+.own-steps-stack {
+  position: relative;
+  height: 487px;
+  margin-top: 214px;
+}
+
+.own-step {
+  position: absolute;
+  width: 643px;
+  height: 397px;
+  border-radius: 30px;
+  background-color: #f8b5b2;
+  color: #000000;
+}
+
+.own-step--1 {
+  left: -0.5px;
+  top: 0;
+}
+
+.own-step--2 {
+  left: 336.5px;
+  top: 28px;
+  background-color: #f04e36;
+}
+
+.own-step--3 {
+  left: 672.5px;
+  top: 61px;
+}
+
+.own-step--4 {
+  left: 1009.5px;
+  top: 90px;
+  background-color: #f04e36;
+}
+
+.own-step-title {
+  position: absolute;
+  left: 61px;
+  top: 61px;
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+}
+
+.own-step:nth-child(n + 2) .own-step-title {
+  left: 52px;
+}
+
+.own-step-text {
+  position: absolute;
+  left: 60px;
+  top: 304px;
+  max-width: 411px;
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  letter-spacing: var(--ls-futura-bold);
+}
+
+.own-step--2 .own-step-text {
+  left: 50px;
+  top: 300px;
+}
+
+.own-step--3 .own-step-text {
+  left: 43px;
+  top: 294px;
+}
+
+.own-step--4 .own-step-text {
+  left: 51px;
+  top: 292px;
+}
+
+/* 13. Ticker (press.css component) */
+.own-ticker-band {
+  margin-top: 125px;
+}
+
+/* 14. Faces banner */
+.own-faces {
+  margin-top: 87px;
+}
+
+/* 15. Get started / prospectus */
+.own-prospectus {
+  padding-top: 182px;
+  text-align: center;
+}
+
+.own-prospectus-heading,
+.own-prospectus-title {
+  margin: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+}
+
+.own-prospectus-heading {
+  color: #ffffff;
+}
+
+.own-prospectus-card {
+  position: relative;
+  width: 797px;
+  height: 700px;
+  margin: 114px auto 0;
+  border-radius: 30px;
+  background-color: #f8b5b2;
+  color: #000000;
+}
+
+.own-prospectus-card > * {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.own-prospectus-title {
+  top: 79px;
+}
+
+.own-prospectus-desc {
+  top: 273px;
+  max-width: 443px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.own-pill--more {
+  top: 459px;
+}
+
+.own-prospectus-included {
+  top: 572px;
+  max-width: 577px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: var(--ls-futura-medium);
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* 16. Learn more (#242424) */
+.own-learn-band {
+  margin-top: 181px;
+  padding: 163px 0 103px;
+  background-color: #242424;
+}
+
+.own-learn-title {
+  margin: 0;
+  padding-left: 63.5px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.own-learn-grid {
+  display: flex;
+  margin: 116px 0 0 -0.5px;
+}
+
+.own-learn-item {
+  position: relative;
+  flex: 0 0 539px;
+  height: 299px;
+}
+
+.own-learn-item:nth-child(2) {
+  margin-left: 19px;
+}
+
+.own-learn-item:nth-child(3) {
+  margin-left: 23px;
+}
+
+.own-learn-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.own-learn-play {
+  position: absolute;
+  left: 230px;
+  top: 107px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.own-learn-item:nth-child(3) .own-learn-play {
+  left: 244px;
+}
+
+/* 17. FAQ (shared pill rows from faq.css) */
+.own-faq {
+  padding-top: 105px;
+}
+
+.own-faq-inner {
+  position: relative;
+  height: 652px;
+}
+
+.own-faq-img {
+  position: absolute;
+  left: 19.5px;
+  top: 0;
+  width: 747px;
+  height: 652px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.own-faq-list {
+  position: absolute;
+  left: 940.5px;
+  top: 56px;
+}
+
+.own-faq-title {
+  padding-left: 1px;
+  margin-bottom: 81px;
+}
+
+/* 18. Obsessed videos */
+.own-obsessed {
+  padding-top: 184px;
+}
+
+/* Footer is not part of this Figma frame; standard footer after the last section */
+.jim-footer--own {
+  margin-top: 182px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1500px) {
+  .jim-header--own .header-btn-get-started {
+    width: auto;
+    padding: 0 20px;
+    gap: 12px;
+  }
+  .own-nav-caret {
+    display: none;
+  }
+  .own-stat {
+    width: 23%;
+  }
+  .own-stat:nth-child(2) {
+    left: 26%;
+  }
+  .own-stat:nth-child(3) {
+    left: 50%;
+  }
+  .own-stat:nth-child(4) {
+    left: 74%;
+    width: 23%;
+  }
+  .own-stat-desc {
+    right: 16px;
+  }
+  .own-why-cards,
+  .own-owner-cards,
+  .own-partner-quotes,
+  .own-learn-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    margin-left: 0;
+  }
+  .own-learn-item:nth-child(n) {
+    margin-left: 0;
+  }
+  .own-step {
+    width: 40%;
+  }
+  .own-step--2 {
+    left: 20%;
+  }
+  .own-step--3 {
+    left: 40%;
+  }
+  .own-step--4 {
+    left: 60%;
+  }
+  .own-faq-img {
+    width: 45%;
+  }
+  .own-faq-list {
+    left: 52%;
+  }
+}
+
+@media (max-width: 992px) {
+  .jim-header--own {
+    height: 84px;
+  }
+  .own-hero .hero-frame {
+    height: 520px;
+  }
+  .own-quote {
+    padding-left: 0;
+  }
+  .own-quote-text,
+  .own-founder-quote,
+  .own-ownership-quote {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .own-stats-card,
+  .own-founder-card {
+    height: auto;
+    padding: 48px 32px;
+  }
+  .own-stat,
+  .own-stat > *,
+  .own-founder-card > * {
+    position: static;
+  }
+  .own-stat {
+    width: auto;
+    height: auto;
+    padding: 0 0 32px 24px;
+    margin-bottom: 32px;
+  }
+  .own-stat > * {
+    margin-top: 12px;
+  }
+  .own-founder-card > * + * {
+    margin-top: 32px;
+  }
+  .own-why-head {
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .own-why-cards,
+  .own-owner-cards,
+  .own-partner-quotes,
+  .own-learn-grid {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  .own-why-card,
+  .own-owner-card,
+  .own-partner-quote {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .own-why-card > *,
+  .own-owner-card > h3,
+  .own-owner-card > p,
+  .own-owner-card > div,
+  .own-partner-quote blockquote,
+  .own-partner-quote figcaption {
+    position: static;
+    margin: 24px 32px 0;
+    max-width: none;
+  }
+  .own-why-card > :first-child {
+    padding-top: 40px;
+  }
+  .own-ownership-hero {
+    height: 520px;
+  }
+  .own-partner-videos {
+    height: auto;
+  }
+  .own-partner-video {
+    position: relative;
+    width: 100%;
+    height: 360px;
+  }
+  .own-partner-video:nth-child(n) {
+    left: 0;
+  }
+  .own-partner-video + .own-partner-video {
+    margin-top: 24px;
+  }
+  .own-partner-play {
+    left: calc(50% - 37px);
+    top: calc(50% - 43px);
+  }
+  .own-steps-stack {
+    height: auto;
+    margin-top: 48px;
+  }
+  .own-step {
+    position: relative;
+    width: 100%;
+    height: 240px;
+  }
+  .own-step:nth-child(n) {
+    left: 0;
+    top: 0;
+  }
+  .own-step + .own-step {
+    margin-top: 16px;
+  }
+  .own-step-text {
+    top: auto;
+    bottom: 40px;
+  }
+  .own-prospectus-card {
+    width: 100%;
+    height: auto;
+    padding: 48px 24px;
+  }
+  .own-prospectus-card > * {
+    position: static;
+  }
+  .own-prospectus-card > * + * {
+    margin-top: 32px;
+  }
+  .own-faq-inner {
+    height: auto;
+  }
+  .own-faq-img,
+  .own-faq-list {
+    position: static;
+  }
+  .own-faq-img {
+    width: 100%;
+    height: 420px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .own-partners-title,
+  .own-steps-title,
+  .own-territory-title,
+  .own-prospectus-heading,
+  .own-prospectus-title,
+  .own-learn-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .own-partners-head,
+  .own-steps-head,
+  .own-learn-title {
+    padding-left: 0;
+  }
+  .own-partners-logo {
+    left: 180px;
+    top: -6px;
+    width: 100px;
+  }
+  .own-steps-title {
+    height: 80px;
+  }
+  .own-steps-studio {
+    left: 110px;
+    top: 40px;
+  }
+  .own-steps-logo {
+    left: 0;
+    top: 38px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .own-faq-list {
+    right: 20px;
+  }
+  .own-faq-list .faq-pill-details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .jim-header--own .nav-links-list {
+    gap: 20px;
+  }
+  .jim-header--own .header-nav {
+    margin-right: 24px;
+  }
+  .jim-header--own .nav-link {
+    font-size: 15px;
+  }
+}

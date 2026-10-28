@@ -1,0 +1,400 @@
+/* ==========================================================================
+   J.I.M - Infrared Workouts (Figma frame 171:486, 1728 x 6476)
+   Built on home.css (header, footer, page hero, sweaty row, reviews band).
+   ========================================================================== */
+
+/* 2. Hero sits 30px under the header, no LOCATIONS pill */
+.inf-hero {
+  margin-top: 30px;
+}
+
+.inf-hero .page-hero-title {
+  top: 441px;
+}
+
+/* 3. WHAT IS J.I.M - reuses the home "sweaty" row */
+.inf-what-is {
+  padding: 72px 0 139px;
+}
+
+.inf-what-is .sweaty-script-logo {
+  left: 350.6px;
+  top: -2.9px;
+}
+
+.inf-what-is-body p {
+  margin: 0;
+}
+
+.inf-what-is-body p + p {
+  margin-top: 17px;
+}
+
+.inf-what-is .btn-red-pill {
+  margin-top: 28px;
+}
+
+/* 4. Feature rows: 1012x614 photo (r22) + 593x614 card (r30), 47px apart */
+.inf-feature-row {
+  display: grid;
+  grid-template-columns: 1012px 593px;
+  column-gap: 47px;
+}
+
+.inf-feature-row--reverse {
+  grid-template-columns: 593px 1012px;
+  margin-top: 38px;
+}
+
+.inf-feature-img {
+  display: block;
+  width: 100%;
+  height: 614px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.inf-feature-card {
+  position: relative;
+  height: 614px;
+  border-radius: 30px;
+  background-color: #242424;
+}
+
+.inf-feature-title {
+  position: absolute;
+  left: 61px;
+  top: 74px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #f04e36;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.inf-feature-desc {
+  position: absolute;
+  left: 61px;
+  top: 276px;
+  max-width: 482px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-medium);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.inf-feature-desc p {
+  margin: 0;
+}
+
+.inf-feature-desc p + p {
+  margin-top: 17px;
+}
+
+.inf-feature-btn {
+  position: absolute;
+  left: 61px;
+  top: 512px;
+  width: 172px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #f04e36;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-bold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* 5. Benefits band: 2 columns x 6 rows, only the first row is highlighted */
+.inf-benefits-band {
+  margin-top: 89px;
+  padding: 70px 0 80px;
+  background-color: #242424;
+}
+
+.inf-benefits-title {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 87px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 60.5px;
+}
+
+.benefits-list {
+  position: relative;
+  height: 1430px;
+  margin-top: 98px;
+}
+
+.benefit-item {
+  position: absolute;
+  left: var(--x);
+  top: calc(var(--y) - 1px);
+  width: 793px;
+  height: var(--h);
+  border-top: 2px solid #ffffff;
+}
+
+.benefit-item.is-dim-line {
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+.benefit-item.is-last {
+  height: calc(var(--h) + 2px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.benefit-item.is-dim > * {
+  opacity: 0.3;
+}
+
+.benefit-icon {
+  position: absolute;
+  left: var(--icon-x);
+  top: calc(var(--icon-y) - 1px);
+  display: block;
+}
+
+.benefit-title {
+  position: absolute;
+  left: 289px;
+  top: calc(var(--title-y) - 1px);
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.benefit-desc {
+  position: absolute;
+  left: 289px;
+  top: calc(var(--title-y) + 66px);
+  max-width: 504px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.035em; /* Figma wraps these lines a little earlier */
+  color: #ffffff;
+  margin: 0;
+}
+
+/* 6. Video teaser */
+.inf-video {
+  margin-top: 142px;
+}
+
+.inf-video-inner {
+  position: relative;
+  height: 510px;
+}
+
+.inf-video-text {
+  position: absolute;
+  left: 81.5px;
+  top: 0;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.inf-video-box {
+  position: absolute;
+  left: 593.5px;
+  top: 0;
+  width: 1027px;
+  height: 510px;
+  border-radius: 30px;
+  background-color: #f8b5b2;
+}
+
+.inf-video-play {
+  position: absolute;
+  left: 488px;
+  top: 212px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.inf-video-play svg {
+  display: block;
+}
+
+/* 7. Reviews band */
+.inf-reviews {
+  margin-top: 132px;
+}
+
+/* Footer: x=33 variant (home.css) */
+.jim-footer--infrared {
+  margin-top: 66px;
+  padding-bottom: 104px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1700px) {
+  .inf-feature-row {
+    grid-template-columns: 1.7fr 1fr;
+  }
+  .inf-feature-row--reverse {
+    grid-template-columns: 1fr 1.7fr;
+  }
+  .benefits-list {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
+    column-gap: 64px;
+  }
+  .benefit-item {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    min-height: 227px;
+    padding: 60px 0 40px 220px;
+  }
+  .benefit-title,
+  .benefit-desc {
+    position: static;
+  }
+  .benefit-desc {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .inf-feature-row,
+  .inf-feature-row--reverse {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  .inf-feature-row--reverse .inf-feature-img {
+    order: -1;
+  }
+  .inf-feature-card {
+    height: auto;
+    padding: 48px 32px;
+  }
+  .inf-feature-title,
+  .inf-feature-desc,
+  .inf-feature-btn {
+    position: static;
+  }
+  .inf-feature-desc {
+    margin: 32px 0;
+    max-width: none;
+  }
+  .inf-benefits-title {
+    font-size: 48px;
+    line-height: 52px;
+    padding-left: 0;
+  }
+  .benefits-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+  }
+  .benefit-item {
+    padding-left: 160px;
+  }
+  .benefit-icon {
+    width: 110px;
+    height: auto;
+    left: 0;
+    top: 40px;
+  }
+  .inf-video-inner {
+    height: auto;
+  }
+  .inf-video-text,
+  .inf-video-box {
+    position: static;
+  }
+  .inf-video-box {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    margin-top: 24px;
+  }
+  .inf-video-play {
+    left: calc(50% - 37px);
+    top: calc(50% - 43px);
+  }
+  .inf-reviews {
+    margin-top: 80px;
+  }
+  .jim-footer--infrared {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 992px) {
+  .inf-feature-row,
+  .inf-feature-row--reverse,
+  .benefits-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .inf-video-box {
+    left: auto;
+    top: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .inf-what-is .sweaty-script-logo {
+    left: 150px;
+    top: -2px;
+    width: 110px;
+  }
+  .inf-feature-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .inf-video-text {
+    left: 20px;
+  }
+  .inf-video-box {
+    left: auto;
+    right: 20px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .inf-feature-title {
+    font-size: 44px;
+    line-height: 48px;
+  }
+  .inf-feature-desc {
+    right: 32px;
+  }
+}

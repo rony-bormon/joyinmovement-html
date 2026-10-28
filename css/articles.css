@@ -1,0 +1,304 @@
+/* ==========================================================================
+   J.I.M - Articles (Figma frame 1311:755, 1728 x 4903)
+   Built on home.css (header, footer, page hero, sweaty band).
+   ========================================================================== */
+
+/* 2. Hero logo above the title */
+.articles-hero-logo {
+  left: 64.9px;
+  top: 302.6px;
+}
+
+/* 3. Articles grid: 537x715 cards at Figma x=39 / 598 / 1154, rows 96px apart */
+.articles-grid-section {
+  padding-top: 108px;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 537px);
+  column-gap: 0;
+  row-gap: 96px;
+  margin-left: 1.5px;
+}
+
+.article-card {
+  position: relative;
+  height: 715px;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.article-card:nth-child(3n + 2) {
+  margin-left: 22px;
+}
+
+.article-card:nth-child(3n) {
+  margin-left: 19px;
+}
+
+.article-card-img {
+  display: block;
+  width: 522px;
+  height: 335px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.article-card-title {
+  position: absolute;
+  left: 27px;
+  top: 396px;
+  max-width: 432px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  letter-spacing: var(--ls-futura-bold);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.article-card:nth-child(2) .article-card-title {
+  max-width: 490px;
+}
+
+.article-card:nth-child(5) .article-card-title {
+  max-width: 449px;
+}
+
+.article-card-desc {
+  position: absolute;
+  left: 27px;
+  top: 524px;
+  max-width: 397px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: var(--ls-futura-medium);
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.article-card:nth-child(3n) .article-card-desc {
+  max-width: 461px;
+}
+
+.article-card:nth-child(5) .article-card-desc {
+  max-width: 423px;
+}
+
+.article-card-btn {
+  position: absolute;
+  left: 27px;
+  top: 634px;
+  width: 184px;
+  height: 46px;
+  border: 2px solid #000000;
+  border-radius: 100px;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-bold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.article-card-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* 4. Sweaty band sits 162px below the grid */
+.articles-sweaty-band {
+  margin-top: 162px;
+}
+
+/* 5. Why members are obsessed (468x734 white video cards, track bleeds off the right edge) */
+.obsessed-section {
+  padding-top: 147px;
+  overflow: hidden;
+}
+
+.obsessed-heading {
+  position: relative;
+  padding-left: 71.5px;
+}
+
+.obsessed-title {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.obsessed-logo {
+  position: absolute;
+  left: 736.6px;
+  top: 52.1px;
+  width: 161.8px;
+  height: auto;
+  pointer-events: none;
+}
+
+.obsessed-track {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 207px;
+  padding-left: 68.5px;
+  width: max-content;
+}
+
+.obsessed-item + .obsessed-item {
+  margin-left: 64px;
+}
+
+.obsessed-item:nth-child(4) {
+  margin-left: 57px;
+}
+
+.obsessed-tag {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #f04e36;
+  text-transform: uppercase;
+  margin: 0 0 21px 3px;
+}
+
+.obsessed-item:nth-child(2) .obsessed-tag {
+  margin-left: -1px;
+}
+
+.obsessed-item:nth-child(3) .obsessed-tag {
+  margin-left: -4px;
+}
+
+.obsessed-item:nth-child(4) .obsessed-tag {
+  margin-left: 0;
+}
+
+.obsessed-card {
+  position: relative;
+  display: block;
+  width: 468px;
+  height: 734px;
+  padding: 0;
+  border: 0;
+  border-radius: 30px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.obsessed-card svg {
+  position: absolute;
+  left: 209px;
+  top: 324px;
+}
+
+/* Footer: x=33 variant (home.css) */
+.jim-footer--articles {
+  margin-top: 167px;
+  padding-bottom: 94px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1750px) {
+  .articles-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    margin-left: 0;
+  }
+  .article-card:nth-child(n) {
+    margin-left: 0;
+  }
+  .article-card-img {
+    width: 100%;
+  }
+  .article-card-title,
+  .article-card-desc {
+    right: 27px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .articles-grid-section {
+    padding-top: 56px;
+  }
+  .articles-grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+  .article-card {
+    height: auto;
+    padding-bottom: 32px;
+  }
+  .article-card-title,
+  .article-card-desc,
+  .article-card-btn {
+    position: static;
+    margin: 24px 19px 0;
+  }
+  .article-card-img {
+    height: 240px;
+  }
+  .articles-sweaty-band {
+    margin-top: 64px;
+  }
+  .obsessed-section {
+    padding-top: 64px;
+  }
+  .obsessed-heading {
+    padding-left: 0;
+  }
+  .obsessed-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .obsessed-logo {
+    left: 270px;
+    top: 30px;
+    width: 100px;
+  }
+  .obsessed-track {
+    margin-top: 48px;
+    padding-left: 0;
+    width: auto;
+    overflow-x: auto;
+  }
+  .obsessed-card {
+    width: 280px;
+    height: 440px;
+  }
+  .obsessed-card svg {
+    left: 103px;
+    top: 177px;
+  }
+  .obsessed-item + .obsessed-item,
+  .obsessed-item:nth-child(4) {
+    margin-left: 20px;
+  }
+  .jim-footer--articles {
+    margin-top: 80px;
+  }
+}

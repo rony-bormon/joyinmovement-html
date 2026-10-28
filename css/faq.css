@@ -1,0 +1,147 @@
+/* ==========================================================================
+   J.I.M - Shared FAQ accordion (Figma: classes 1269:441, about 169:277)
+   Title, category tabs and 690x46 pill rows; used by classes.html and about.html.
+   ========================================================================== */
+
+.faq-section-title {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  padding-left: 67.5px;
+}
+
+.faq-tabs {
+  position: relative;
+  height: 19px;
+  margin-top: 71px;
+}
+
+.faq-tab-btn {
+  position: absolute;
+  left: var(--tab-x);
+  top: 0;
+  width: var(--tab-w);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #f04e36;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-bold);
+  cursor: pointer;
+  opacity: 0.23;
+}
+
+.faq-tab-btn.active,
+.faq-tab-btn:hover {
+  opacity: 1;
+}
+
+.faqs-groups-container {
+  margin-top: 40px;
+  padding-left: 66.5px;
+}
+
+.faq-category-group + .faq-category-group {
+  margin-top: 97px;
+}
+
+.faq-category-group:nth-child(4) {
+  margin-top: 93px;
+}
+
+.faq-category-label {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-bold);
+  color: #f04e36;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 26px;
+}
+
+.faq-pill-details {
+  width: 690px;
+  max-width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 23px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.faq-pill-details + .faq-pill-details {
+  margin-top: 16px;
+}
+
+.faq-pill-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 19px 0 26px;
+  list-style: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.faq-pill-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question-text {
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: var(--ls-futura-medium);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.faq-arrow-icon {
+  flex-shrink: 0;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.faq-pill-details[open] .faq-arrow-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer-drawer {
+  padding: 0 26px 18px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #d9d9d9;
+}
+
+.faq-answer-drawer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .faq-section-title,
+  .faqs-groups-container {
+    padding-left: 0;
+  }
+  .faq-tabs {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+  }
+  .faq-tab-btn {
+    position: static;
+    width: auto;
+  }
+}

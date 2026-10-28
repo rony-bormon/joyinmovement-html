@@ -1,810 +1,1019 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classes | J.I.M - Joy In Movement</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="classes.css">
-</head>
-<body class="classes-page-body">
-
-  <!-- =========================================================================
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes | J.I.M - Joy In Movement</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/classes.css" />
+  </head>
+  <body class="classes-page-body">
+    <!-- =========================================================================
        1. Top Header Bar (1:1 standardized with Figma)
        ========================================================================= -->
-  <header class="jim-header" id="header">
-    <div class="content-container header-inner">
-      <a href="index.html" class="header-brand" aria-label="J.I.M Home">
-        <img src="assets/jim_logo_script.png" alt="J.I.M" class="logo-script-img">
-      </a>
+    <header class="jim-header">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo" aria-label="J.I.M Home">
+          <img src="assets/jim_logo_script.webp" alt="J.I.M" class="logo-script-img" />
+        </a>
 
-      <nav class="header-nav" aria-label="Main Navigation">
-        <ul class="nav-links-list">
-          <li><a href="locations.html" class="nav-link">Locations</a></li>
-          <li><a href="infrared.html" class="nav-link">Infrared Workouts</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="own-a-jim.html" class="nav-link">Own A J.I.M</a></li>
-          <li><a href="#store" class="nav-link">Store</a></li>
-        </ul>
-      </nav>
+        <nav class="header-nav" aria-label="Main Navigation">
+          <ul class="nav-links-list">
+            <li><a href="locations.html" class="nav-link">Locations</a></li>
+            <li><a href="infrared.html" class="nav-link">Infrared Workouts</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="own-a-jim.html" class="nav-link">Own A J.I.M</a></li>
+            <li><a href="#store" class="nav-link">Store</a></li>
+          </ul>
+        </nav>
 
-      <div class="header-right">
-        <a href="#schedule" class="header-btn-get-started">GET STARTED</a>
-        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- =========================================================================
-         2. Hero Banner (1653px x 742px, radius 22px)
-         ========================================================================= -->
-    <section class="classes-hero-section">
-      <div class="content-container">
-        <div class="classes-hero-frame">
-          <img src="assets/classes_hero_banner.png" alt="Sculpt, Stretch, Strengthen, Recover" class="classes-hero-bg">
-          <div class="classes-hero-overlay">
-            <h1 class="classes-hero-title">
-              SCULPT, STRETCH,<br>
-              STRENGTHEN,<br>
-              RECOVER
-            </h1>
-          </div>
+        <div class="header-action">
+          <a href="classes.html" class="header-btn-get-started">GET STARTED</a>
+          <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- =========================================================================
-         3. Intro Section: MORE MOVEMENT. | MORE HEAT. MORE JOY.
+    <main>
+      <!-- =========================================================================
+         2. Hero (159 - 901px)
          ========================================================================= -->
-    <section class="section-classes-intro">
-      <div class="content-container">
-        <div class="classes-intro-row">
-          <div class="classes-intro-left">
-            <h2 class="title-classes-stacked">
-              MORE MOVEMENT. |<br>
-              MORE HEAT.<br>
-              MORE JOY.
-            </h2>
-          </div>
-
-          <div class="classes-intro-right">
-            <h3 class="subtitle-classes-stats">100+ WORKOUTS<br>EVERY WEEK.</h3>
-            <p class="desc-classes-stats">
-              Over 1,000 moves across 42 infrared class formats.<br>
-              30-minute workouts designed to build strength, improve mobility, burn more and help you feel better in your body.
-            </p>
-            <a href="#schedule" class="btn-classes-join">GET STARTED</a>
-          </div>
+      <section class="section-hero page-hero cls-hero">
+        <div class="hero-frame">
+          <img src="assets/classes_hero_banner.webp" alt="Infrared class at J.I.M" class="hero-img" />
+          <h1 class="page-hero-title cls-hero-title">SCULPT, STRETCH, STRENGTHEN, RECOVER</h1>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- =========================================================================
-         4. 28 Class Formats Matrix (Full Bleed Band #242424)
+      <!-- =========================================================================
+         3. MORE MOVEMENT. MORE HEAT. MORE JOY. (901 - 1366px)
          ========================================================================= -->
-    <section class="section-formats-catalog-band" id="formats-grid">
-      <div class="content-container">
-        
-        <!-- Filter Pills Row -->
-        <div class="formats-filter-pills" role="tablist">
-          <button class="filter-pill active" data-filter="all">ALL</button>
-          <button class="filter-pill" data-filter="sculpt">SCULPT</button>
-          <button class="filter-pill" data-filter="stretch">STRETCH</button>
-          <button class="filter-pill" data-filter="strengthen">STRENGTHEN</button>
-          <button class="filter-pill" data-filter="recovery">RECOVERY</button>
-        </div>
-
-        <!-- 28 Formats 4-Column Grid -->
-        <div class="classes-matrix-grid">
-          <!-- 1. BALLER -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_baller.png" alt="BALLER" class="class-vector-icon"></div>
-            <h4 class="class-format-title">BALLER</h4>
-            <p class="class-format-desc">Full-body movement designed to tone, strengthen and get your heart rate up. Work every muscle and walk out feeling like a baller.</p>
-          </article>
-
-          <!-- 2. MAGIC -->
-          <article class="class-card-item" data-category="sculpt">
-            <div class="class-icon-wrapper"><img src="assets/icon_magic.png" alt="MAGIC" class="class-vector-icon"></div>
-            <h4 class="class-format-title">MAGIC</h4>
-            <p class="class-format-desc">Small ring. Big work. A Pilates-inspired class designed to activate muscles, improve posture and build total-body strength and control.</p>
-          </article>
-
-          <!-- 3. BOX -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_box.png" alt="BOX" class="class-vector-icon"></div>
-            <h4 class="class-format-title">BOX</h4>
-            <p class="class-format-desc">Punch, jab and move. A fun, high-energy boxing workout designed to get your heart rate up and your whole body working.</p>
-          </article>
-
-          <!-- 4. MOVE -->
-          <article class="class-card-item" data-category="stretch">
-            <div class="class-icon-wrapper"><img src="assets/icon_move.png" alt="MOVE" class="class-vector-icon"></div>
-            <h4 class="class-format-title">MOVE</h4>
-            <p class="class-format-desc">Exactly what it says. A full-body, uptempo workout designed to improve mobility, flexibility and cardiovascular fitness.</p>
-          </article>
-
-          <!-- 5. SCULPT -->
-          <article class="class-card-item" data-category="sculpt">
-            <div class="class-icon-wrapper"><img src="assets/icon_sculpt.png" alt="SCULPT" class="class-vector-icon"></div>
-            <h4 class="class-format-title">SCULPT</h4>
-            <p class="class-format-desc">A core-focused workout designed to strengthen, tone and sculpt your midsection through three targeted flows.</p>
-          </article>
-
-          <!-- 6. SHAPE -->
-          <article class="class-card-item" data-category="sculpt">
-            <div class="class-icon-wrapper"><img src="assets/icon_shape.png" alt="SHAPE" class="class-vector-icon"></div>
-            <h4 class="class-format-title">SHAPE</h4>
-            <p class="class-format-desc">Slow it down and feel every move. A controlled workout focused on strength, length, tone and total-body shape.</p>
-          </article>
-
-          <!-- 7. BURN -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_burn.png" alt="BURN" class="class-vector-icon"></div>
-            <h4 class="class-format-title">BURN</h4>
-            <p class="class-format-desc">Turn up the heat. A faster-paced, low-impact workout designed to raise your heart rate, challenge your muscles and get you sweating.</p>
-          </article>
-
-          <!-- 8. JOKER -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_joker.png" alt="JOKER" class="class-vector-icon"></div>
-            <h4 class="class-format-title">JOKER</h4>
-            <p class="class-format-desc">The wild card. You never quite know what’s coming — except plenty of movement, plenty of laughs and a seriously good workout.</p>
-          </article>
-
-          <!-- 9. FREEZE -->
-          <article class="class-card-item" data-category="recovery">
-            <div class="class-icon-wrapper"><img src="assets/icon_freeze.png" alt="FREEZE" class="class-vector-icon"></div>
-            <h4 class="class-format-title">FREEZE</h4>
-            <p class="class-format-desc">Slow down. Hold strong. Three controlled flows designed to improve balance, flexibility, concentration and body awareness.</p>
-          </article>
-
-          <!-- 10. BEND -->
-          <article class="class-card-item" data-category="stretch">
-            <div class="class-icon-wrapper"><img src="assets/icon_bend.png" alt="BEND" class="class-vector-icon"></div>
-            <h4 class="class-format-title">BEND</h4>
-            <p class="class-format-desc">A mobility-focused class designed to release tight hamstrings, glutes and lower back while improving overall flexibility.</p>
-          </article>
-
-          <!-- 11. POWER -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_power.png" alt="POWER" class="class-vector-icon"></div>
-            <h4 class="class-format-title">POWER</h4>
-            <p class="class-format-desc">Yoga, the J.I.M way. Strength, balance and mobility meet weighted movement for a stronger, more dynamic flow.</p>
-          </article>
-
-          <!-- 12. REMIX -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_remix.png" alt="REMIX" class="class-vector-icon"></div>
-            <h4 class="class-format-title">REMIX</h4>
-            <p class="class-format-desc">Classic J.I.M moves with the volume turned up. Weights, beats and flowing movement come together for a fun full-body workout.</p>
-          </article>
-
-          <!-- 13. LIMITLESS -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_limitless.png" alt="LIMITLESS" class="class-vector-icon"></div>
-            <h4 class="class-format-title">LIMITLESS</h4>
-            <p class="class-format-desc">Low impact doesn’t mean easy. Challenge your strength, endurance and mindset with a workout designed to push you without pounding your body.</p>
-          </article>
-
-          <!-- 14. SWEAT -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_sweat.png" alt="SWEAT" class="class-vector-icon"></div>
-            <h4 class="class-format-title">SWEAT</h4>
-            <p class="class-format-desc">Three full-body flows. Plenty of movement. Plenty of heat. Exactly what you came for.</p>
-          </article>
-
-          <!-- 15. LOADED -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_loaded.png" alt="LOADED" class="class-vector-icon"></div>
-            <h4 class="class-format-title">LOADED</h4>
-            <p class="class-format-desc">Pick up the weights. Loaded movements help build strength, support lean muscle and improve the way your body moves.</p>
-          </article>
-
-          <!-- 16. BEATS -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_beats.png" alt="BEATS" class="class-vector-icon"></div>
-            <h4 class="class-format-title">BEATS</h4>
-            <p class="class-format-desc">Move to the music. A high-energy, dance-inspired workout that gets your heart rate up while working your whole body.</p>
-          </article>
-
-          <!-- 17. OUCH -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_ouch.png" alt="OUCH" class="class-vector-icon"></div>
-            <h4 class="class-format-title">OUCH</h4>
-            <p class="class-format-desc">Functional strength training designed to build muscle, improve movement and leave you feeling stronger long after class is done.</p>
-          </article>
-
-          <!-- 18. AFTERBURN -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_afterburn.png" alt="AFTERBURN" class="class-vector-icon"></div>
-            <h4 class="class-format-title">AFTERBURN</h4>
-            <p class="class-format-desc">Weights. Heat. Full-body conditioning. A low-impact workout designed to lift intensity, build strength and keep your body working hard.</p>
-          </article>
-
-          <!-- 19. TORCHED -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_torched.png" alt="TORCHED" class="class-vector-icon"></div>
-            <h4 class="class-format-title">TORCHED</h4>
-            <p class="class-format-desc">No burpees required. Dumbbell-based movements combine strength and conditioning to work the whole body and get your heart rate up.</p>
-          </article>
-
-          <!-- 20. LIIT -->
-          <article class="class-card-item" data-category="strengthen">
-            <div class="class-icon-wrapper"><img src="assets/icon_liit.png" alt="LIIT" class="class-vector-icon"></div>
-            <h4 class="class-format-title">LIIT</h4>
-            <p class="class-format-desc">Low impact. High reward. Dumbbells and intervals combine strength and cardio for a joint-friendly alternative to traditional HIIT.</p>
-          </article>
-
-          <!-- 21. CORE -->
-          <article class="class-card-item" data-category="sculpt">
-            <div class="class-icon-wrapper"><img src="assets/icon_core.png" alt="CORE" class="class-vector-icon"></div>
-            <h4 class="class-format-title">CORE</h4>
-            <p class="class-format-desc">Strong starts at the centre. Dumbbell-based flows target your core from every angle to improve stability, posture and control.</p>
-          </article>
-
-          <!-- 22. TONE -->
-          <article class="class-card-item" data-category="sculpt">
-            <div class="class-icon-wrapper"><img src="assets/icon_tone.png" alt="TONE" class="class-vector-icon"></div>
-            <h4 class="class-format-title">TONE</h4>
-            <p class="class-format-desc">Pilates-inspired. Cardio-infused. Controlled movements and conditioning come together to strengthen, tone and get your whole body moving.</p>
-          </article>
-
-          <!-- 23. PEACH -->
-          <article class="class-card-item" data-category="sculpt">
-            <div class="class-icon-wrapper"><img src="assets/icon_peach.png" alt="PEACH" class="class-vector-icon"></div>
-            <h4 class="class-format-title">PEACH</h4>
-            <p class="class-format-desc">Glutes, legs and hips - this one’s for them. Resistance-band movements activate, strengthen and sculpt your lower body.</p>
-          </article>
-
-          <!-- 24. ACTIVATE -->
-          <article class="class-card-item" data-category="sculpt">
-            <div class="class-icon-wrapper"><img src="assets/icon_activate.png" alt="ACTIVATE" class="class-vector-icon"></div>
-            <h4 class="class-format-title">ACTIVATE</h4>
-            <p class="class-format-desc">Switch on the muscles that matter. Using the Pilates ball, ring and hand weights, Activate targets posture, alignment, strength and total-body control.</p>
-          </article>
-
-          <!-- 25. FLOW -->
-          <article class="class-card-item" data-category="stretch">
-            <div class="class-icon-wrapper"><img src="assets/icon_flow.png" alt="FLOW" class="class-vector-icon"></div>
-            <h4 class="class-format-title">FLOW</h4>
-            <p class="class-format-desc">Your reset button. Functional movement meets yoga-inspired stretching to improve flexibility, mobility and control — without the woo-woo.</p>
-          </article>
-
-          <!-- 26. POSER -->
-          <article class="class-card-item" data-category="stretch">
-            <div class="class-icon-wrapper"><img src="assets/icon_poser.png" alt="POSER" class="class-vector-icon"></div>
-            <h4 class="class-format-title">POSER</h4>
-            <p class="class-format-desc">Strike a pose. Work through 21 positions designed to improve balance, flexibility, strength and body control.</p>
-          </article>
-
-          <!-- 27. ALIGN -->
-          <article class="class-card-item" data-category="stretch">
-            <div class="class-icon-wrapper"><img src="assets/icon_align.png" alt="ALIGN" class="class-vector-icon"></div>
-            <h4 class="class-format-title">ALIGN</h4>
-            <p class="class-format-desc">Yoga without the woo-woo. A mobility-focused class designed to improve flexibility, posture and movement - with fresh beats to keep things moving.</p>
-          </article>
-
-          <!-- 28. ROLLED -->
-          <article class="class-card-item" data-category="recovery">
-            <div class="class-icon-wrapper"><img src="assets/icon_rolled.png" alt="ROLLED" class="class-vector-icon"></div>
-            <h4 class="class-format-title">ROLLED</h4>
-            <p class="class-format-desc">Roll it out. Recover. Move better. Foam rolling and controlled movement help release tension, improve mobility and give your body the reset it needs.</p>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         5. DAILY SCHEDULE Section (Pure Black #000000)
-         ========================================================================= -->
-    <section class="section-daily-schedule" id="schedule">
-      <div class="content-container">
-        <div class="schedule-split-layout">
-          
-          <!-- Left: Timetable and Badges -->
-          <div class="schedule-left-content">
-            <div class="schedule-brand-badge-wrap">
-              <img src="assets/jim_logo_script.png" alt="J.I.M" class="schedule-script-logo">
-              <h2 class="schedule-main-title">DAILY<br>SCHEDULE</h2>
+      <section class="section-sweaty cls-intro">
+        <div class="content-container">
+          <div class="sweaty-row">
+            <div class="sweaty-left">
+              <h2 class="title-get-sweaty">MORE MOVEMENT.<br />MORE HEAT.<br />MORE JOY.</h2>
             </div>
 
-            <!-- Red Day Badge: MONDAY - SUNDAY -->
-            <div class="schedule-day-badge">
-              <span>MONDAY - SUNDAY</span>
-            </div>
-
-            <!-- 3 Timetable Columns -->
-            <div class="schedule-timetable-grid">
-              <!-- Column 1: MORNING -->
-              <div class="timetable-col">
-                <h4 class="timetable-col-heading">MORNING</h4>
-                <div class="time-slot-peach-card">5:00</div>
-                <div class="time-slot-peach-card">6:00</div>
-                <div class="time-slot-peach-card">7:00</div>
-                <div class="time-slot-peach-card">8:00</div>
-                <div class="time-slot-peach-card">9:00</div>
-                <div class="time-slot-peach-card">10:00</div>
-                <div class="time-slot-peach-card">11:00</div>
+            <div class="sweaty-right">
+              <h3 class="subtitle-30">100+ WORKOUTS<br />EVERY WEEK.</h3>
+              <div class="body-15 cls-intro-body">
+                <p>Over 1,000 moves across 42 infrared class formats.</p>
+                <p>
+                  30-minute workouts designed to build strength, improve mobility, burn more and help you feel better in
+                  your body.
+                </p>
               </div>
-
-              <!-- Column 2: AFTERNOON -->
-              <div class="timetable-col">
-                <h4 class="timetable-col-heading">AFTERNOON</h4>
-                <div class="time-slot-peach-card">12:00</div>
-                <div class="time-slot-peach-card">1:00</div>
-                <div class="time-slot-peach-card">2:00</div>
-                <div class="time-slot-peach-card">3:00</div>
-                <div class="time-slot-peach-card">4:00</div>
-              </div>
-
-              <!-- Column 3: EVENING -->
-              <div class="timetable-col">
-                <h4 class="timetable-col-heading">EVENING</h4>
-                <div class="time-slot-peach-card">5:00</div>
-                <div class="time-slot-peach-card">6:00</div>
-                <div class="time-slot-peach-card">7:00</div>
-                <div class="time-slot-peach-card">8:00</div>
-                <div class="time-slot-peach-card">9:00</div>
-              </div>
+              <a href="classes.html" class="btn-red-pill">GET STARTED</a>
             </div>
           </div>
+        </div>
+      </section>
 
-          <!-- Right: Photo of Girl in J.I.M Black Shirt -->
-          <div class="schedule-right-content">
-            <div class="schedule-girl-card">
-              <img src="assets/classes_schedule_girl.png" alt="Joy In Movement Member" class="schedule-girl-img">
+      <!-- =========================================================================
+         4. 28 class formats - #242424 band (1366 - 5643px)
+         ========================================================================= -->
+      <section class="cls-catalog-band" id="formats">
+        <div class="content-container">
+          <div class="cls-filter-row" role="tablist">
+            <button class="filter-pill active" data-filter="all">ALL</button>
+            <button class="filter-pill" data-filter="sculpt">SCULPT</button>
+            <button class="filter-pill" data-filter="stretch">STRETCH</button>
+            <button class="filter-pill" data-filter="strengthen">STRENGTHEN</button>
+            <button class="filter-pill" data-filter="recovery">RECOVERY</button>
+          </div>
+          <div class="cls-grid">
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -57px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_baller.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">BALLER</h3>
+              <p class="class-card-desc">
+                Full-body movement designed to tone, strengthen and get your heart rate up. Work every muscle and walk
+                out feeling like a baller.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="sculpt"
+              style="--icon-x: -87px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_magic.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">MAGIC</h3>
+              <p class="class-card-desc">
+                Small ring. Big work. A Pilates-inspired class designed to activate muscles, improve posture and build
+                total-body strength and control.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -61px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_box.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">BOX</h3>
+              <p class="class-card-desc">
+                Punch, jab and move. A fun, high-energy boxing workout designed to get your heart rate up and your whole
+                body working.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="stretch"
+              style="--icon-x: -73px; --icon-y: 10px; --desc-w: 337px"
+            >
+              <img src="assets/icon_move.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">MOVE</h3>
+              <p class="class-card-desc">
+                Exactly what it says. A full-body, uptempo workout designed to improve mobility, flexibility and
+                cardiovascular fitness.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="sculpt"
+              style="--icon-x: -57px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_sculpt.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">SCULPT</h3>
+              <p class="class-card-desc">
+                A core-focused workout designed to strengthen, tone and sculpt your midsection through three targeted
+                flows.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="sculpt"
+              style="--icon-x: -73px; --icon-y: 1px; --desc-w: 337px"
+            >
+              <img src="assets/icon_shape.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">SHAPE</h3>
+              <p class="class-card-desc">
+                Slow it down and feel every move. A controlled workout focused on strength, length, tone and total-body
+                shape.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -76px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_burn.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">BURN</h3>
+              <p class="class-card-desc">
+                Turn up the heat. A faster-paced, low-impact workout designed to raise your heart rate, challenge your
+                muscles and get you sweating.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -73px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_joker.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">JOKER</h3>
+              <p class="class-card-desc">
+                The wild card. You never quite know what’s coming — except plenty of movement, plenty of laughs and a
+                seriously good workout.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="recovery"
+              style="--icon-x: -71px; --icon-y: 29px; --desc-w: 337px"
+            >
+              <img src="assets/icon_freeze.webp" alt="" class="class-card-icon" width="293" height="293" />
+              <h3 class="class-card-title">FREEZE</h3>
+              <p class="class-card-desc">
+                Slow down. Hold strong. Three controlled flows designed to improve balance, flexibility, concentration
+                and body awareness.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="stretch"
+              style="--icon-x: -56px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_bend.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">BEND</h3>
+              <p class="class-card-desc">
+                A mobility-focused class designed to release tight hamstrings, glutes and lower back while improving
+                overall flexibility.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -90px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_power.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">POWER</h3>
+              <p class="class-card-desc">
+                Yoga, the J.I.M way. Strength, balance and mobility meet weighted movement for a stronger, more dynamic
+                flow.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -43px; --icon-y: 10px; --desc-w: 337px"
+            >
+              <img src="assets/icon_remix.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">REMIX</h3>
+              <p class="class-card-desc">
+                Classic J.I.M moves with the volume turned up. Weights, beats and flowing movement come together for a
+                fun full-body workout.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -71px; --icon-y: 0px; --desc-w: 311px"
+            >
+              <img src="assets/icon_limitless.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">LIMITLESS</h3>
+              <p class="class-card-desc">
+                Low impact doesn’t mean easy. Challenge your strength, endurance and mindset with a workout designed to
+                push you without pounding your body.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -87px; --icon-y: 0px; --desc-w: 277px"
+            >
+              <img src="assets/icon_sweat.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">SWEAT</h3>
+              <p class="class-card-desc">
+                Three full-body flows. Plenty of movement. Plenty of heat. Exactly what you came for.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -86px; --icon-y: 0px; --desc-w: 323px"
+            >
+              <img src="assets/icon_loaded.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">LOADED</h3>
+              <p class="class-card-desc">
+                Pick up the weights. Loaded movements help build strength, support lean muscle and improve the way your
+                body moves.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -43px; --icon-y: 0px; --desc-w: 309px"
+            >
+              <img src="assets/icon_beats.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">BEATS</h3>
+              <p class="class-card-desc">
+                Move to the music. A high-energy, dance-inspired workout that gets your heart rate up while working your
+                whole body.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -17px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_ouch.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">OUCH</h3>
+              <p class="class-card-desc">
+                Functional strength training designed to build muscle, improve movement and leave you feeling stronger
+                long after class is done.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -96px; --icon-y: 10px; --desc-w: 337px"
+            >
+              <img src="assets/icon_afterburn.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">AFTERBURN</h3>
+              <p class="class-card-desc">
+                Weights. Heat. Full-body conditioning. A low-impact workout designed to lift intensity, build strength
+                and keep your body working hard.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -72px; --icon-y: -7px; --desc-w: 337px"
+            >
+              <img src="assets/icon_torched.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">TORCHED</h3>
+              <p class="class-card-desc">
+                No burpees required. Dumbbell-based movements combine strength and conditioning to work the whole body
+                and get your heart rate up.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="strengthen"
+              style="--icon-x: -73px; --icon-y: 8px; --desc-w: 323px"
+            >
+              <img src="assets/icon_liit.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">LIIT</h3>
+              <p class="class-card-desc">
+                Low impact. High reward. Dumbbells and intervals combine strength and cardio for a joint-friendly
+                alternative to traditional HIIT.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="sculpt"
+              style="--icon-x: -95px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_core.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">CORE</h3>
+              <p class="class-card-desc">
+                Strong starts at the centre. Dumbbell-based flows target your core from every angle to improve
+                stability, posture and control.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="sculpt"
+              style="--icon-x: -73px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_tone.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">TONE</h3>
+              <p class="class-card-desc">
+                Pilates-inspired. Cardio-infused. Controlled movements and conditioning come together to strengthen,
+                tone and get your whole body moving.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="sculpt"
+              style="--icon-x: -64px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_peach.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">PEACH</h3>
+              <p class="class-card-desc">
+                Glutes, legs and hips - this one’s for them. Resistance-band movements activate, strengthen and sculpt
+                your lower body.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="sculpt"
+              style="--icon-x: -86px; --icon-y: 7px; --desc-w: 337px"
+            >
+              <img src="assets/icon_activate.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">ACTIVATE</h3>
+              <p class="class-card-desc">
+                Switch on the muscles that matter. Using the Pilates ball, ring and hand weights, Activate targets
+                posture, alignment, strength and total-body control.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="stretch"
+              style="--icon-x: -86px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_flow.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">FLOW</h3>
+              <p class="class-card-desc">
+                Your reset button. Functional movement meets yoga-inspired stretching to improve flexibility, mobility
+                and control — without the woo-woo.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="stretch"
+              style="--icon-x: -82px; --icon-y: 20px; --desc-w: 337px"
+            >
+              <img src="assets/icon_poser.webp" alt="" class="class-card-icon" width="320" height="265" />
+              <h3 class="class-card-title">POSER</h3>
+              <p class="class-card-desc">
+                Strike a pose. Work through 21 positions designed to improve balance, flexibility, strength and body
+                control.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="stretch"
+              style="--icon-x: -91px; --icon-y: 52px; --desc-w: 337px"
+            >
+              <img src="assets/icon_align.webp" alt="" class="class-card-icon" width="320" height="268" />
+              <h3 class="class-card-title">ALIGN</h3>
+              <p class="class-card-desc">
+                Yoga without the woo-woo. A mobility-focused class designed to improve flexibility, posture and movement
+                - with fresh beats to keep things moving.
+              </p>
+            </article>
+            <article
+              class="class-card-item"
+              data-category="recovery"
+              style="--icon-x: -73px; --icon-y: 0px; --desc-w: 337px"
+            >
+              <img src="assets/icon_rolled.webp" alt="" class="class-card-icon" width="320" height="320" />
+              <h3 class="class-card-title">ROLLED</h3>
+              <p class="class-card-desc">
+                Roll it out. Recover. Move better. Foam rolling and controlled movement help release tension, improve
+                mobility and give your body the reset it needs
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         5. DAILY SCHEDULE (5714 - 7354px)
+         ========================================================================= -->
+      <section class="cls-schedule" id="schedule">
+        <div class="content-container cls-schedule-inner">
+          <img src="assets/jim_logo_script.webp" alt="J.I.M" class="cls-schedule-logo" />
+          <h2 class="cls-schedule-title">DAILY<br />SCHEDULE</h2>
+          <div class="cls-schedule-days">MONDAY - SUNDAY</div>
+          <div class="cls-schedule-cols">
+            <div class="cls-schedule-col">
+              <h3 class="cls-schedule-col-title">MORNING</h3>
+              <span class="cls-time-pill">5:00</span>
+              <span class="cls-time-pill">6:00</span>
+              <span class="cls-time-pill">7:00</span>
+              <span class="cls-time-pill">8:00</span>
+              <span class="cls-time-pill">9:00</span>
+              <span class="cls-time-pill">10:00</span>
+              <span class="cls-time-pill">11:00</span>
+            </div>
+            <div class="cls-schedule-col">
+              <h3 class="cls-schedule-col-title">AFTERNOON</h3>
+              <span class="cls-time-pill">12:00</span>
+              <span class="cls-time-pill">1:00</span>
+              <span class="cls-time-pill">2:00</span>
+              <span class="cls-time-pill">3:00</span>
+              <span class="cls-time-pill">4:00</span>
+            </div>
+            <div class="cls-schedule-col">
+              <h3 class="cls-schedule-col-title">EVENING</h3>
+              <span class="cls-time-pill">5:00</span>
+              <span class="cls-time-pill">6:00</span>
+              <span class="cls-time-pill">7:00</span>
+              <span class="cls-time-pill">8:00</span>
+              <span class="cls-time-pill">9:00</span>
             </div>
           </div>
-
+          <img src="assets/classes_schedule_girl.webp" alt="J.I.M member in a J.I.M tee" class="cls-schedule-photo" />
         </div>
-      </div>
-    </section>
+        <div class="content-container">
+          <img src="assets/classes_four_girls_banner.webp" alt="J.I.M members together" class="cls-schedule-banner" />
+        </div>
+      </section>
 
-    <!-- =========================================================================
-         6. Four Girls Laughing Photo Banner (GET MOVING Neon)
+      <!-- =========================================================================
+         6. FAQ'S - #242424 band (7450 - 9452px)
          ========================================================================= -->
-    <section class="section-classes-banner-strip">
-      <div class="content-container">
-        <div class="banner-photo-wrapper">
-          <img src="assets/classes_four_girls_banner.png" alt="J.I.M Members Get Moving" class="banner-four-girls-img">
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         7. FAQ's Section (Full Bleed Band #242424)
-         ========================================================================= -->
-    <section class="section-classes-faqs-band" id="classes-faqs">
-      <div class="content-container">
-        <h2 class="faqs-main-title">FAQ’S</h2>
-
-        <!-- Category Tabs -->
-        <div class="faqs-category-nav" role="tablist">
-          <button class="faq-tab-btn active" data-cat="all">All</button>
-          <button class="faq-tab-btn" data-cat="first-time">first time</button>
-          <button class="faq-tab-btn" data-cat="membership">Membership</button>
-          <button class="faq-tab-btn" data-cat="infrared">Infrared Workouts</button>
-          <button class="faq-tab-btn" data-cat="health-safety">Health &amp; Safety</button>
-        </div>
-
-        <!-- FAQ Categories & Pill Accordion Items -->
-        <div class="faqs-groups-container">
-          
-          <!-- Category 1: First Time -->
-          <div class="faq-category-group" data-group="first-time">
-            <h3 class="faq-category-label">First Time</h3>
-            
-            <div class="faq-pill-accordion">
+      <section class="cls-faqs-band" id="classes-faqs">
+        <div class="content-container">
+          <h2 class="faq-section-title">FAQ’S</h2>
+          <div class="faq-tabs" role="tablist">
+            <button class="faq-tab-btn active" data-cat="all" style="--tab-x: 29.5px; --tab-w: 101px">All</button>
+            <button class="faq-tab-btn" data-cat="first-time" style="--tab-x: 116.5px; --tab-w: 109px">
+              first time
+            </button>
+            <button class="faq-tab-btn" data-cat="membership" style="--tab-x: 249.5px; --tab-w: 109px">
+              Membership
+            </button>
+            <button class="faq-tab-btn" data-cat="infrared" style="--tab-x: 390.5px; --tab-w: 185px">
+              Infrared Workouts
+            </button>
+            <button class="faq-tab-btn" data-cat="health-safety" style="--tab-x: 609.5px; --tab-w: 147px">
+              Health &amp; Safety
+            </button>
+          </div>
+          <div class="faqs-groups-container">
+            <div class="faq-category-group" data-group="first-time">
+              <h3 class="faq-category-label">First Time</h3>
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">Do I need my own mat?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>No, we provide premium sanitized yoga mats, blocks, resistance bands, and foam rollers for every single class.</p>
+                  <p>
+                    No, we provide premium sanitized yoga mats, blocks, resistance bands, and foam rollers for every
+                    single class.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">What should I bring to class?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Just bring a water bottle, a sweat towel, and comfortable workout clothes. We have water refill stations in every studio.</p>
+                  <p>
+                    Just bring a water bottle, a sweat towel, and comfortable workout clothes. We have water refill
+                    stations in every studio.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">What do I wear to class?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Breathable workout attire such as activewear shorts, leggings, or tops that you feel comfortable sweating in.</p>
+                  <p>
+                    Breathable workout attire such as activewear shorts, leggings, or tops that you feel comfortable
+                    sweating in.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">Do I need to wear shoes?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Most of our classes are performed barefoot or with grip socks to improve balance, foot strength, and joint alignment.</p>
+                  <p>
+                    Most of our classes are performed barefoot or with grip socks to improve balance, foot strength, and
+                    joint alignment.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
-                  <span class="faq-question-text">I’ve never done sculpt, stretch and strengthen. Does that matter?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <span class="faq-question-text"
+                    >I’ve never done sculpt, stretch and strengthen. Does that matter?</span
+                  >
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Not at all! Our classes are low-impact and designed for all fitness levels with clear coach modifications for every move.</p>
+                  <p>
+                    Not at all! Our classes are low-impact and designed for all fitness levels with clear coach
+                    modifications for every move.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">How early should I arrive?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Please arrive 10-15 minutes before your class start time so our team can show you around the studio and set up your mat.</p>
+                  <p>
+                    Please arrive 10-15 minutes before your class start time so our team can show you around the studio
+                    and set up your mat.
+                  </p>
                 </div>
               </details>
             </div>
-          </div>
 
-          <!-- Category 2: Membership -->
-          <div class="faq-category-group" data-group="membership">
-            <h3 class="faq-category-label">Membership</h3>
-
-            <div class="faq-pill-accordion">
+            <div class="faq-category-group" data-group="membership">
+              <h3 class="faq-category-label">Membership</h3>
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">How do I sign up for a free class?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Download the J.I.M App, select your home studio, and your complimentary first class pass will be ready to book immediately.</p>
+                  <p>
+                    Download the J.I.M App, select your home studio, and your complimentary first class pass will be
+                    ready to book immediately.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">How do I sign up for my membership?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Memberships can be set up directly in the J.I.M app or with our studio team before or after your first session.</p>
+                  <p>
+                    Memberships can be set up directly in the J.I.M app or with our studio team before or after your
+                    first session.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">Do you offer class packs?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Yes, we offer flexible 10-class and 20-class packs in addition to unlimited weekly membership tiers.</p>
+                  <p>
+                    Yes, we offer flexible 10-class and 20-class packs in addition to unlimited weekly membership tiers.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">Do I need a booking to attend a 30 minute workout session?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Yes, because studio mat spots are capped to ensure plenty of personal space, bookings via the app are required.</p>
+                  <p>
+                    Yes, because studio mat spots are capped to ensure plenty of personal space, bookings via the app
+                    are required.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">Can I bring a friend?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Absolutely! All unlimited members receive guest pass perks every month to introduce friends and family to J.I.M.</p>
+                  <p>
+                    Absolutely! All unlimited members receive guest pass perks every month to introduce friends and
+                    family to J.I.M.
+                  </p>
                 </div>
               </details>
             </div>
-          </div>
 
-          <!-- Category 3: Infrared Workouts -->
-          <div class="faq-category-group" data-group="infrared">
-            <h3 class="faq-category-label">Infrared Workouts</h3>
-
-            <div class="faq-pill-accordion">
+            <div class="faq-category-group" data-group="infrared">
+              <h3 class="faq-category-label">Infrared Workouts</h3>
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">What is infrared heat?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Infrared heat gently penetrates muscle tissue directly rather than merely blowing hot air, providing deeper muscle warmth, circulation, and recovery.</p>
+                  <p>
+                    Infrared heat gently penetrates muscle tissue directly rather than merely blowing hot air, providing
+                    deeper muscle warmth, circulation, and recovery.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">Are infrared workouts safe?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Yes! Infrared wavelengths are the same therapeutic rays used in physical therapy and neonatal units, free of UV radiation.</p>
+                  <p>
+                    Yes! Infrared wavelengths are the same therapeutic rays used in physical therapy and neonatal units,
+                    free of UV radiation.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">What are the benefits of infrared?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Benefits include enhanced calorie burn, accelerated muscle recovery, improved cardiovascular health, deeper sleep, and radiant skin.</p>
+                  <p>
+                    Benefits include enhanced calorie burn, accelerated muscle recovery, improved cardiovascular health,
+                    deeper sleep, and radiant skin.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">How often should I attend J.I.M?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Because our workouts are low-impact, 3 to 5 times per week is ideal to maximize physical results without overtraining joints.</p>
+                  <p>
+                    Because our workouts are low-impact, 3 to 5 times per week is ideal to maximize physical results
+                    without overtraining joints.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">Can I do J.I.M if I am pregnant?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>We recommend consulting with your obstetrician prior to heated workouts during pregnancy. We also offer non-heated movement modifications.</p>
+                  <p>
+                    We recommend consulting with your obstetrician prior to heated workouts during pregnancy. We also
+                    offer non-heated movement modifications.
+                  </p>
                 </div>
               </details>
             </div>
-          </div>
 
-          <!-- Category 4: Health & Safety -->
-          <div class="faq-category-group" data-group="health-safety">
-            <h3 class="faq-category-label">Health &amp; Safety</h3>
-
-            <div class="faq-pill-accordion">
+            <div class="faq-category-group" data-group="health-safety">
+              <h3 class="faq-category-label">Health &amp; Safety</h3>
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">What’s your cleaning protocol?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Studios are hospital-grade sanitized between every class, including deep infrared mat cleans, touchpoint disinfections, and HEPA air filtering.</p>
+                  <p>
+                    Studios are hospital-grade sanitized between every class, including deep infrared mat cleans,
+                    touchpoint disinfections, and HEPA air filtering.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">What disinfectants / chemicals do you use?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>We use eco-certified, non-toxic, antibacterial botanical solutions that are tough on bacteria yet gentle on skin and breathing.</p>
+                  <p>
+                    We use eco-certified, non-toxic, antibacterial botanical solutions that are tough on bacteria yet
+                    gentle on skin and breathing.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">What about air quality?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Our studios feature high-volume fresh air ventilation systems that cycle and replace 100% of studio air continuously throughout each hour.</p>
+                  <p>
+                    Our studios feature high-volume fresh air ventilation systems that cycle and replace 100% of studio
+                    air continuously throughout each hour.
+                  </p>
                 </div>
               </details>
-            </div>
-
-            <div class="faq-pill-accordion">
               <details class="faq-pill-details">
                 <summary class="faq-pill-summary">
                   <span class="faq-question-text">What if I test positive for Covid-19?</span>
-                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                    <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
                 </summary>
                 <div class="faq-answer-drawer">
-                  <p>Please stay home and rest! We will gladly place your membership on an immediate complimentary hold until you make a full recovery.</p>
+                  <p>
+                    Please stay home and rest! We will gladly place your membership on an immediate complimentary hold
+                    until you make a full recovery.
+                  </p>
                 </div>
               </details>
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <!-- =========================================================================
+    <!-- =========================================================================
        8. Global Footer (1:1 with Figma)
        ========================================================================= -->
-  <footer class="jim-footer">
-    <div class="content-container">
-      <div class="footer-divider-red"></div>
-      <div class="footer-layout-flex">
-        <!-- Red Brand Badge -->
-        <div class="footer-badge-wrap">
-          <img src="assets/footer_badge_logo.png" alt="JOY IN MOVEMENT" class="footer-badge-img">
-        </div>
-
-        <!-- Links Column 1 -->
-        <div class="footer-nav-col">
-          <ul class="footer-links">
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="infrared.html">Infrared Workouts</a></li>
-            <li><a href="classes.html" class="active">Classes</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="articles.html">Articles</a></li>
-          </ul>
-        </div>
-
-        <!-- Links Column 2 -->
-        <div class="footer-nav-col">
-          <ul class="footer-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="press.html">Press</a></li>
-            <li><a href="own-a-jim.html">Franchise</a></li>
-            <li><a href="#store">Store</a></li>
-            <li><a href="#classes-faqs">FAQ’s</a></li>
-          </ul>
-        </div>
-
-        <!-- Social Icons & Copyright -->
-        <div class="footer-meta-col">
-          <div class="footer-social-icons">
-            <a href="#instagram" class="social-icon-link" aria-label="Instagram">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F04E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-            <a href="#facebook" class="social-icon-link" aria-label="Facebook">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E36">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
+    <footer class="jim-footer jim-footer--classes">
+      <div class="content-container">
+        <div class="footer-divider-red"></div>
+        <div class="footer-layout-flex">
+          <!-- Red Brand Badge -->
+          <div class="footer-badge-wrap">
+            <img src="assets/footer_badge_logo.webp" alt="JOY IN MOVEMENT" class="footer-badge-img" />
           </div>
-          <p class="footer-copy-text">© JOY IN MOVEMENT 2025.<br>ALL RIGHTS RESERVED</p>
-          <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+
+          <!-- Links Column 1 -->
+          <div class="footer-nav-col">
+            <ul class="footer-links">
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="infrared.html">Infrared Workouts</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="articles.html">Articles</a></li>
+            </ul>
+          </div>
+
+          <!-- Links Column 2 -->
+          <div class="footer-nav-col">
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="press.html">Press</a></li>
+              <li><a href="own-a-jim.html">Franchise</a></li>
+              <li><a href="#store">Store</a></li>
+              <li><a href="classes.html#classes-faqs">FAQ’s</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Icons & Copyright -->
+          <div class="footer-meta-col">
+            <div class="footer-social-icons">
+              <a href="#instagram" class="social-icon-link social-icon-link--ig" aria-label="Instagram">
+                <img src="assets/social_instagram.webp" alt="" width="25" height="25" />
+              </a>
+              <a href="#facebook" class="social-icon-link social-icon-link--fb" aria-label="Facebook">
+                <img src="assets/social_facebook.webp" alt="" width="23" height="23" />
+              </a>
+              <a href="#youtube" class="social-icon-link social-icon-link--yt" aria-label="YouTube">
+                <svg width="32" height="21" viewBox="0 0 32 21" fill="none">
+                  <rect width="32" height="21" rx="5" fill="#F04E36" />
+                  <polygon points="13,15 20.5,10.5 13,6" fill="#000000" />
+                </svg>
+              </a>
+            </div>
+            <p class="footer-copy-text">© JOY IN MOVEMENT 2025.<br />ALL RIGHTS RESERVED</p>
+            <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-  <script>
-    // Classes 28-Format Filter Pills Functionality
-    const filterPills = document.querySelectorAll('.filter-pill');
-    const classCards = document.querySelectorAll('.class-card-item');
+    <script src="js/script.js"></script>
+    <script>
+      // Classes 28-Format Filter Pills Functionality
+      const filterPills = document.querySelectorAll(".filter-pill");
+      const classCards = document.querySelectorAll(".class-card-item");
 
-    filterPills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        filterPills.forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        const filterVal = pill.getAttribute('data-filter');
+      filterPills.forEach((pill) => {
+        pill.addEventListener("click", () => {
+          filterPills.forEach((p) => p.classList.remove("active"));
+          pill.classList.add("active");
+          const filterVal = pill.getAttribute("data-filter");
 
-        classCards.forEach(card => {
-          const cardCat = card.getAttribute('data-category');
-          if (filterVal === 'all' || cardCat === filterVal) {
-            card.style.display = 'flex';
-          } else {
-            card.style.display = 'none';
-          }
+          classCards.forEach((card) => {
+            const cardCat = card.getAttribute("data-category");
+            if (filterVal === "all" || cardCat === filterVal) {
+              card.style.display = "flex";
+            } else {
+              card.style.display = "none";
+            }
+          });
         });
       });
-    });
 
-    // FAQs Category Tabs Functionality
-    const faqTabs = document.querySelectorAll('.faq-tab-btn');
-    const faqGroups = document.querySelectorAll('.faq-category-group');
+      // FAQs Category Tabs Functionality
+      const faqTabs = document.querySelectorAll(".faq-tab-btn");
+      const faqGroups = document.querySelectorAll(".faq-category-group");
 
-    faqTabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        faqTabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        const targetCat = tab.getAttribute('data-cat');
+      faqTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          faqTabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+          const targetCat = tab.getAttribute("data-cat");
 
-        faqGroups.forEach(group => {
-          const groupCat = group.getAttribute('data-group');
-          if (targetCat === 'all' || groupCat === targetCat) {
-            group.style.display = 'block';
-          } else {
-            group.style.display = 'none';
-          }
+          faqGroups.forEach((group) => {
+            const groupCat = group.getAttribute("data-group");
+            if (targetCat === "all" || groupCat === targetCat) {
+              group.style.display = "block";
+            } else {
+              group.style.display = "none";
+            }
+          });
         });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

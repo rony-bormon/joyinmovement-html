@@ -1,718 +1,752 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | J.I.M - Joy In Movement</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="about.css">
-</head>
-<body class="about-page-body">
-
-  <!-- =========================================================================
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | J.I.M - Joy In Movement</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body class="about-page-body">
+    <!-- =========================================================================
        1. Top Header Bar (1:1 standardized with Figma)
        ========================================================================= -->
-  <header class="jim-header" id="header">
-    <div class="content-container header-inner">
-      <a href="index.html" class="header-brand" aria-label="J.I.M Home">
-        <img src="assets/jim_logo_script.png" alt="J.I.M" class="logo-script-img">
-      </a>
+    <header class="jim-header">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo" aria-label="J.I.M Home">
+          <img src="assets/jim_logo_script.webp" alt="J.I.M" class="logo-script-img" />
+        </a>
 
-      <nav class="header-nav" aria-label="Main Navigation">
-        <ul class="nav-links-list">
-          <li><a href="locations.html" class="nav-link">Locations</a></li>
-          <li><a href="infrared.html" class="nav-link">Infrared Workouts</a></li>
-          <li><a href="classes.html" class="nav-link">Classes</a></li>
-          <li><a href="about.html" class="nav-link active">About</a></li>
-          <li><a href="own-a-jim.html" class="nav-link">Own A J.I.M</a></li>
-          <li><a href="#store" class="nav-link">Store</a></li>
-        </ul>
-      </nav>
+        <nav class="header-nav" aria-label="Main Navigation">
+          <ul class="nav-links-list">
+            <li><a href="locations.html" class="nav-link">Locations</a></li>
+            <li><a href="infrared.html" class="nav-link">Infrared Workouts</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="own-a-jim.html" class="nav-link">Own A J.I.M</a></li>
+            <li><a href="#store" class="nav-link">Store</a></li>
+          </ul>
+        </nav>
 
-      <div class="header-right">
-        <a href="classes.html" class="header-btn-get-started">GET STARTED</a>
-        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- =========================================================================
-         2. Hero Banner (1653px x 742px, radius 22px)
-         ========================================================================= -->
-    <section class="about-hero-section">
-      <div class="content-container">
-        <div class="about-hero-frame">
-          <img src="assets/about_hero_banner.png" alt="Australia's First Infrared Group Training Studio" class="about-hero-bg">
-          <div class="about-hero-overlay">
-            <h1 class="about-hero-title">
-              AUSTRALIA’S FIRST<br>
-              INFRARED GROUP<br>
-              TRAINING STUDIO
-            </h1>
-            <a href="locations.html" class="about-hero-btn-locations">LOCATIONS</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         3. Intro Founder Quote Section: Movement should feel empowering...
-         ========================================================================= -->
-    <section class="section-about-intro">
-      <div class="content-container">
-        <div class="about-intro-row">
-          
-          <!-- Left: Big Quote & Founder Meta -->
-          <div class="about-intro-left">
-            <blockquote class="about-intro-quote">
-              “MOVEMENT SHOULD FEEL EMPOWERING, ACCESSIBLE, AND ENJOYABLE.”
-            </blockquote>
-            <div class="about-founder-tag">
-              <span class="founder-name">JARAD HOBBS</span>
-              <span class="founder-role">FOUNDER AND CEO</span>
-            </div>
-          </div>
-
-          <!-- Right: Details & Action Button -->
-          <div class="about-intro-right">
-            <h3 class="subtitle-about-intro">30-minute<br>Infrared Group Fitness</h3>
-            <p class="desc-about-intro">
-              Low-impact, high-result workouts combining movement and infrared heat to help you move better, recover faster and feel better - from energy and sleep to skin and overall wellbeing.
-            </p>
-            <a href="classes.html" class="btn-about-action">GET STARTED</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         4. Three Dark Pillar Cards (#242424): Convenience, Joy, Infrared
-         ========================================================================= -->
-    <section class="section-about-pillars">
-      <div class="content-container">
-        
-        <!-- Pillar 1: CONVENIENCE -->
-        <article class="about-pillar-card mb-32">
-          <div class="pillar-text-side">
-            <div>
-              <h2 class="pillar-card-title">CONVENIENCE</h2>
-              <p class="pillar-card-subtitle">Wellness and fitness<br>that fit your life</p>
-            </div>
-            <button class="pillar-circle-btn" aria-label="Expand Convenience details">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-            </button>
-          </div>
-          <div class="pillar-photo-side">
-            <img src="assets/about_feature_convenience.png" alt="Convenience" class="pillar-card-img">
-          </div>
-        </article>
-
-        <!-- Pillar 2: JOY IN THE MOVEMENT (Wide Card) -->
-        <article class="about-pillar-card full-width-card mb-32">
-          <div class="pillar-text-side">
-            <div>
-              <h2 class="pillar-card-title">JOY IN THE<br>MOVEMENT</h2>
-              <p class="pillar-card-subtitle">J.I.M makes<br>movement feel good</p>
-            </div>
-            <button class="pillar-circle-btn" aria-label="Expand Joy in Movement details">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-            </button>
-          </div>
-          <div class="pillar-paragraph-side">
-            <p class="pillar-long-text">
-              J.I.M offers low-impact, high-results infrared group fitness classes - each class is crafted to help members feel better and move smarter - without the pressure or intensity of traditional gyms. Smart, low-impact workoputs that deliver real results. Movement that supports, not pushes. No one watching. No one waiting. No Mirrors.
-            </p>
-          </div>
-        </article>
-
-        <!-- Pillar 3: INFRARED -->
-        <article class="about-pillar-card mb-80">
-          <div class="pillar-text-side">
-            <div>
-              <h2 class="pillar-card-title">INFRARED</h2>
-              <p class="pillar-card-subtitle">Infrared<br>fitness studio</p>
-            </div>
-            <button class="pillar-circle-btn" aria-label="Expand Infrared details">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
-            </button>
-          </div>
-          <div class="pillar-photo-side">
-            <img src="assets/about_feature_infrared.png" alt="Infrared" class="pillar-card-img">
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         5. Founder Philosophy Feature: Jarad Hobbs Portrait + Red Quote
-         ========================================================================= -->
-    <section class="section-founder-feature">
-      <div class="content-container">
-        <div class="founder-split-layout">
-          <!-- Left: Jarad Portrait -->
-          <div class="founder-portrait-box">
-            <img src="assets/about_founder_jarad.png" alt="Jarad Hobbs" class="founder-portrait-img">
-          </div>
-
-          <!-- Right: Red Quote & Read Story Pill -->
-          <div class="founder-quote-content">
-            <h2 class="founder-bold-quote">
-              “FITNESS DOESN’T<br>
-              HAVE TO FEEL<br>
-              PUNISHING. IT CAN<br>
-              FEEL ENERGISING,<br>
-              HUMAN AND FUN.”
-            </h2>
-            <div class="founder-story-pill">
-              <span class="founder-story-text">Read Founder Story</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         6. WHERE FITNESS MEETS INFRARED WELLNESS (Full Bleed Band #242424)
-         ========================================================================= -->
-    <section class="section-wellness-video-band">
-      <div class="content-container">
-        
-        <!-- Header Row -->
-        <div class="wellness-header-row">
-          <div class="wellness-title-col">
-            <h2 class="wellness-main-heading">
-              WHERE FITNESS MEETS<br>
-              INFRARED WELLNESS
-            </h2>
-          </div>
-          <div class="wellness-desc-col">
-            <h4 class="wellness-subheading">A New Generation<br>of Studios</h4>
-            <p class="wellness-desc-text">
-              designed with immersive heat, low lights, no mirrors, curated music, and world-class environments that help people feel comfortable while supporting recovery, energy, better sleep, skin health, and full-body wellness in a way traditional gyms can’t.
-            </p>
-          </div>
-        </div>
-
-        <!-- Video Player Card with Play Button -->
-        <div class="wellness-video-frame" data-video-url="https://joyinmovement.com.au/wp-content/uploads/2026/03/JIM_WEBSITE_HERO_4K_NoAudio_compressed_video.mp4">
-          <img src="assets/about_video_studio.png" alt="J.I.M Studio Environment" class="wellness-video-bg">
-          <button class="wellness-video-play-btn" aria-label="Play Studio Tour Video" data-video-url="https://joyinmovement.com.au/wp-content/uploads/2026/03/JIM_WEBSITE_HERO_4K_NoAudio_compressed_video.mp4">
-            <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-              <polygon points="6 3 20 12 6 21 6 3"></polygon>
-            </svg>
+        <div class="header-action">
+          <a href="classes.html" class="header-btn-get-started">GET STARTED</a>
+          <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
-
       </div>
-    </section>
+    </header>
+
+    <main>
+      <!-- =========================================================================
+         2. Hero (193 - 935px)
+         ========================================================================= -->
+      <section class="section-hero page-hero">
+        <div class="hero-frame">
+          <img src="assets/about_hero_banner.webp" alt="J.I.M infrared group training studio" class="hero-img" />
+          <h1 class="page-hero-title about-hero-title">AUSTRALIA’S FIRST INFRARED GROUP TRAINING STUDIO</h1>
+          <a href="locations.html" class="hero-pill-locations hero-pill-locations--red">LOCATIONS</a>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         3. Founder quote + intro (935 - 1448px)
+         ========================================================================= -->
+      <section class="about-intro">
+        <div class="content-container about-intro-row">
+          <div class="about-intro-left">
+            <blockquote class="about-intro-quote">
+              “Movement should feel empowering, accessible, and enjoyable.”
+            </blockquote>
+            <p class="about-intro-author">JARAD HOBBS <span>FOUNDER AND CEO</span></p>
+          </div>
+          <div class="about-intro-right">
+            <h2 class="subtitle-30 about-intro-sub">30-minute<br />Infrared Group Fitness</h2>
+            <p class="about-intro-desc">
+              Low-impact, high-result workouts combining movement and infrared heat to help you move better, recover
+              faster and feel better - from energy and sleep to skin and overall wellbeing.
+            </p>
+            <a href="classes.html" class="about-intro-btn">GET STARTED</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         4. Pillars - Convenience / Joy in the Movement / Infrared (1495 - 3418px)
+         ========================================================================= -->
+      <section class="about-pillars">
+        <div class="content-container">
+          <article class="about-pillar about-pillar--convenience">
+            <div class="about-pillar-card">
+              <h2 class="about-pillar-title">CONVENIENCE</h2>
+              <p class="about-pillar-sub">Wellness and fitness that fit your life</p>
+              <span class="about-pillar-icon" aria-hidden="true"></span>
+            </div>
+            <img
+              src="assets/about_feature_convenience.webp"
+              alt="J.I.M members laughing together"
+              class="about-pillar-img"
+            />
+          </article>
+
+          <article class="about-pillar about-pillar--joy is-open">
+            <div class="about-pillar-card">
+              <h2 class="about-pillar-title">JOY IN THE MOVEMENT</h2>
+              <p class="about-pillar-sub">J.I.M makes movement feel good</p>
+              <div class="about-pillar-desc">
+                <p>
+                  J.I.M offers low-impact, high-results infrared group fitness classes - each class is crafted to help
+                  members feel better and move smarter - without the pressure or intensity of traditional gyms.
+                </p>
+                <ul>
+                  <li>Smart, low-impact workoputs that deliver real results.</li>
+                  <li>Movement that supports, not pushes.</li>
+                  <li>No one watching. No one waiting. No Mirrors.</li>
+                </ul>
+              </div>
+              <span class="about-pillar-icon" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="about-pillar about-pillar--infrared">
+            <div class="about-pillar-card">
+              <h2 class="about-pillar-title">INFRARED</h2>
+              <p class="about-pillar-sub">Infrared fitness studio</p>
+              <span class="about-pillar-icon" aria-hidden="true"></span>
+            </div>
+            <img src="assets/about_feature_infrared.webp" alt="Smiling J.I.M member" class="about-pillar-img" />
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         5. Founder story (3604 - 4456px)
+         ========================================================================= -->
+      <section class="about-founder">
+        <div class="content-container about-founder-inner">
+          <img src="assets/about_founder_jarad.webp" alt="Jarad Hobbs, founder of J.I.M" class="about-founder-photo" />
+          <blockquote class="about-founder-quote">
+            “Fitness doesn’t have to feel punishing. IT CAN FEEL ENERGISING, HUMAN AND FUN.”
+          </blockquote>
+          <a href="#founder-story" class="about-founder-pill">
+            <span>Read Founder Story</span>
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+              <path
+                d="M1 1.5L8 8.5L15 1.5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         6. Where fitness meets infrared wellness - #242424 band (4642 - 5743px)
+         ========================================================================= -->
+      <section class="about-video-band">
+        <div class="content-container">
+          <div class="about-video-head">
+            <h2 class="about-video-title">WHERE FITNESS MEETS<br />INFRARED WELLNESS</h2>
+            <div class="about-video-copy">
+              <h3 class="subtitle-30 about-video-sub">A New Generation<br />of Studios</h3>
+              <p class="about-video-desc">
+                designed with immersive heat, low lights, no mirrors, curated music, and world-class environments that
+                help people feel comfortable while supporting recovery, energy, better sleep, skin health, and full-body
+                wellness in a way traditional gyms can’t.
+              </p>
+            </div>
+          </div>
+          <div class="wellness-video-frame about-video-frame">
+            <img
+              src="assets/about_video_studio.webp"
+              alt="Infrared class in the J.I.M studio"
+              class="about-video-img"
+            />
+            <button type="button" class="wellness-video-play-btn about-video-play" aria-label="Play video">
+              <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         7. FAQ's (5743 - 7807px)
+         ========================================================================= -->
+      <section class="about-faq" id="about-faqs">
+        <div class="content-container about-faq-inner">
+          <img src="assets/about_faq_girl.webp" alt="J.I.M member" class="about-faq-photo" />
+          <h2 class="faq-section-title">FAQ’S</h2>
+          <div class="faq-tabs" role="tablist">
+            <button class="faq-tab-btn active" data-cat="all" style="--tab-x: 29.5px; --tab-w: 101px">All</button>
+            <button class="faq-tab-btn" data-cat="first-time" style="--tab-x: 116.5px; --tab-w: 109px">
+              first time
+            </button>
+            <button class="faq-tab-btn" data-cat="membership" style="--tab-x: 249.5px; --tab-w: 109px">
+              Membership
+            </button>
+            <button class="faq-tab-btn" data-cat="infrared" style="--tab-x: 390.5px; --tab-w: 185px">
+              Infrared Workouts
+            </button>
+            <button class="faq-tab-btn" data-cat="health-safety" style="--tab-x: 609.5px; --tab-w: 147px">
+              Health &amp; Safety
+            </button>
+          </div>
+          <div class="faqs-groups-container">
+            <div class="faq-category-group" data-group="first-time">
+              <h3 class="faq-category-label">First Time</h3>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">Do I need my own mat?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    No, we provide premium sanitized yoga mats, blocks, resistance bands, and foam rollers for every
+                    single class.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">What should I bring to class?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Just bring a water bottle, a sweat towel, and comfortable workout clothes. We have water refill
+                    stations in every studio.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">What do I wear to class?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Breathable workout attire such as activewear shorts, leggings, or tops that you feel comfortable
+                    sweating in.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">Do I need to wear shoes?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Most of our classes are performed barefoot or with grip socks to improve balance, foot strength, and
+                    joint alignment.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text"
+                    >I’ve never done sculpt, stretch and strengthen. Does that matter?</span
+                  >
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Not at all! Our classes are low-impact and designed for all fitness levels with clear coach
+                    modifications for every move.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">How early should I arrive?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Please arrive 10-15 minutes before your class start time so our team can show you around the studio
+                    and set up your mat.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            <div class="faq-category-group" data-group="membership">
+              <h3 class="faq-category-label">Membership</h3>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">How do I sign up for a free class?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Download the J.I.M App, select your home studio, and your complimentary first class pass will be
+                    ready to book immediately.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">How do I sign up for my membership?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Memberships can be set up directly in the J.I.M app or with our studio team before or after your
+                    first session.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">Do you offer class packs?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Yes, we offer flexible 10-class and 20-class packs in addition to unlimited weekly membership tiers.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">Do I need a booking to attend a 30 minute workout session?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Yes, because studio mat spots are capped to ensure plenty of personal space, bookings via the app
+                    are required.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">Can I bring a friend?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Absolutely! All unlimited members receive guest pass perks every month to introduce friends and
+                    family to J.I.M.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            <div class="faq-category-group" data-group="infrared">
+              <h3 class="faq-category-label">Infrared Workouts</h3>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">What is infrared heat?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Infrared heat gently penetrates muscle tissue directly rather than merely blowing hot air, providing
+                    deeper muscle warmth, circulation, and recovery.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">Are infrared workouts safe?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Yes! Infrared wavelengths are the same therapeutic rays used in physical therapy and neonatal units,
+                    free of UV radiation.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">What are the benefits of infrared?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Benefits include enhanced calorie burn, accelerated muscle recovery, improved cardiovascular health,
+                    deeper sleep, and radiant skin.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">How often should I attend J.I.M?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Because our workouts are low-impact, 3 to 5 times per week is ideal to maximize physical results
+                    without overtraining joints.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">Can I do J.I.M if I am pregnant?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    We recommend consulting with your obstetrician prior to heated workouts during pregnancy. We also
+                    offer non-heated movement modifications.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            <div class="faq-category-group" data-group="health-safety">
+              <h3 class="faq-category-label">Health &amp; Safety</h3>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">What’s your cleaning protocol?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Studios are hospital-grade sanitized between every class, including deep infrared mat cleans,
+                    touchpoint disinfections, and HEPA air filtering.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">What disinfectants / chemicals do you use?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    We use eco-certified, non-toxic, antibacterial botanical solutions that are tough on bacteria yet
+                    gentle on skin and breathing.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">What about air quality?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Our studios feature high-volume fresh air ventilation systems that cycle and replace 100% of studio
+                    air continuously throughout each hour.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-pill-details">
+                <summary class="faq-pill-summary">
+                  <span class="faq-question-text">What if I test positive for Covid-19?</span>
+                  <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path
+                      d="M1 1.5L8 8.5L15 1.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </summary>
+                <div class="faq-answer-drawer">
+                  <p>
+                    Please stay home and rest! We will gladly place your membership on an immediate complimentary hold
+                    until you make a full recovery.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         8. Why members are obsessed with J.I.M (7954 - 9070px)
+         ========================================================================= -->
+      <section class="obsessed-section about-obsessed">
+        <div class="content-container">
+          <div class="obsessed-heading">
+            <h2 class="obsessed-title">WHY MEMBERS<br />ARE OBSESSED WITH</h2>
+            <img src="assets/jim_logo_script.webp" alt="J.I.M" class="obsessed-logo" />
+          </div>
+          <div class="obsessed-track">
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">MENTAL HEALTH</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play mental health video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">CONVENIENCE</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play convenience video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">SLEEP</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play sleep video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">LOW IMPACT</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play low impact video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- =========================================================================
-         7. FAQ's Section (With Girl Photo on Right!)
-         ========================================================================= -->
-    <section class="section-about-faqs" id="about-faqs">
-      <div class="content-container">
-        <div class="faqs-split-layout">
-          
-          <!-- Left: FAQs Accordions -->
-          <div class="faqs-left-column">
-            <h2 class="faqs-title-text">FAQ’S</h2>
-
-            <!-- Category Tabs -->
-            <div class="faqs-category-nav" role="tablist">
-              <button class="faq-tab-btn active" data-cat="all">All</button>
-              <button class="faq-tab-btn" data-cat="first-time">first time</button>
-              <button class="faq-tab-btn" data-cat="membership">Membership</button>
-              <button class="faq-tab-btn" data-cat="infrared">Infrared Workouts</button>
-              <button class="faq-tab-btn" data-cat="health-safety">Health &amp; Safety</button>
-            </div>
-
-            <!-- FAQ Groups -->
-            <div class="faqs-groups-wrapper">
-              <!-- Group 1: First Time -->
-              <div class="faq-group-block" data-group="first-time">
-                <h3 class="faq-group-label">First Time</h3>
-                
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">Do I need my own mat?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>No, we provide premium sanitized yoga mats, blocks, resistance bands, and foam rollers for every single class.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">What should I bring to class?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Just bring a water bottle, a sweat towel, and comfortable workout clothes. We have water refill stations in every studio.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">What do I wear to class?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Breathable workout attire such as activewear shorts, leggings, or tops that you feel comfortable sweating in.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">Do I need to wear shoes?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Most of our classes are performed barefoot or with grip socks to improve balance, foot strength, and joint alignment.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">I’ve never done sculpt, stretch and strengthen. Does that matter?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Not at all! Our classes are low-impact and designed for all fitness levels with clear coach modifications for every move.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">How early should I arrive?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Please arrive 10-15 minutes before your class start time so our team can show you around the studio and set up your mat.</p>
-                    </div>
-                  </details>
-                </div>
-              </div>
-
-              <!-- Group 2: Membership -->
-              <div class="faq-group-block" data-group="membership">
-                <h3 class="faq-group-label">Membership</h3>
-                
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">How do I sign up for a free class?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Download the J.I.M App, select your home studio, and your complimentary first class pass will be ready to book immediately.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">How do I sign up for my membership?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Memberships can be set up directly in the J.I.M app or with our studio team before or after your first session.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">Do you offer class packs?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Yes, we offer flexible 10-class and 20-class packs in addition to unlimited weekly membership tiers.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">Do I need a booking to attend a 30 minute workout session?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Yes, because studio mat spots are capped to ensure plenty of personal space, bookings via the app are required.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">Can I bring a friend?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Absolutely! All unlimited members receive guest pass perks every month to introduce friends and family to J.I.M.</p>
-                    </div>
-                  </details>
-                </div>
-              </div>
-
-              <!-- Group 3: Infrared Workouts -->
-              <div class="faq-group-block" data-group="infrared">
-                <h3 class="faq-group-label">Infrared Workouts</h3>
-                
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">What is infrared heat?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Infrared heat gently penetrates muscle tissue directly rather than merely blowing hot air, providing deeper muscle warmth, circulation, and recovery.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">Are infrared workouts safe?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Yes! Infrared wavelengths are the same therapeutic rays used in physical therapy and neonatal units, free of UV radiation.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">What are the benefits of infrared?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Benefits include enhanced calorie burn, accelerated muscle recovery, improved cardiovascular health, deeper sleep, and radiant skin.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">How often should I attend J.I.M?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Because our workouts are low-impact, 3 to 5 times per week is ideal to maximize physical results without overtraining joints.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">Can I do J.I.M if I am pregnant?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>We recommend consulting with your obstetrician prior to heated workouts during pregnancy. We also offer non-heated movement modifications.</p>
-                    </div>
-                  </details>
-                </div>
-              </div>
-
-              <!-- Group 4: Health & Safety -->
-              <div class="faq-group-block" data-group="health-safety">
-                <h3 class="faq-group-label">Health &amp; Safety</h3>
-                
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">What’s your cleaning protocol?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Studios are hospital-grade sanitized between every class, including deep infrared mat cleans, touchpoint disinfections, and HEPA air filtering.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">What disinfectants / chemicals do you use?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>We use eco-certified, non-toxic, antibacterial botanical solutions that are tough on bacteria yet gentle on skin and breathing.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">What about air quality?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Our studios feature high-volume fresh air ventilation systems that cycle and replace 100% of studio air continuously throughout each hour.</p>
-                    </div>
-                  </details>
-                </div>
-
-                <div class="faq-pill-accordion">
-                  <details class="faq-pill-details">
-                    <summary class="faq-pill-summary">
-                      <span class="faq-question-text">What if I test positive for Covid-19?</span>
-                      <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                        <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </summary>
-                    <div class="faq-answer-drawer">
-                      <p>Please stay home and rest! We will gladly place your membership on an immediate complimentary hold until you make a full recovery.</p>
-                    </div>
-                  </details>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Smiling Girl Photo -->
-          <div class="faqs-right-column">
-            <div class="faqs-girl-photo-box">
-              <img src="assets/about_faq_girl.png" alt="Happy J.I.M Member" class="faqs-girl-photo">
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         8. WHY MEMBERS ARE OBSESSED WITH J.I.M (Video Testimonials)
-         ========================================================================= -->
-    <section class="section-obsessed-testimonials">
-      <div class="content-container">
-        <!-- Title Group -->
-        <div class="obsessed-header-flex">
-          <h2 class="obsessed-main-title">
-            WHY MEMBERS<br>
-            ARE OBSESSED WITH
-          </h2>
-          <img src="assets/jim_logo_script.png" alt="J.I.M" class="obsessed-script-logo">
-        </div>
-
-        <!-- 4 White Cards Grid -->
-        <div class="obsessed-cards-grid">
-          <!-- Card 1: MENTAL HEALTH -->
-          <div class="obsessed-col-item">
-            <h4 class="obsessed-card-tag">MENTAL HEALTH</h4>
-            <div class="obsessed-white-card">
-              <button class="obsessed-play-btn" aria-label="Play Mental Health Story">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 2: CONVENIENCE -->
-          <div class="obsessed-col-item">
-            <h4 class="obsessed-card-tag">CONVENIENCE</h4>
-            <div class="obsessed-white-card">
-              <button class="obsessed-play-btn" aria-label="Play Convenience Story">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 3: SLEEP -->
-          <div class="obsessed-col-item">
-            <h4 class="obsessed-card-tag">SLEEP</h4>
-            <div class="obsessed-white-card">
-              <button class="obsessed-play-btn" aria-label="Play Sleep Story">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 4: LOW IMPACT -->
-          <div class="obsessed-col-item">
-            <h4 class="obsessed-card-tag">LOW IMPACT</h4>
-            <div class="obsessed-white-card">
-              <button class="obsessed-play-btn" aria-label="Play Low Impact Story">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- =========================================================================
        9. Global Footer (1:1 with Figma)
        ========================================================================= -->
-  <footer class="jim-footer">
-    <div class="content-container">
-      <div class="footer-divider-red"></div>
-      <div class="footer-layout-flex">
-        <!-- Red Brand Badge -->
-        <div class="footer-badge-wrap">
-          <img src="assets/footer_badge_logo.png" alt="JOY IN MOVEMENT" class="footer-badge-img">
-        </div>
-
-        <!-- Links Column 1 -->
-        <div class="footer-nav-col">
-          <ul class="footer-links">
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="infrared.html">Infrared Workouts</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="articles.html">Articles</a></li>
-          </ul>
-        </div>
-
-        <!-- Links Column 2 -->
-        <div class="footer-nav-col">
-          <ul class="footer-links">
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="press.html">Press</a></li>
-            <li><a href="own-a-jim.html">Franchise</a></li>
-            <li><a href="#store">Store</a></li>
-            <li><a href="#about-faqs">FAQ’s</a></li>
-          </ul>
-        </div>
-
-        <!-- Social Icons & Copyright -->
-        <div class="footer-meta-col">
-          <div class="footer-social-icons">
-            <a href="#instagram" class="social-icon-link" aria-label="Instagram">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F04E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-            <a href="#facebook" class="social-icon-link" aria-label="Facebook">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E36">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
+    <footer class="jim-footer jim-footer--about">
+      <div class="content-container">
+        <div class="footer-divider-red"></div>
+        <div class="footer-layout-flex">
+          <!-- Red Brand Badge -->
+          <div class="footer-badge-wrap">
+            <img src="assets/footer_badge_logo.webp" alt="JOY IN MOVEMENT" class="footer-badge-img" />
           </div>
-          <p class="footer-copy-text">© JOY IN MOVEMENT 2025.<br>ALL RIGHTS RESERVED</p>
-          <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+
+          <!-- Links Column 1 -->
+          <div class="footer-nav-col">
+            <ul class="footer-links">
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="infrared.html">Infrared Workouts</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="articles.html">Articles</a></li>
+            </ul>
+          </div>
+
+          <!-- Links Column 2 -->
+          <div class="footer-nav-col">
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="press.html">Press</a></li>
+              <li><a href="own-a-jim.html">Franchise</a></li>
+              <li><a href="#store">Store</a></li>
+              <li><a href="classes.html#classes-faqs">FAQ’s</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Icons & Copyright -->
+          <div class="footer-meta-col">
+            <div class="footer-social-icons">
+              <a href="#instagram" class="social-icon-link social-icon-link--ig" aria-label="Instagram">
+                <img src="assets/social_instagram.webp" alt="" width="25" height="25" />
+              </a>
+              <a href="#facebook" class="social-icon-link social-icon-link--fb" aria-label="Facebook">
+                <img src="assets/social_facebook.webp" alt="" width="23" height="23" />
+              </a>
+              <a href="#youtube" class="social-icon-link social-icon-link--yt" aria-label="YouTube">
+                <svg width="32" height="21" viewBox="0 0 32 21" fill="none">
+                  <rect width="32" height="21" rx="5" fill="#F04E36" />
+                  <polygon points="13,15 20.5,10.5 13,6" fill="#000000" />
+                </svg>
+              </a>
+            </div>
+            <p class="footer-copy-text">© JOY IN MOVEMENT 2025.<br />ALL RIGHTS RESERVED</p>
+            <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-  <script>
-    // FAQs Category Tabs Filtering
-    const faqTabs = document.querySelectorAll('.faq-tab-btn');
-    const faqGroups = document.querySelectorAll('.faq-group-block');
+    <script src="js/script.js"></script>
+    <script>
+      // FAQs Category Tabs Filtering
+      const faqTabs = document.querySelectorAll(".faq-tab-btn");
+      const faqGroups = document.querySelectorAll(".faq-group-block");
 
-    faqTabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        faqTabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        const targetCat = tab.getAttribute('data-cat');
+      faqTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          faqTabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+          const targetCat = tab.getAttribute("data-cat");
 
-        faqGroups.forEach(group => {
-          const groupCat = group.getAttribute('data-group');
-          if (targetCat === 'all' || groupCat === targetCat) {
-            group.style.display = 'block';
-          } else {
-            group.style.display = 'none';
-          }
+          faqGroups.forEach((group) => {
+            const groupCat = group.getAttribute("data-group");
+            if (targetCat === "all" || groupCat === targetCat) {
+              group.style.display = "block";
+            } else {
+              group.style.display = "none";
+            }
+          });
         });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

@@ -1,307 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Articles | J.I.M - Joy In Movement</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="articles.css">
-</head>
-<body class="articles-page-body">
-
-  <!-- =========================================================================
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles | J.I.M - Joy In Movement</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+  </head>
+  <body class="articles-page-body">
+    <!-- =========================================================================
        1. Top Header Bar (1:1 standardized with Figma)
        ========================================================================= -->
-  <header class="jim-header" id="header">
-    <div class="content-container header-inner">
-      <a href="index.html" class="header-brand" aria-label="J.I.M Home">
-        <img src="assets/jim_logo_script.png" alt="J.I.M" class="logo-script-img">
-      </a>
+    <header class="jim-header">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo" aria-label="J.I.M Home">
+          <img src="assets/jim_logo_script.webp" alt="J.I.M" class="logo-script-img" />
+        </a>
 
-      <nav class="header-nav" aria-label="Main Navigation">
-        <ul class="nav-links-list">
-          <li><a href="locations.html" class="nav-link">Locations</a></li>
-          <li><a href="infrared.html" class="nav-link">Infrared Workouts</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="own-a-jim.html" class="nav-link">Own A J.I.M</a></li>
-          <li><a href="#store" class="nav-link">Store</a></li>
-        </ul>
-      </nav>
+        <nav class="header-nav" aria-label="Main Navigation">
+          <ul class="nav-links-list">
+            <li><a href="locations.html" class="nav-link">Locations</a></li>
+            <li><a href="infrared.html" class="nav-link">Infrared Workouts</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="own-a-jim.html" class="nav-link">Own A J.I.M</a></li>
+            <li><a href="#store" class="nav-link">Store</a></li>
+          </ul>
+        </nav>
 
-      <div class="header-right">
-        <a href="classes.html" class="header-btn-get-started">GET STARTED</a>
-        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- =========================================================================
-         2. Hero Banner (1653px x 742px, radius 22px)
-         ========================================================================= -->
-    <section class="articles-hero-section">
-      <div class="content-container">
-        <div class="articles-hero-frame">
-          <img src="assets/articles_hero_banner.png" alt="Infrared Fitness, Recovery & Wellness" class="articles-hero-bg">
-          <div class="articles-hero-overlay">
-            <div class="articles-hero-left">
-              <img src="assets/jim_logo_script.png" alt="J.I.M" class="articles-hero-script-logo">
-              <h1 class="articles-hero-title">
-                INFRARED<br>
-                FITNESS, RECOVERY<br>
-                &amp; WELLNESS
-              </h1>
-            </div>
-            <div class="articles-hero-right">
-              <a href="locations.html" class="articles-hero-btn-locations">LOCATIONS</a>
-            </div>
-          </div>
+        <div class="header-action">
+          <a href="classes.html" class="header-btn-get-started">GET STARTED</a>
+          <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- =========================================================================
-         3. Wellness Articles 6-Card Grid (3 Columns x 2 Rows, White Cards)
+    <main>
+      <!-- =========================================================================
+         2. Hero (193 - 935px)
          ========================================================================= -->
-    <section class="section-articles-grid-block">
-      <div class="content-container">
-        <div class="articles-six-grid">
-          
-          <!-- Article 1: How Tech Is Changing -->
-          <article class="article-white-card">
-            <div class="article-card-img-box">
-              <img src="assets/press_art1.png" alt="How Tech Is Changing The Way We Workout" class="article-card-img">
-            </div>
-            <div class="article-card-body">
-              <h3 class="article-card-title">HOW TECH IS CHANGING THE WAY WE WORKOUT</h3>
-              <p class="article-card-desc">Over the last 10 years, the fitness industry has seen an exlosion in the use...</p>
-              <a href="#read-more" class="btn-article-read-more">READ MORE</a>
-            </div>
-          </article>
+      <section class="section-hero page-hero">
+        <div class="hero-frame">
+          <img src="assets/articles_hero_banner.webp" alt="Infrared fitness class at J.I.M" class="hero-img" />
+          <img src="assets/jim_logo_script.webp" alt="J.I.M" class="page-hero-logo articles-hero-logo" />
+          <h1 class="page-hero-title">INFRARED<br />FITNESS, RECOVERY<br />&amp; WELLNESS</h1>
+          <a href="locations.html" class="hero-pill-locations hero-pill-locations--red">LOCATIONS</a>
+        </div>
+      </section>
 
-          <!-- Article 2: Joy In Movement Launch -->
-          <article class="article-white-card">
-            <div class="article-card-img-box">
-              <img src="assets/press_art2.png" alt="Joy In Movement Launch In 3 Locations" class="article-card-img">
-            </div>
-            <div class="article-card-body">
+      <!-- =========================================================================
+         3. Articles grid - 2 rows x 3 white cards (1043 - 2569px)
+         ========================================================================= -->
+      <section class="articles-grid-section">
+        <div class="content-container">
+          <div class="articles-grid">
+            <article class="article-card">
+              <img src="assets/articles_card_studio.webp" alt="" class="article-card-img" />
+              <h3 class="article-card-title">How tech is changing the way we workout</h3>
+              <p class="article-card-desc">
+                Over the last 10 years, the fitness industry has seen an exlosion in the use...
+              </p>
+              <a href="#read-more" class="article-card-btn">READ MORE</a>
+            </article>
+
+            <article class="article-card">
+              <img src="assets/articles_card_studio.webp" alt="" class="article-card-img" />
               <h3 class="article-card-title">JOY IN MOVEMENT (J.I.M) INFRARED WORKOUT STUDIOS LAUNCH IN 3 LOCATIONS</h3>
               <p class="article-card-desc">Introducing Joy. In. Movement (J.I.M), a groundbreaking concept...</p>
-              <a href="#read-more" class="btn-article-read-more">READ MORE</a>
-            </div>
-          </article>
+              <a href="#read-more" class="article-card-btn">READ MORE</a>
+            </article>
 
-          <!-- Article 3: Is The Sauna Having A Renaissance? -->
-          <article class="article-white-card">
-            <div class="article-card-img-box">
-              <img src="assets/press_art3.png" alt="Is The Sauna Having A Renaissance?" class="article-card-img">
-            </div>
-            <div class="article-card-body">
-              <h3 class="article-card-title">IS THE SAUNA HAVING A RENAISSANCE?</h3>
-              <p class="article-card-desc">The sauna is a long, noble and occasionally religious tradition in many places...</p>
-              <a href="#read-more" class="btn-article-read-more">READ MORE</a>
-            </div>
-          </article>
+            <article class="article-card">
+              <img src="assets/articles_card_studio.webp" alt="" class="article-card-img" />
+              <h3 class="article-card-title">Is The Sauna Having A Renaissance?</h3>
+              <p class="article-card-desc">
+                The sauna is a long, noble and occasionally religious tradition in many places...
+              </p>
+              <a href="#read-more" class="article-card-btn">READ MORE</a>
+            </article>
 
-          <!-- Article 4: Balancing The Grind -->
-          <article class="article-white-card">
-            <div class="article-card-img-box">
-              <img src="assets/press_art4.png" alt="Balancing The Grind With Jarad Hobbs" class="article-card-img">
-            </div>
-            <div class="article-card-body">
-              <h3 class="article-card-title">BALANCING THE GRIND WITH JARAD HOBBS, FOUNDER OF JOY IN MOVEMENT (J.I.M)</h3>
-              <p class="article-card-desc">In our conversation with Jarad Hobbs, the visionary behind Joy In Movement (J.I.M)...</p>
-              <a href="#read-more" class="btn-article-read-more">READ MORE</a>
-            </div>
-          </article>
+            <article class="article-card">
+              <img src="assets/articles_card_studio.webp" alt="" class="article-card-img" />
+              <h3 class="article-card-title">
+                Balancing the Grind with Jarad Hobbs, Founder of Joy In Movement (J.I.M)
+              </h3>
+              <p class="article-card-desc">
+                In our conversation with Jarad Hobbs, the visionary behind Joy In Movement (J.I.M)...
+              </p>
+              <a href="#read-more" class="article-card-btn">READ MORE</a>
+            </article>
 
-          <!-- Article 5: Red-Faced Selfie -->
-          <article class="article-white-card">
-            <div class="article-card-img-box">
-              <img src="assets/press_art5.png" alt="The Reason Behind A Woman's Red-Faced Selfie" class="article-card-img">
-            </div>
-            <div class="article-card-body">
-              <h3 class="article-card-title">THE REASON BEHIND A WOMAN’S RED-FACED SELFIE HAS BEEN REVEALED</h3>
-              <p class="article-card-desc">Women across Australia are trying out whole new ways to achieve wellness - with one...</p>
-              <a href="#read-more" class="btn-article-read-more">READ MORE</a>
-            </div>
-          </article>
+            <article class="article-card">
+              <img src="assets/articles_card_studio.webp" alt="" class="article-card-img" />
+              <h3 class="article-card-title">The reason behind a woman’s red-faced selfie has been revealed</h3>
+              <p class="article-card-desc">
+                Women across Australia are trying out whole new ways to achieve wellness - with one...
+              </p>
+              <a href="#read-more" class="article-card-btn">READ MORE</a>
+            </article>
 
-          <!-- Article 6: AI and Infrared Heat -->
-          <article class="article-white-card">
-            <div class="article-card-img-box">
-              <img src="assets/press_art6.png" alt="AI and Infrared Heat For Unique Fitness Concept" class="article-card-img">
-            </div>
-            <div class="article-card-body">
-              <h3 class="article-card-title">JOY IN MOVEMENT COMBINES AI AND INFRARED HEAT FOR UNIQUE FITNESS CONCEPT</h3>
-              <p class="article-card-desc">There is a brand new Australian fitness franchise concept on the scene. Joy In Movement...</p>
-              <a href="#read-more" class="btn-article-read-more">READ MORE</a>
-            </div>
-          </article>
-
+            <article class="article-card">
+              <img src="assets/articles_card_studio.webp" alt="" class="article-card-img" />
+              <h3 class="article-card-title">
+                Joy In Movement combines AI and infrared heat for unique fitness concept
+              </h3>
+              <p class="article-card-desc">
+                There is a brand new Australian fitness franchise concept on the scene. Joy In Movement...
+              </p>
+              <a href="#read-more" class="article-card-btn">READ MORE</a>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- =========================================================================
+         4. GET SWEATY WITH J.I.M - dark band (2731 - 3177px)
+         ========================================================================= -->
+      <section class="section-sweaty-dark-band articles-sweaty-band">
+        <div class="content-container">
+          <div class="sweaty-row">
+            <div class="sweaty-left">
+              <h2 class="title-get-sweaty">GET SWEATY<br />WITH</h2>
+              <img src="assets/jim_logo_script.webp" alt="J.I.M" class="sweaty-script-logo" />
+            </div>
+
+            <div class="sweaty-right">
+              <h3 class="subtitle-30">28 CLASS FORMATS.<br />100+&nbsp; WORKOUTS EVERY WEEK.</h3>
+              <p class="body-15">
+                Low-impact, high-results 30-minute workouts made for real life. All designed to help you burn calories,
+                recover better and support sleep, circulation, energy, skin and overall wellbeing.
+              </p>
+              <a href="classes.html" class="btn-red-pill">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         5. WHY MEMBERS ARE OBSESSED WITH J.I.M (3324 - 4440px)
+         ========================================================================= -->
+      <section class="obsessed-section">
+        <div class="content-container">
+          <div class="obsessed-heading">
+            <h2 class="obsessed-title">WHY MEMBERS<br />ARE OBSESSED WITH</h2>
+            <img src="assets/jim_logo_script.webp" alt="J.I.M" class="obsessed-logo" />
+          </div>
+          <div class="obsessed-track">
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">MENTAL HEALTH</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play mental health video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">CONVENIENCE</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play convenience video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">SLEEP</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play sleep video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">LOW IMPACT</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play low impact video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- =========================================================================
-         4. GET SWEATY WITH J.I.M (Full Bleed Band #242424)
-         ========================================================================= -->
-    <section class="section-articles-sweaty-band">
-      <div class="content-container">
-        <div class="sweaty-band-flex">
-          <div class="sweaty-left-title-col">
-            <h2 class="sweaty-title-text">
-              GET SWEATY<br>
-              WITH
-            </h2>
-            <img src="assets/jim_logo_script.png" alt="J.I.M" class="sweaty-script-logo">
-          </div>
-
-          <div class="sweaty-right-desc-col">
-            <h3 class="sweaty-subtitle-text">28 CLASS FORMATS.<br>100+ WORKOUTS EVERY WEEK.</h3>
-            <p class="sweaty-desc-para">
-              Low-impact, high-results 30-minute workouts made for real life. All designed to help you burn calories, recover better and support sleep, circulation, energy, skin and overall wellbeing.
-            </p>
-            <a href="classes.html" class="btn-sweaty-get-started">GET STARTED</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         5. WHY MEMBERS ARE OBSESSED WITH J.I.M (Video Testimonials)
-         ========================================================================= -->
-    <section class="section-obsessed-testimonials">
-      <div class="content-container">
-        <!-- Title Group -->
-        <div class="obsessed-header-flex">
-          <h2 class="obsessed-main-title">
-            WHY MEMBERS<br>
-            ARE OBSESSED WITH
-          </h2>
-          <img src="assets/jim_logo_script.png" alt="J.I.M" class="obsessed-script-logo">
-        </div>
-
-        <!-- 4 White Cards Grid -->
-        <div class="obsessed-cards-grid">
-          <!-- Card 1: MENTAL HEALTH -->
-          <div class="obsessed-col-item">
-            <h4 class="obsessed-card-tag">MENTAL HEALTH</h4>
-            <div class="obsessed-white-card">
-              <button class="obsessed-play-btn" aria-label="Play Mental Health Story">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 2: CONVENIENCE -->
-          <div class="obsessed-col-item">
-            <h4 class="obsessed-card-tag">CONVENIENCE</h4>
-            <div class="obsessed-white-card">
-              <button class="obsessed-play-btn" aria-label="Play Convenience Story">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 3: SLEEP -->
-          <div class="obsessed-col-item">
-            <h4 class="obsessed-card-tag">SLEEP</h4>
-            <div class="obsessed-white-card">
-              <button class="obsessed-play-btn" aria-label="Play Sleep Story">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 4: LOW IMPACT -->
-          <div class="obsessed-col-item">
-            <h4 class="obsessed-card-tag">LOW IMPACT</h4>
-            <div class="obsessed-white-card">
-              <button class="obsessed-play-btn" aria-label="Play Low Impact Story">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#F04E36">
-                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- =========================================================================
        6. Global Footer (1:1 with Figma)
        ========================================================================= -->
-  <footer class="jim-footer">
-    <div class="content-container">
-      <div class="footer-divider-red"></div>
-      <div class="footer-layout-flex">
-        <!-- Red Brand Badge -->
-        <div class="footer-badge-wrap">
-          <img src="assets/footer_badge_logo.png" alt="JOY IN MOVEMENT" class="footer-badge-img">
-        </div>
-
-        <!-- Links Column 1 -->
-        <div class="footer-nav-col">
-          <ul class="footer-links">
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="infrared.html">Infrared Workouts</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="articles.html" class="active">Articles</a></li>
-          </ul>
-        </div>
-
-        <!-- Links Column 2 -->
-        <div class="footer-nav-col">
-          <ul class="footer-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="press.html">Press</a></li>
-            <li><a href="own-a-jim.html">Franchise</a></li>
-            <li><a href="#store">Store</a></li>
-            <li><a href="classes.html#classes-faqs">FAQ’s</a></li>
-          </ul>
-        </div>
-
-        <!-- Social Icons & Copyright -->
-        <div class="footer-meta-col">
-          <div class="footer-social-icons">
-            <a href="#instagram" class="social-icon-link" aria-label="Instagram">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F04E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-            <a href="#facebook" class="social-icon-link" aria-label="Facebook">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E36">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
+    <footer class="jim-footer jim-footer--x33 jim-footer--articles">
+      <div class="content-container">
+        <div class="footer-divider-red"></div>
+        <div class="footer-layout-flex">
+          <!-- Red Brand Badge -->
+          <div class="footer-badge-wrap">
+            <img src="assets/footer_badge_logo.webp" alt="JOY IN MOVEMENT" class="footer-badge-img" />
           </div>
-          <p class="footer-copy-text">© JOY IN MOVEMENT 2025.<br>ALL RIGHTS RESERVED</p>
-          <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+
+          <!-- Links Column 1 -->
+          <div class="footer-nav-col">
+            <ul class="footer-links">
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="infrared.html">Infrared Workouts</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="articles.html">Articles</a></li>
+            </ul>
+          </div>
+
+          <!-- Links Column 2 -->
+          <div class="footer-nav-col">
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="press.html">Press</a></li>
+              <li><a href="own-a-jim.html">Franchise</a></li>
+              <li><a href="#store">Store</a></li>
+              <li><a href="classes.html#classes-faqs">FAQ’s</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Icons & Copyright -->
+          <div class="footer-meta-col">
+            <div class="footer-social-icons">
+              <a href="#instagram" class="social-icon-link social-icon-link--ig" aria-label="Instagram">
+                <img src="assets/social_instagram.webp" alt="" width="25" height="25" />
+              </a>
+              <a href="#facebook" class="social-icon-link social-icon-link--fb" aria-label="Facebook">
+                <img src="assets/social_facebook.webp" alt="" width="23" height="23" />
+              </a>
+              <a href="#youtube" class="social-icon-link social-icon-link--yt" aria-label="YouTube">
+                <svg width="32" height="21" viewBox="0 0 32 21" fill="none">
+                  <rect width="32" height="21" rx="5" fill="#F04E36" />
+                  <polygon points="13,15 20.5,10.5 13,6" fill="#000000" />
+                </svg>
+              </a>
+            </div>
+            <p class="footer-copy-text">© JOY IN MOVEMENT 2025.<br />ALL RIGHTS RESERVED</p>
+            <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

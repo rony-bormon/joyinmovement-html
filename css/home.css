@@ -1,0 +1,1725 @@
+/* ==========================================================================
+   J.I.M - Home Page CSS (shared base: header, footer, common components)
+   Desktop values are taken 1:1 from Figma frame 135:2 (1728px wide).
+   ========================================================================== */
+
+/* Figma body text uses Apple "Futura", which runs wider than Futura LT;
+   these tracking values match its measured text widths. */
+:root {
+  --ls-futura-medium: 0.029em;
+  --ls-futura-bold: 0.025em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Futura", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Centered container: 1653px content (Figma x=37..1690) + 20px side padding */
+.content-container {
+  width: 100%;
+  max-width: 1693px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 1. Header (0 - 129px) */
+.jim-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 129px;
+  background-color: #000000;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1728px;
+  margin: 0 auto;
+  padding: 0 45px 0 35.5px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: block;
+  margin-top: 8px;
+}
+
+.logo-script-img {
+  width: 93px;
+  height: auto;
+  display: block;
+}
+
+.header-nav {
+  margin-left: auto;
+  margin-right: 352px;
+  padding-top: 7px;
+}
+
+.header-nav .nav-links-list {
+  display: flex;
+  list-style: none;
+  gap: 51px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav .nav-link {
+  letter-spacing: 0.04em;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header-nav .nav-link:hover {
+  color: #f04e36;
+}
+
+.header-right,
+.header-action {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-btn-get-started {
+  letter-spacing: var(--ls-futura-bold);
+  width: 144px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #f04e36;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.header-btn-get-started:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* Mobile Hamburger Toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  z-index: 1100;
+}
+
+.mobile-nav-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-toggle.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+  background-color: #f04e36;
+}
+
+.mobile-nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.mobile-nav-toggle.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+  background-color: #f04e36;
+}
+
+/* Mobile Fullscreen Drawer */
+.mobile-menu-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.mobile-menu-drawer.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.mobile-nav-link {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: #f04e36;
+  transform: scale(1.05);
+}
+
+.mobile-btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 48px;
+  border-radius: 100px;
+  background-color: #f04e36;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 12px;
+  transition: transform 0.2s ease;
+}
+
+.mobile-btn-get-started:hover {
+  transform: scale(1.03);
+}
+
+/* 2. Hero Section (129 - 894px) */
+.section-hero {
+  width: 100%;
+  max-width: 1693px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-frame {
+  position: relative;
+  width: 100%;
+  height: 765px;
+  border-radius: 22px;
+  overflow: hidden;
+  background-color: #0d0d0d;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.hero-overlay-center {
+  position: absolute;
+  top: 333px;
+  left: 55.5px;
+  z-index: 2;
+}
+
+.hero-huge-title {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 87px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.hero-pill-locations {
+  letter-spacing: var(--ls-futura-bold);
+  position: absolute;
+  bottom: 61px;
+  right: 59.5px;
+  z-index: 3;
+  width: 162px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #f8b5b2;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.hero-pill-locations:hover {
+  background-color: #ffffff;
+}
+
+/* 3. GET SWEATY WITH J.I.M (894 - 1277px) */
+.section-sweaty {
+  padding: 79px 0 72px;
+  background-color: #000000;
+}
+
+.sweaty-row {
+  display: grid;
+  grid-template-columns: 61.13% 1fr;
+  align-items: start;
+}
+
+.sweaty-left {
+  position: relative;
+  padding-left: 65.5px;
+}
+
+.title-get-sweaty {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sweaty-script-logo {
+  position: absolute;
+  left: 226.6px;
+  top: 43px;
+  width: 161.8px;
+  height: auto;
+  pointer-events: none;
+}
+
+.sweaty-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 11px;
+}
+
+.subtitle-30 {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 2px;
+}
+
+.body-15 {
+  letter-spacing: var(--ls-futura-medium);
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: #d9d9d9;
+  margin: 39px 0 0;
+  max-width: 456px;
+}
+
+.btn-red-pill {
+  letter-spacing: var(--ls-futura-bold);
+  width: 174px;
+  height: 46px;
+  margin-top: 38px;
+  border-radius: 100px;
+  background-color: #f04e36;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+/* 4. Photo Strip Banners (radius 33, fixed Figma heights) */
+.section-photo-banner {
+  width: 100%;
+  max-width: 1693px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner-frame {
+  width: 100%;
+  border-radius: 33px;
+  overflow: hidden;
+}
+
+.banner-frame--507 {
+  height: 507px;
+}
+
+.banner-frame--432 {
+  height: 432px;
+}
+
+.banner-frame--812 {
+  height: 812px;
+}
+
+.banner-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 5. Studios Band - full bleed #242424 (1861 - 3429px) */
+.section-studios-band {
+  width: 100%;
+  background-color: #242424;
+  padding: 90px 0 114px;
+  margin: 77px 0 85px;
+}
+
+.find-nearest-title-row {
+  position: relative;
+  padding-left: 63.5px;
+}
+
+.title-find-nearest {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.find-nearest-indent {
+  display: inline-block;
+  margin-left: 163px;
+}
+
+.find-nearest-jim-script {
+  position: absolute;
+  left: 57.7px;
+  top: 63.2px;
+  width: 146.6px;
+  height: auto;
+  pointer-events: none;
+}
+
+.search-bar-row {
+  display: flex;
+  align-items: center;
+  margin-top: 81px;
+  padding-left: 63.5px;
+}
+
+.search-input-pill {
+  position: relative;
+  flex: 0 1 623px;
+}
+
+.input-postcode {
+  letter-spacing: var(--ls-futura-medium);
+  width: 100%;
+  height: 46px;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 0 26px;
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  outline: none;
+}
+
+.input-postcode::placeholder {
+  color: #ffffff;
+}
+
+.btn-find-location,
+.btn-current-location {
+  letter-spacing: var(--ls-futura-bold);
+  flex: 0 0 auto;
+  height: 46px;
+  border-radius: 100px;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-find-location {
+  width: 252px;
+  margin-left: 70px;
+  background-color: #f04e36;
+}
+
+.btn-current-location {
+  width: 337px;
+  margin-left: 30px;
+  background-color: #f8b5b2;
+}
+
+.heading-studios-near-you {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 126px 0 0;
+  padding-left: 63.5px;
+}
+
+/* 3 White Studio Cards (537x634, gap 24, start 7.5px left of container) */
+.studios-three-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 81px 0 0 -7.5px;
+}
+
+.studio-white-card {
+  position: relative;
+  height: 634px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 8px 7px 0 8px;
+}
+
+.studio-card-photo-wrap {
+  width: 100%;
+  height: 335px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.studio-white-card:nth-child(n + 2) .studio-card-photo-wrap {
+  width: 519px;
+  height: 327px;
+  margin-left: 1px;
+}
+
+.studio-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.studio-card-details {
+  position: absolute;
+  top: 396px;
+  left: 27px;
+  right: 27px;
+}
+
+.studio-white-card:nth-child(2) .studio-card-details {
+  left: 29px;
+}
+
+.studio-white-card:nth-child(3) .studio-card-details {
+  left: 30px;
+}
+
+.studio-card-name {
+  letter-spacing: var(--ls-futura-bold);
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.studio-card-addr {
+  letter-spacing: var(--ls-futura-medium);
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 18px 0 0;
+  max-width: 397px;
+}
+
+.btn-view-studio-black {
+  letter-spacing: var(--ls-futura-bold);
+  width: 184px;
+  height: 46px;
+  margin-top: 77px;
+  border-radius: 100px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-view-studio-black:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.view-all-locations-center {
+  display: flex;
+  margin-top: 102px;
+  padding-left: 58.5px;
+}
+
+.btn-view-all-red {
+  letter-spacing: var(--ls-futura-bold);
+  width: 252px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #f04e36;
+  color: #000000;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* 6. Meet Band - full bleed #242424 (4041 - 4797px) */
+.section-meet-band {
+  width: 100%;
+  background-color: #242424;
+  padding: 62px 0 90px;
+  margin: 95px 0 0;
+}
+
+.meet-heading-row {
+  position: relative;
+  padding-left: 62.5px;
+}
+
+.title-meet {
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 77px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.meet-script-logo {
+  position: absolute;
+  left: 218.5px;
+  top: -8px;
+  width: 168.9px;
+  height: auto;
+  pointer-events: none;
+}
+
+/* 5 cards (304x419) spanning Figma x=30..1680 */
+/* Desktop: exact Figma card x-positions (30, 366, 700, 1035, 1376) */
+.meet-five-grid {
+  display: flex;
+  align-items: flex-start;
+  margin: 108px 0 0 -7.5px;
+}
+
+.meet-five-grid > .meet-card-item {
+  flex: 0 0 304px;
+}
+
+.meet-five-grid > .meet-card-item:nth-child(1) {
+  flex-basis: 308px;
+}
+
+.meet-five-grid > .meet-card-item:nth-child(2) {
+  margin-left: 28px;
+}
+
+.meet-five-grid > .meet-card-item:nth-child(3) {
+  margin-left: 30px;
+}
+
+.meet-five-grid > .meet-card-item:nth-child(4) {
+  margin-left: 31px;
+}
+
+.meet-five-grid > .meet-card-item:nth-child(5) {
+  margin-left: 37px;
+}
+
+.meet-card-item {
+  position: relative;
+  height: 419px;
+  border-radius: 22px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.meet-card-item:nth-child(3),
+.meet-card-item:nth-child(4) {
+  height: 414px;
+}
+
+.meet-card-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.meet-card-caption-top {
+  position: relative;
+  z-index: 3;
+  padding: 27px 0 0 27px;
+}
+
+.meet-card-item:nth-child(5) .meet-card-caption-top {
+  padding-left: 31px;
+}
+
+.meet-card-title {
+  letter-spacing: var(--ls-futura-bold);
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.meet-card-desc {
+  letter-spacing: var(--ls-futura-medium);
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 32px 0 0;
+  max-width: 242px;
+}
+
+.meet-card-item:nth-child(1) .meet-card-desc {
+  max-width: 224px;
+}
+
+.meet-card-item:nth-child(4) .meet-card-desc {
+  max-width: 230px;
+}
+
+.meet-card-item:nth-child(5) .meet-card-desc {
+  max-width: 260px;
+}
+
+/* 7. Reviews (4797 - 5432px) */
+.section-reviews {
+  width: 100%;
+  padding: 0 0 95px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.reviews-header-flex {
+  position: relative;
+  height: 263px;
+}
+
+.reviews-left-group,
+.reviews-right-group {
+  position: static;
+}
+
+.reviews-script-logo {
+  position: absolute;
+  left: 70.5px;
+  top: 82px;
+  width: 182px;
+  height: auto;
+  pointer-events: none;
+}
+
+.title-reviews {
+  position: absolute;
+  left: 272.5px;
+  top: 93px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.tag-hear-members {
+  position: absolute;
+  left: 1144.5px;
+  top: 80px;
+  width: 343px;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Horizontal drag track of 478x277 cards, gap 42px */
+.reviews-track-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  -webkit-overflow-scrolling: touch;
+}
+
+.reviews-track-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.reviews-track-wrapper.active {
+  cursor: grabbing;
+}
+
+/* Full-bleed variant: track spans the viewport (first card starts off-canvas) */
+.reviews-track-wrapper--bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.reviews-track-wrapper--bleed .review-peach-box:nth-child(4) {
+  margin-left: 11px;
+}
+
+.reviews-track-wrapper--bleed .review-peach-box:nth-child(3) .review-body-quote {
+  max-width: 385px;
+}
+
+.reviews-four-grid {
+  display: flex;
+  gap: 42px;
+  width: max-content;
+}
+
+.review-peach-box {
+  position: relative;
+  width: 478px;
+  min-width: 478px;
+  height: 277px;
+  background-color: #f8b5b2;
+  border-radius: 30px;
+  padding: 59px 38px 0;
+  flex-shrink: 0;
+}
+
+.review-author-name {
+  letter-spacing: var(--ls-futura-bold);
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.review-body-quote {
+  letter-spacing: var(--ls-futura-medium);
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 34px 0 0;
+  max-width: 396px;
+}
+
+.review-peach-box:nth-child(1) .review-body-quote,
+.review-peach-box:nth-child(4) .review-body-quote {
+  max-width: 325px;
+}
+
+.review-stars-row {
+  position: absolute;
+  top: 195px;
+  left: 38px;
+  display: flex;
+  gap: 18px;
+}
+
+.review-stars-row svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* 8. Sweaty Dark Band - full bleed #242424 (6317 - 6763px) */
+.section-sweaty-dark-band {
+  width: 100%;
+  background-color: #242424;
+  padding: 98px 0 101px;
+  margin: 73px 0 0;
+}
+
+.section-sweaty-dark-band .btn-red-pill {
+  margin-top: 36px;
+}
+
+/* 9. The J.I.M App - pure black (6763 - 7743px) */
+.section-app-pure-black {
+  padding: 73px 0 95px;
+  background-color: #000000;
+}
+
+.app-row-flex {
+  position: relative;
+  height: 812px;
+}
+
+.app-text-left {
+  position: absolute;
+  top: 269px;
+  left: 0;
+}
+
+.app-heading-brand {
+  position: relative;
+}
+
+.title-app-white {
+  position: relative;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 62.5px;
+  width: 520px;
+}
+
+.app-title-app {
+  position: absolute;
+  left: 381.5px;
+  top: 0;
+}
+
+.app-script-logo {
+  position: absolute;
+  left: 199.6px;
+  top: -11px;
+  width: 161.8px;
+  height: auto;
+  pointer-events: none;
+}
+
+.app-instruction-desc {
+  letter-spacing: var(--ls-futura-medium);
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: #d9d9d9;
+  margin: 41px 0 0 74.5px;
+  max-width: 366px;
+}
+
+.app-store-badges-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 53px;
+  margin: 85px 0 0 65.5px;
+}
+
+.store-badge-img {
+  height: 57px;
+  width: auto;
+  display: block;
+}
+
+.badge-link:nth-child(2) {
+  margin-top: 1px;
+}
+
+.app-photo-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 790px;
+  height: 812px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.app-phone-mockup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 10. Global Footer - pure black with 2px brand red divider (7743 - 8041px) */
+.jim-footer {
+  width: 100%;
+  background-color: #000000;
+  padding: 0 0 96px;
+}
+
+.jim-footer .content-container {
+  padding: 0 14.5px 0 25.5px;
+}
+
+.footer-divider-red {
+  width: 100%;
+  height: 2px;
+  background-color: #f04e36;
+  margin-bottom: 75px;
+}
+
+.footer-layout-flex {
+  display: grid;
+  grid-template-columns: 565px 193px 666px auto;
+  align-items: start;
+}
+
+.footer-badge-img {
+  width: 309px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  letter-spacing: var(--ls-futura-bold);
+  display: block;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: #f04e36;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+.footer-meta-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  height: 23px;
+}
+
+.social-icon-link {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-icon-link img,
+.social-icon-link svg {
+  display: block;
+}
+
+.social-icon-link--ig {
+  margin-top: -2px;
+}
+
+.social-icon-link--yt {
+  margin: 1px 0 0 2px;
+}
+
+.social-icon-link:hover {
+  transform: scale(1.1);
+}
+
+.footer-copy-text {
+  letter-spacing: var(--ls-futura-bold);
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: #f04e36;
+  text-transform: uppercase;
+  margin: 31px 0 0 2px;
+  white-space: nowrap;
+}
+
+.footer-policy-link {
+  letter-spacing: var(--ls-futura-bold);
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: #f04e36;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 15px 0 0 2px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-policy-link:hover {
+  opacity: 0.8;
+}
+
+/* Reviews variant on a full-bleed #242424 band, shifted left (locations, infrared) */
+.section-reviews--band {
+  background-color: #242424;
+  padding-bottom: 101px;
+}
+
+.section-reviews--band .reviews-script-logo {
+  left: 59.5px;
+}
+
+.section-reviews--band .title-reviews {
+  left: 261.5px;
+}
+
+.section-reviews--band .tag-hear-members {
+  left: 1129.5px;
+}
+
+/* Footer x-offset variants used by inner pages (divider starts at Figma x=33 / x=17) */
+.jim-footer--x33 .content-container {
+  padding: 0 24.5px 0 15.5px;
+}
+
+.jim-footer--x17 .content-container {
+  padding: 0 40px 0 0;
+}
+
+/* 11. Inner-page hero (Figma: 1653x742 at y=193, 85px title, red LOCATIONS pill) */
+.page-hero {
+  margin-top: 64px;
+}
+
+.page-hero .hero-frame {
+  height: 742px;
+}
+
+.page-hero-title {
+  position: absolute;
+  left: 57.5px;
+  top: 407px;
+  z-index: 2;
+  font-family: "Futura", sans-serif;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 87px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.page-hero-logo {
+  position: absolute;
+  z-index: 2;
+  width: 171.9px;
+  height: auto;
+  pointer-events: none;
+}
+
+.hero-pill-locations--red {
+  width: 157px;
+  background-color: #f04e36;
+}
+
+@media (max-width: 992px) {
+  .page-hero-title {
+    font-size: 56px;
+    line-height: 60px;
+    top: auto;
+    bottom: 120px;
+    left: 32px;
+  }
+  .page-hero-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .jim-footer--x33 .content-container,
+  .jim-footer--x17 .content-container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero-title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
+
+/* ==========================================================================
+   Responsive (below the 1728px Figma desktop frame)
+   ========================================================================== */
+@media (max-width: 1500px) {
+  .header-nav {
+    margin-right: 60px;
+  }
+  .meet-five-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 0;
+    gap: 22px;
+  }
+  .meet-five-grid > .meet-card-item:nth-child(n) {
+    margin-left: 0;
+  }
+  .meet-card-desc {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .tag-hear-members,
+  .section-reviews--band .tag-hear-members {
+    left: auto;
+    right: 0;
+  }
+  .footer-layout-flex {
+    grid-template-columns: 1fr auto auto auto;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .meet-five-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .studio-white-card:nth-child(n + 2) .studio-card-photo-wrap {
+    width: 100%;
+    margin-left: 0;
+  }
+  .studios-three-grid {
+    margin-left: 0;
+  }
+  .app-row-flex {
+    height: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .app-text-left {
+    position: static;
+    flex: 1 1 50%;
+  }
+  .app-photo-right {
+    position: static;
+    flex: 1 1 50%;
+    width: auto;
+    height: 640px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .studios-three-grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+  .sweaty-row {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .hero-huge-title {
+    font-size: 90px;
+    line-height: 90px;
+    white-space: normal;
+  }
+  .hero-overlay-center {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .search-bar-row {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .btn-find-location,
+  .btn-current-location {
+    margin-left: 0;
+  }
+  .reviews-header-flex {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 70px 0 48px;
+  }
+  .reviews-left-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .reviews-script-logo,
+  .title-reviews,
+  .tag-hear-members {
+    position: static;
+    width: auto;
+  }
+  .reviews-script-logo {
+    width: 130px;
+  }
+  .footer-layout-flex {
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-nav {
+    display: none !important;
+  }
+  .header-action {
+    margin-left: auto;
+  }
+  .mobile-nav-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .jim-header {
+    height: 84px;
+  }
+  .header-inner {
+    padding: 0 20px;
+  }
+  .header-logo {
+    margin-top: 4px;
+  }
+  .logo-script-img {
+    width: 74px;
+  }
+  .header-btn-get-started {
+    width: 124px;
+    height: 38px;
+    font-size: 13px;
+  }
+  .hero-frame {
+    height: 440px;
+  }
+  .hero-huge-title {
+    font-size: 54px;
+    line-height: 56px;
+  }
+  .hero-pill-locations {
+    bottom: 20px;
+    right: 20px;
+    width: 130px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .section-sweaty,
+  .section-sweaty-dark-band {
+    padding: 56px 0;
+  }
+  .sweaty-left,
+  .find-nearest-title-row,
+  .search-bar-row,
+  .heading-studios-near-you,
+  .meet-heading-row,
+  .view-all-locations-center {
+    padding-left: 0;
+  }
+  .title-get-sweaty,
+  .title-find-nearest,
+  .heading-studios-near-you,
+  .title-meet,
+  .title-reviews,
+  .title-app-white {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .sweaty-script-logo {
+    left: 118px;
+    top: 28px;
+    width: 110px;
+  }
+  .find-nearest-indent {
+    margin-left: 110px;
+  }
+  .find-nearest-jim-script {
+    left: -4px;
+    top: 42px;
+    width: 100px;
+  }
+  .meet-script-logo {
+    left: 120px;
+    width: 110px;
+  }
+  .tag-hear-members {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .banner-frame--507,
+  .banner-frame--432,
+  .banner-frame--812 {
+    height: 320px;
+  }
+  .section-studios-band {
+    padding: 56px 0 64px;
+    margin: 48px 0;
+  }
+  .search-bar-row {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 40px;
+  }
+  .search-input-pill {
+    flex: none;
+    width: 100%;
+  }
+  .btn-find-location,
+  .btn-current-location {
+    width: 100%;
+  }
+  .heading-studios-near-you {
+    margin-top: 56px;
+  }
+  .studios-three-grid {
+    margin-top: 40px;
+  }
+  .view-all-locations-center {
+    margin-top: 48px;
+    justify-content: center;
+  }
+  .section-meet-band {
+    padding: 56px 0 64px;
+    margin-top: 48px;
+  }
+  .meet-five-grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .meet-card-item:nth-child(n) {
+    height: 419px;
+  }
+  .reviews-track-wrapper--bleed {
+    width: 100%;
+    margin-left: 0;
+  }
+  .review-peach-box {
+    width: 300px;
+    min-width: 300px;
+    padding: 32px 24px 0;
+  }
+  .review-body-quote {
+    margin-top: 16px;
+  }
+  .review-stars-row {
+    top: auto;
+    bottom: 28px;
+    left: 24px;
+  }
+  .section-sweaty-dark-band {
+    margin-top: 48px;
+  }
+  .section-app-pure-black {
+    padding: 48px 0 64px;
+  }
+  .app-row-flex {
+    flex-direction: column;
+  }
+  .title-app-white {
+    padding-left: 0;
+    width: 340px;
+  }
+  .app-title-app {
+    left: 236px;
+  }
+  .app-script-logo {
+    left: 100px;
+    top: -6px;
+    width: 120px;
+  }
+  .app-instruction-desc,
+  .app-store-badges-row {
+    margin-left: 0;
+  }
+  .app-store-badges-row {
+    margin-top: 32px;
+    gap: 16px;
+  }
+  .app-photo-right {
+    width: 100%;
+    height: 420px;
+  }
+  .jim-footer .content-container {
+    padding: 0 20px;
+  }
+  .footer-divider-red {
+    margin-bottom: 40px;
+  }
+  .footer-layout-flex {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .footer-badge-wrap {
+    grid-column: 1 / -1;
+  }
+  .footer-badge-img {
+    max-width: 250px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .jim-header {
+    height: 72px;
+  }
+  .logo-script-img {
+    width: 62px;
+  }
+  .header-btn-get-started {
+    width: 110px;
+    height: 36px;
+    font-size: 12px;
+  }
+  .hero-frame {
+    height: 360px;
+  }
+  .hero-huge-title {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .content-container,
+  .header-inner {
+    padding: 0 16px;
+  }
+  .footer-layout-flex {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Universal Cinematic Video Modal / Lightbox Player
+   ========================================================================== */
+.jim-video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.jim-video-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.jim-video-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  cursor: pointer;
+}
+
+.jim-video-modal-dialog {
+  position: relative;
+  z-index: 10;
+  width: 92%;
+  max-width: 1240px;
+  background-color: #000000;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(240, 78, 54, 0.4);
+  transform: scale(0.92);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.jim-video-modal.open .jim-video-modal-dialog {
+  transform: scale(1);
+}
+
+.jim-video-modal-video {
+  width: 100%;
+  height: auto;
+  max-height: 82vh;
+  display: block;
+  outline: none;
+  background-color: #000000;
+}
+
+.jim-video-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.22s ease;
+  padding: 0;
+}
+
+.jim-video-modal-close:hover {
+  background-color: #f04e36;
+  border-color: #f04e36;
+  color: #000000;
+  transform: rotate(90deg) scale(1.1);
+}
+
+.jim-video-modal-close svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}
+
+/* Inline Video Player Support */
+.wellness-video-player,
+.inline-video-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: inherit;
+}

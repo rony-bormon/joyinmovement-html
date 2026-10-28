@@ -1,0 +1,27 @@
+/* ==========================================================================
+   J.I.M - Locations Page (Figma frame 287:288)
+   Reuses the home.css studios + reviews components; only the offsets differ.
+   ========================================================================== */
+
+/* Studios block on plain black (title at y=311) */
+.section-studios-band--plain {
+  background-color: transparent;
+  margin: 92px 0 0;
+  padding-bottom: 106px;
+}
+
+/* Footer: x=33 variant (home.css), closer to the band */
+.jim-footer--locations {
+  margin-top: 71px;
+  padding-bottom: 89px;
+}
+
+@media (max-width: 768px) {
+  .section-studios-band--plain {
+    margin-top: 32px;
+    padding-bottom: 64px;
+  }
+  .jim-footer--locations {
+    margin-top: 48px;
+  }
+}

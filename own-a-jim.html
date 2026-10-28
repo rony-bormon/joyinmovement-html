@@ -1,632 +1,705 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Own A J.I.M | Australia's First Infrared Fitness Studio</title>
-  <!-- Montserrat geometric font matching Futura exactly from Figma -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- =========================================================================
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Own A J.I.M | Australia's First Infrared Fitness Studio</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+    <link rel="stylesheet" href="css/press.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/own-a-jim.css" />
+  </head>
+  <body>
+    <!-- =========================================================================
        1. Top Header Bar
        ========================================================================= -->
-  <header class="top-nav-bar" id="header">
-    <div class="nav-container">
-      <div class="nav-left">
-        <a href="about.html" class="nav-link">ABOUT</a>
-        <a href="how-it-works.html" class="nav-link">HOW IT WORKS</a>
-        <a href="classes.html" class="nav-link">CLASSES</a>
-      </div>
-
-      <div class="nav-center">
-        <a href="index.html" class="brand-link" aria-label="J.I.M Home">
-          <img src="assets/jim_logo_script.png" alt="J.I.M" class="script-logo-header">
+    <header class="jim-header jim-header--own">
+      <div class="header-inner">
+        <nav class="header-nav" aria-label="Main Navigation">
+          <ul class="nav-links-list">
+            <li style="--x: 161px">
+              <a href="about.html" class="nav-link">ABOUT</a>
+              <svg class="own-nav-caret" width="11" height="6" viewBox="0 0 11 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4.5 4L10 1" stroke="currentColor" stroke-width="1.2" />
+              </svg>
+            </li>
+            <li style="--x: 280px"><a href="infrared.html" class="nav-link">INFRARED WORKOUTS</a></li>
+            <li style="--x: 537px"><a href="locations.html" class="nav-link">LOCATIONS</a></li>
+            <li style="--x: 977px"><a href="own-a-jim.html" class="nav-link active">OWN A J.I.M</a></li>
+            <li style="--x: 1136px"><a href="press.html" class="nav-link">PRESS</a></li>
+            <li style="--x: 1222px"><a href="#store" class="nav-link">STORE</a></li>
+          </ul>
+        </nav>
+        <a href="index.html" class="header-logo" aria-label="J.I.M Home">
+          <img src="assets/jim_logo_script.webp" alt="J.I.M" class="logo-script-img" />
         </a>
-      </div>
-
-      <div class="nav-right">
-        <a href="own-a-jim.html" class="nav-link active">OWN A J.I.M</a>
-        <a href="locations.html" class="nav-link">LOCATIONS</a>
-        <a href="#apply" class="btn btn-red btn-header-cta">START A STUDIO</a>
-        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- =========================================================================
-         2. Hero Section (Amber Warm Silhouettes, 1653x812px)
-         ========================================================================= -->
-    <section class="page-hero-section" id="hero">
-      <div class="hero-frame-container">
-        <img src="assets/own_hero_amber_banner.png" alt="Own Australia's First Infrared Fitness Studio" class="hero-amber-bg">
-        
-        <div class="hero-floating-elements">
-          <!-- Red J.I.M script watermark on left -->
-          <img src="assets/jim_logo_script.png" alt="J.I.M" class="hero-script-watermark">
-          
-          <!-- Main Display Title -->
-          <h1 class="hero-title-main">
-            OWN AUSTRALIA’S<br>
-            FIRST INFRARED FITNESS<br>
-            STUDIO
-          </h1>
-          
-          <!-- Bottom Right APPLY NOW Button -->
-          <a href="#apply" class="btn btn-red hero-apply-btn">APPLY NOW</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         3. Quote Bar
-         ========================================================================= -->
-    <section class="franchise-quote-section">
-      <div class="jim-container">
-        <h2 class="quote-text-large">
-          “TURN AWAY THE FASTEST GROWING FITNESS FRANCHISE IN THE COUNTRY?”
-        </h2>
-        <p class="quote-author-never">Never.</p>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         4. Red Stats Container (80+, $200-$250K, 30-35%, End-to-End Support)
-         ========================================================================= -->
-    <section class="stats-red-section">
-      <div class="jim-container">
-        <div class="red-stats-box">
-          <div class="stat-col">
-            <span class="stat-category-label">GROWING FRANCHISE NETWORK</span>
-            <div class="stat-number">80+</div>
-            <div class="stat-subhead">Studios Open & Sold</div>
-            <p class="stat-desc">Join one of Australia's fastest-growing fitness franchise networks, with studios operating across Australia and international expansion underway.</p>
-          </div>
-
-          <div class="stat-col">
-            <span class="stat-category-label">LOW INITIAL INVESTMENT</span>
-            <div class="stat-number">$200 - $250K</div>
-            <div class="stat-subhead">Typical Investment</div>
-            <p class="stat-desc">A streamlined studio model designed to reduce complexity, control fit-out costs, and make business ownership more accessible.</p>
-          </div>
-
-          <div class="stat-col">
-            <span class="stat-category-label">STRONG UNIT ECONOMICS</span>
-            <div class="stat-number">30-35%</div>
-            <div class="stat-subhead">Target Profit Margin</div>
-            <p class="stat-desc">Low overheads, recurring membership revenue, and a business model designed to support both single-site and multi-site ownership.</p>
-          </div>
-
-          <div class="stat-col">
-            <span class="stat-category-label">END-TO-END SUPPORT</span>
-            <div class="stat-number stat-icon-space">✓</div>
-            <div class="stat-subhead">From Site Selection to Growth</div>
-            <p class="stat-desc">Receive support across site selection, fit-out, technology, marketing, sales, operations, training, and ongoing business coaching.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         5. Poster Banner (J.I.M HATES BURPEES TOO)
-         ========================================================================= -->
-    <section class="banner-strip-section py-0">
-      <div class="jim-container">
-        <div class="rounded-wide-card">
-          <img src="assets/own_poster_chair_banner.png" alt="J.I.M Hates Burpees Too Poster" class="full-media-img">
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         6. Where Fitness Meets Infrared Wellness
-         ========================================================================= -->
-    <section class="section-dark-gray" id="how-it-works">
-      <div class="jim-container">
-        <div class="split-header-row mb-50">
-          <div class="col-left">
-            <h2 class="section-heading-60">WHERE FITNESS MEETS<br>INFRARED WELLNESS</h2>
-          </div>
-          <div class="col-right">
-            <h3 class="subtitle-24">A New Generation of Studios</h3>
-            <p class="body-15">designed with immersive heat, low lights, no mirrors, curated music, and world-class environments that help people feel comfortable while supporting recovery, energy, better sleep, skin health, and full-body wellness in a way traditional gyms can’t.</p>
-          </div>
-        </div>
-
-        <!-- Video Banner with Red Play Button -->
-        <div class="video-preview-wrapper" data-video-url="https://joyinmovement.com.au/wp-content/uploads/2026/03/JIM_WEBSITE_HERO_4K_NoAudio_compressed_video.mp4">
-          <img src="assets/own_video_infrared_banner.png" alt="Where Fitness Meets Infrared Wellness Demonstration" class="video-cover-img">
-          <button class="play-btn-circle" aria-label="Play Video" data-video-url="https://joyinmovement.com.au/wp-content/uploads/2026/03/JIM_WEBSITE_HERO_4K_NoAudio_compressed_video.mp4">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="#F04E36">
-              <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        <div class="header-action">
+          <a href="classes.html" class="header-btn-get-started">
+            GET STARTED
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 1.5L11 8l-7 6.5" stroke="#ffffff" stroke-width="3.5" />
             </svg>
+          </a>
+          <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- =========================================================================
-         7. WHY J.I.M?
+    <main>
+      <!-- =========================================================================
+         2. Apply bar + hero (144 - 1081px)
          ========================================================================= -->
-    <section class="section-black" id="why-jim">
-      <div class="jim-container">
-        <div class="split-header-row mb-50">
-          <div class="col-left">
-            <h2 class="section-heading-60">WHY J.I.M?</h2>
-          </div>
-          <div class="col-right">
-            <h3 class="subtitle-24">More Money. More Meaning. More Freedom.</h3>
-            <p class="body-15">J.I.M was built around a simple belief: business ownership should be financially rewarding, personally fulfilling, and capable of creating freedom.</p>
-          </div>
+      <div class="own-apply-bar">
+        <div class="content-container"><a href="#apply" class="own-pill own-pill--bar">APPLY NOW</a></div>
+      </div>
+      <section class="section-hero own-hero">
+        <div class="hero-frame">
+          <img src="assets/own_hero.webp" alt="Infrared class at J.I.M" class="hero-img" />
+          <img src="assets/jim_logo_script.webp" alt="J.I.M" class="page-hero-logo own-hero-logo" />
+          <h1 class="page-hero-title own-hero-title">OWN AUSTRALIA’S<br />FIRST INFRARED FITNESS<br />STUDIO</h1>
+          <a href="#apply" class="own-pill own-pill--hero">APPLY NOW</a>
         </div>
+      </section>
 
-        <!-- 3 Peach Cards -->
-        <div class="tri-peach-cards-grid mb-50">
-          <div class="peach-feature-card">
-            <h4 class="peach-card-title">STRONG MARGINS</h4>
-            <p class="peach-card-text">High-margin group fitness model with lean staffing and high retention rates.</p>
-          </div>
-          <div class="peach-feature-card">
-            <h4 class="peach-card-title">STREAMLINED OPERATIONS</h4>
-            <p class="peach-card-text">Automated booking, digital studio control, and structured playbooks that make execution straightforward.</p>
-          </div>
-          <div class="peach-feature-card">
-            <h4 class="peach-card-title">PURPOSE-DRIVEN CULTURE</h4>
-            <p class="peach-card-text">A welcoming, low-intimidation workout culture that members genuinely fall in love with.</p>
-          </div>
-        </div>
-
-        <!-- Big Red Quote Callout -->
-        <div class="big-red-callout-box">
-          <blockquote class="callout-quote-text">
-            “HOW DO WE CREATE A FITNESS BUSINESS THAT IS BETTER FOR MEMBERS, BETTER FOR OWNERS, AND CAPABLE OF SCALING GLOBALLY?”
+      <!-- =========================================================================
+         3. Forbes quote (1189 - 1495px)
+         ========================================================================= -->
+      <section class="own-quote">
+        <div class="content-container">
+          <blockquote class="own-quote-text">
+            “ARGUABLY THE FASTEST<br />GROWING FITNESS FRANCHISE<br />IN THE COUNTRY.”<br />-
           </blockquote>
+          <img src="assets/own_forbes_logo.webp" alt="Forbes" class="own-quote-logo" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- =========================================================================
-         8. Owner Models (Run Day to Day vs Manager)
+      <!-- =========================================================================
+         4. Key numbers - red card (1611 - 2280px)
          ========================================================================= -->
-    <section class="section-dark-gray">
-      <div class="jim-container">
-        <div class="manifesto-intro-text mb-50">
-          <h2 class="manifesto-title">
-            SOME OWNERS CHOOSE TO RUN THEIR STUDIO DAY TO DAY, OTHERS DO THIS THROUGH A MANAGER OR GROWING MULTIPLE LOCATIONS. THE RIGHT MODEL DEPENDS ON YOUR GOALS, EXPERIENCE AND STAGE OF LIFE.
-          </h2>
-        </div>
+      <section class="own-stats">
+        <div class="content-container">
+          <div class="own-stats-card">
+            <div class="own-stat">
+              <h3 class="own-stat-head">GROWING FRANCHISE<br />NETWORK</h3>
+              <p class="own-stat-num">80+</p>
+              <p class="own-stat-label">Studios Open &amp; Sold</p>
+              <p class="own-stat-desc">
+                Join one of Australia's fastest-growing fitness franchise networks, with studios operating across
+                Australia and international expansion underway.
+              </p>
+            </div>
+            <div class="own-stat is-dim">
+              <h3 class="own-stat-head">LOW INITIAL<br />INVESTMENT</h3>
+              <p class="own-stat-num">$200 -<br />$250K</p>
+              <p class="own-stat-label">Typical Investment</p>
+              <p class="own-stat-desc">
+                A streamlined studio model designed to reduce complexity, control fit-out costs, and make business
+                ownership more accessible.
+              </p>
+            </div>
+            <div class="own-stat is-dim">
+              <h3 class="own-stat-head">STRONG UNIT<br />ECONOMICS</h3>
+              <p class="own-stat-num">30-35%</p>
+              <p class="own-stat-label">Target Profit Margin</p>
+              <p class="own-stat-desc">
+                Low overheads, recurring membership revenue, and a business model designed to support both single-site
+                and multi-site ownership.
+              </p>
+            </div>
+            <div class="own-stat is-dim">
+              <h3 class="own-stat-head">END-TO-END<br />SUPPORT</h3>
 
-        <!-- 3 Owner Model Cards -->
-        <div class="tri-owner-cards-grid">
-          <!-- Card 1 -->
-          <div class="owner-model-card">
-            <div class="model-photo-frame">
-              <img src="assets/own_owner_model_1.png" alt="Owner-Operator Model" class="model-photo">
-            </div>
-            <div class="model-peach-info">
-              <h4 class="model-title">OWNER-OPERATOR</h4>
-              <p class="model-desc">Be the face of your studio, drive local community engagement, and lead your team daily for maximum operational returns.</p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="owner-model-card">
-            <div class="model-photo-frame">
-              <img src="assets/own_owner_model_2.png" alt="Executive Owner Model" class="model-photo">
-            </div>
-            <div class="model-peach-info">
-              <h4 class="model-title">EXECUTIVE OWNER</h4>
-              <p class="model-desc">Appoint a talented studio manager to run day-to-day operations while you focus on high-level growth and performance.</p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="owner-model-card">
-            <div class="model-photo-frame">
-              <img src="assets/own_owner_model_3.png" alt="Multi-Unit Operator" class="model-photo">
-            </div>
-            <div class="model-peach-info">
-              <h4 class="model-title">MULTI-UNIT OPERATOR</h4>
-              <p class="model-desc">Scale across dedicated territories, leverage shared overheads, and build a substantial enterprise portfolio.</p>
+              <p class="own-stat-label">From Site Selection<br />to Growth</p>
+              <p class="own-stat-desc">
+                Receive support across site selection, fit-out, technology, marketing, sales, operations, training, and
+                ongoing business coaching.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- =========================================================================
-         9. Secure Your Territory
+      <!-- =========================================================================
+         5. J.I.M hates burpees too - poster (2331 - 3143px)
          ========================================================================= -->
-    <section class="section-black territory-section" id="apply">
-      <div class="jim-container text-center">
-        <h2 class="section-heading-60 mb-20">SECURE YOUR<br>TERRITORY</h2>
-        <p class="territory-red-note">Initial territories are strictly limited by population density and prime retail demographics.</p>
-        <div class="mt-40">
-          <a href="#prospectus" class="btn btn-red btn-fixed-252">ENQUIRE NOW</a>
+      <section class="section-photo-banner own-poster">
+        <div class="banner-frame banner-frame--812">
+          <img src="assets/own_poster.webp" alt="J.I.M hates burpees too" class="banner-photo-img" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- =========================================================================
-         10. Meet Our Partners (Video Cards + 3 Red Quote Cards)
+      <!-- =========================================================================
+         6. Where fitness meets infrared wellness - #242424 band (3188 - 4289px)
          ========================================================================= -->
-    <section class="section-dark-gray">
-      <div class="jim-container">
-        <h2 class="hero-heading mb-40">
-          MEET OUR <img src="assets/jim_logo_script.png" alt="J.I.M" class="inline-jim-script"> PARTNERS
-        </h2>
-
-        <!-- Top Video Partner Cards -->
-        <div class="partner-videos-row mb-40">
-          <div class="partner-video-box">
-            <img src="assets/own_founder_video_1.png" alt="Partner Story 1" class="video-img">
-            <button class="play-btn-circle" aria-label="Play Story">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-            </button>
+      <section class="about-video-band own-video-band">
+        <div class="content-container">
+          <div class="about-video-head">
+            <h2 class="about-video-title">WHERE FITNESS MEETS<br />INFRARED WELLNESS</h2>
+            <div class="about-video-copy">
+              <h3 class="subtitle-30 about-video-sub">A New Generation<br />of Studios</h3>
+              <p class="about-video-desc">
+                designed with immersive heat, low lights, no mirrors, curated music, and world-class environments that
+                help people feel comfortable while supporting recovery, energy, better sleep, skin health, and full-body
+                wellness in a way traditional gyms can’t.
+              </p>
+            </div>
           </div>
-          <div class="partner-video-box">
-            <img src="assets/own_founder_video_2.png" alt="Partner Story 2" class="video-img">
-            <button class="play-btn-circle" aria-label="Play Story">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+          <div class="wellness-video-frame about-video-frame">
+            <img src="assets/own_video.webp" alt="Infrared class in the J.I.M studio" class="about-video-img" />
+            <button type="button" class="wellness-video-play-btn about-video-play" aria-label="Play video">
+              <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+              </svg>
             </button>
           </div>
         </div>
+      </section>
 
-        <!-- 3 Red Partner Quote Cards -->
-        <div class="partner-quotes-grid">
-          <div class="partner-red-card">
-            <p class="partner-quote-body">“The feedback has been so beautiful from people returning from injury, to mums getting back into movement after kids, to people using it alongside weight training. I’m obsessed with it… and our members are too.”</p>
-            <div class="partner-meta">
-              <strong>Dom & Steve</strong><br>
-              <span>J.I.M Glenhaven</span>
+      <!-- =========================================================================
+         7. WHY J.I.M? (4405 - 4902px)
+         ========================================================================= -->
+      <section class="own-why">
+        <div class="content-container">
+          <div class="about-video-head own-why-head">
+            <h2 class="about-video-title">WHY J.I.M?</h2>
+            <div class="about-video-copy">
+              <h3 class="subtitle-30 about-video-sub">More Money. More Meaning.<br />More Freedom.</h3>
+              <p class="about-video-desc own-why-desc">
+                J.I.M was built around a simple belief: business ownership should be financially rewarding, personally
+                fulfilling, and capable of creating more freedom.
+              </p>
             </div>
           </div>
+          <div class="own-why-cards">
+            <article class="own-why-card">
+              <h3 class="own-why-card-title">More Money</h3>
+              <p class="own-why-card-desc">
+                We've designed a lean, technology-enabled studio model with low overheads, recurring revenue, and strong
+                unit economics—helping owners build profitable, scalable businesses.
+              </p>
+            </article>
+            <article class="own-why-card">
+              <h3 class="own-why-card-title">More Meaning</h3>
+              <p class="own-why-card-desc">
+                Every day, J.I.M owners help people move more, improve their health, build confidence, and connect with
+                their local community. Success isn't measured solely by revenue, but by the impact created along the
+                way.
+              </p>
+            </article>
+            <article class="own-why-card">
+              <h3 class="own-why-card-title">More Freedom</h3>
+              <p class="own-why-card-desc">
+                Powered by technology and automation, J.I.M is designed to reduce operational complexity and create
+                flexibility for owners. Whether you choose to run a single studio or grow into multiple locations, the
+                model is built to support a lifestyle as well as a business.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-          <div class="partner-red-card">
-            <p class="partner-quote-body">“We made a real quantum leap financially with our investment in J.I.M, and have got a return on investment in just 7-months.”</p>
-            <div class="partner-meta">
-              <strong>MADI</strong><br>
-              <span>J.I.M BURLEIGH</span>
+      <!-- =========================================================================
+         8. Founder question - red card (4963 - 5632px)
+         ========================================================================= -->
+      <section class="own-founder">
+        <div class="content-container">
+          <div class="own-founder-card">
+            <p class="own-founder-intro">
+              Founded by Jarad Hobbs, J.I.M is the result of more than two decades in the fitness industry and a simple
+              question:
+            </p>
+            <blockquote class="own-founder-quote">
+              "How do we create a fitness business that's better for members, better for owners, and capable of reaching
+              more people?"
+            </blockquote>
+            <p class="own-founder-answer">
+              The answer became J.I.M a technology-enabled fitness concept designed to inspire more people to move while
+              creating an opportunity for owners to build a profitable, purpose-driven business.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         9. Ownership that fits your lifestyle - #242424 band (5697 - 7221px)
+         ========================================================================= -->
+      <section class="own-ownership-band">
+        <div class="content-container">
+          <div class="own-ownership-hero">
+            <img src="assets/own_ownership.webp" alt="" class="own-ownership-img" />
+            <h2 class="own-ownership-kicker">Ownership That Fits<br />Your Lifestyle</h2>
+            <blockquote class="own-ownership-quote">
+              “Some owners choose to run their studio day-to-day. Others lead through a manager or grow into multiple
+              locations. The right model depends on your goals, experience, and stage of life”.
+            </blockquote>
+          </div>
+          <div class="own-owner-cards">
+            <article class="own-owner-card">
+              <img src="assets/own_model_1.webp" alt="" class="own-owner-img" />
+              <h3 class="own-owner-title">Owner-Manager</h3>
+              <p class="own-owner-sub">Own and run your studio</p>
+              <div class="own-owner-desc">
+                <p>
+                  For ambitious operators who want to build a business and be involved in the day-to-day success of the
+                  studio.
+                </p>
+                <ul>
+                  <li>Own the business and manage the studio</li>
+                  <li>Manage the member experience and local community</li>
+                  <li>Build a career through business ownership</li>
+                </ul>
+              </div>
+            </article>
+            <article class="own-owner-card">
+              <img src="assets/own_model_2.webp" alt="" class="own-owner-img" />
+              <h3 class="own-owner-title">Owner-Leader</h3>
+              <p class="own-owner-sub">Lead the business while a manager runs the studio</p>
+              <div class="own-owner-desc">
+                <p>
+                  For business owners who want to focus on growth, leadership, and performance rather than daily
+                  operations.
+                </p>
+                <ul>
+                  <li>Employ and lead a full-time Studio Manager</li>
+                  <li>Focus on growth, marketing, and business performance</li>
+                  <li>Stay actively involved as the business owner</li>
+                </ul>
+              </div>
+            </article>
+            <article class="own-owner-card">
+              <img src="assets/own_model_3.webp" alt="" class="own-owner-img" />
+              <h3 class="own-owner-title">Multi-Site Owner</h3>
+              <p class="own-owner-sub">Build and lead multiple studios</p>
+              <div class="own-owner-desc">
+                <p>For experienced operators looking to scale and create a portfolio of locations.</p>
+                <ul>
+                  <li>Lead multiple studios through a team of managers</li>
+                  <li>Focus on people, systems, and performance</li>
+                  <li>Build a scalable business with long-term growth potential</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         10. SECURE YOUR TERRITORY (7438 - 7895px)
+         ========================================================================= -->
+      <section class="own-territory" id="apply">
+        <div class="content-container">
+          <h2 class="own-territory-title">SECURE YOUR<br />TERRITORY</h2>
+          <div class="own-territory-text">
+            <p>
+              From a single studio to 80+ locations open and sold, J.I.M continues to expand across Australia and
+              internationally.
+            </p>
+            <p>
+              The strongest territories are often secured early. Explore current opportunities and discover what's
+              available in your preferred region.
+            </p>
+          </div>
+          <a href="#apply" class="own-pill own-pill--center">APPLY NOW</a>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         11. Meet our partners - #242424 band (8112 - 9667px)
+         ========================================================================= -->
+      <section class="own-partners-band">
+        <div class="content-container">
+          <div class="own-partners-head">
+            <h2 class="own-partners-title">MEET OUR<br />PARTNERS</h2>
+            <img src="assets/jim_logo_script.webp" alt="J.I.M" class="own-partners-logo" />
+          </div>
+          <div class="own-partner-videos">
+            <div class="video-peach-box own-partner-video">
+              <button type="button" class="video-play-center-btn own-partner-play" aria-label="Play video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
             </div>
-          </div>
-
-          <div class="partner-red-card">
-            <p class="partner-quote-body">“The hard work, the pre-sales, the build and getting to opening is so rewarding because in the end your members tell all their friends about it for you and you realise it's not just a fitness/wellness studio, you've created a strong supportive community.”</p>
-            <div class="partner-meta">
-              <strong>Lyndal</strong><br>
-              <span>J.I.M BURLEIGH</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         11. 4 Steps to Opening a J.I.M Studio (Staggered Stepped Cards)
-         ========================================================================= -->
-    <section class="section-black">
-      <div class="jim-container">
-        <h2 class="hero-heading mb-60">
-          4 STEPS TO OPENING A<br>
-          <img src="assets/jim_logo_script.png" alt="J.I.M" class="inline-jim-script"> STUDIO
-        </h2>
-
-        <div class="stepped-cards-layout">
-          <!-- Step 1 (Peach) -->
-          <div class="step-card step-peach step-idx-1">
-            <div class="step-badge">STEP 1</div>
-            <h3 class="step-instruction">Download the info pack</h3>
-          </div>
-
-          <!-- Step 2 (Red) -->
-          <div class="step-card step-red step-idx-2">
-            <div class="step-badge">STEP 2</div>
-            <h3 class="step-instruction">Book a Partner Fit Call</h3>
-          </div>
-
-          <!-- Step 3 (Peach) -->
-          <div class="step-card step-peach step-idx-3">
-            <div class="step-badge">STEP 3</div>
-            <h3 class="step-instruction">Submit Application</h3>
-          </div>
-
-          <!-- Step 4 (Red) -->
-          <div class="step-card step-red step-idx-4">
-            <div class="step-badge">STEP 4</div>
-            <h3 class="step-instruction">Complete A Studio Tour & Founders Meeting</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         12. Scrolling Ticker Bar
-         ========================================================================= -->
-    <div class="ticker-strip-wrap">
-      <img src="assets/own_ticker_bar.png" alt="Revolutionizing the Infrared Space" class="ticker-media-img" onerror="this.style.display='none'">
-      <div class="marquee-text-content">
-        <span>REVOLUTIONIZING THE INFRARED SPACE</span>
-        <span>•</span>
-        <span>REVOLUTIONIZING THE INFRARED SPACE</span>
-        <span>•</span>
-        <span>REVOLUTIONIZING THE INFRARED SPACE</span>
-      </div>
-    </div>
-
-    <!-- =========================================================================
-         13. Circle of Faces Banner
-         ========================================================================= -->
-    <section class="banner-strip-section py-0">
-      <div class="jim-container">
-        <div class="rounded-wide-card">
-          <img src="assets/own_faces_circle_banner.png" alt="Joy In Movement Community Circle" class="full-media-img">
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         14. Download the Prospectus
-         ========================================================================= -->
-    <section class="section-black" id="prospectus">
-      <div class="jim-container text-center">
-        <span class="eyebrow-accent">GET STARTED</span>
-        
-        <div class="prospectus-peach-box">
-          <h2 class="prospectus-title">Download the Prospectus</h2>
-          <p class="prospectus-desc">Get the full investment breakdown, studio performance models, and available territories sent straight to your inbox.</p>
-          
-          <form class="prospectus-form" onsubmit="event.preventDefault(); alert('Thank you! The Prospectus has been sent to your email.');">
-            <input type="text" placeholder="Full Name" required class="form-field-pill">
-            <input type="email" placeholder="Email Address" required class="form-field-pill">
-            <input type="tel" placeholder="Phone Number" required class="form-field-pill">
-            <button type="submit" class="btn btn-red btn-submit-form">MORE INFORMATION</button>
-          </form>
-
-          <p class="prospectus-included"><strong>What’s Included:</strong> Investment costs, territory availability, partner journey overview, indicative performance model, FAQs</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         15. LEARN MORE (3 Video Cards)
-         ========================================================================= -->
-    <section class="section-dark-gray">
-      <div class="jim-container">
-        <h2 class="section-heading-60 mb-40">LEARN MORE</h2>
-
-        <div class="learn-videos-grid">
-          <div class="learn-video-card">
-            <img src="assets/own_founder_video_4.png" alt="Inside the Studio" class="learn-thumb-img">
-            <button class="play-btn-circle" aria-label="Play">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-            </button>
-          </div>
-
-          <div class="learn-video-card">
-            <img src="assets/own_founder_video_5.png" alt="Founder Insights" class="learn-thumb-img">
-            <button class="play-btn-circle" aria-label="Play">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-            </button>
-          </div>
-
-          <div class="learn-video-card">
-            <img src="assets/own_founder_video_2.png" alt="Owner Interview" class="learn-thumb-img">
-            <button class="play-btn-circle" aria-label="Play">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         16. FAQ'S (Man Screaming Photo on Left + Accordion on Right)
-         ========================================================================= -->
-    <section class="section-black" id="faqs">
-      <div class="jim-container">
-        <div class="faq-layout-grid">
-          <!-- Screaming Man Photo on Red Frame -->
-          <div class="faq-photo-col">
-            <img src="assets/own_faq_man.png" alt="Frequently Asked Questions" class="faq-man-photo">
-          </div>
-
-          <!-- FAQ Accordion -->
-          <div class="faq-accordion-col">
-            <h2 class="section-heading-60 mb-40">FAQ’S</h2>
-
-            <div class="faq-list">
-              <details class="faq-item" open>
-                <summary class="faq-question">
-                  <span>What is the upfront investment?</span>
-                  <span class="faq-arrow">▼</span>
-                </summary>
-                <div class="faq-answer">
-                  <p>A typical J.I.M studio investment ranges from $200,000 to $250,000, which includes turnkey fit-out, certified infrared equipment, pre-sale launch marketing, and working capital.</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary class="faq-question">
-                  <span>What are the ongoing fees?</span>
-                  <span class="faq-arrow">▼</span>
-                </summary>
-                <div class="faq-answer">
-                  <p>Our competitive franchise royalty and marketing fund contributions are designed to ensure head office continuously drives customer acquisition and software improvements.</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary class="faq-question">
-                  <span>What support do I receive?</span>
-                  <span class="faq-arrow">▼</span>
-                </summary>
-                <div class="faq-answer">
-                  <p>You receive complete end-to-end guidance from real estate selection and lease negotiation to studio construction, staff hiring, instructor training, and automated systems.</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary class="faq-question">
-                  <span>What kind of return can I expect?</span>
-                  <span class="faq-arrow">▼</span>
-                </summary>
-                <div class="faq-answer">
-                  <p>Historical mature studios operate with strong 30-35% cash operating margins with rapid member acquisition through our pre-sale methodology.</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary class="faq-question">
-                  <span>I’ve never done sculpt, stretch and strengthen. Does that matter?</span>
-                  <span class="faq-arrow">▼</span>
-                </summary>
-                <div class="faq-answer">
-                  <p>Not at all! We provide exhaustive instructor training and class format playbooks so your studio delivers exceptional, consistent experiences from day one.</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary class="faq-question">
-                  <span>Do I need previous fitness industry experience?</span>
-                  <span class="faq-arrow">▼</span>
-                </summary>
-                <div class="faq-answer">
-                  <p>No. Many of our highest-performing franchise owners come from corporate, sales, hospitality, or management backgrounds with a passion for people and wellness.</p>
-                </div>
-              </details>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         17. Why Members Are Obsessed With J.I.M (4 White Video Cards)
-         ========================================================================= -->
-    <section class="section-black pb-100">
-      <div class="jim-container">
-        <h2 class="hero-heading mb-50">
-          WHY MEMBERS<br>
-          ARE OBSESSED WITH <img src="assets/jim_logo_script.png" alt="J.I.M" class="inline-jim-script">
-        </h2>
-
-        <div class="obsessed-cards-grid">
-          <!-- Card 1 -->
-          <div class="obsessed-card">
-            <h4 class="obsessed-card-title">MENTAL HEALTH</h4>
-            <div class="obsessed-inner-box">
-              <button class="play-btn-circle" aria-label="Play">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+            <div class="video-peach-box own-partner-video">
+              <button type="button" class="video-play-center-btn own-partner-play" aria-label="Play video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
               </button>
             </div>
           </div>
+          <div class="own-partner-quotes">
+            <figure class="own-partner-quote">
+              <blockquote>
+                "We made a real quantum leap financially with our investment in J.I.M, and have got a return on
+                investment in just 7-months"
+              </blockquote>
+              <figcaption><strong>Dom &amp; Steve</strong><br />J.I.M Glenhaven</figcaption>
+            </figure>
+            <figure class="own-partner-quote">
+              <blockquote>
+                “The feedback has been so beautiful from people returning from injury, to mums getting back into
+                movement after kids, to people using it alongside weight training. I’m obsessed with it… and our members
+                are too."
+              </blockquote>
+              <figcaption><strong>MADI</strong><br />J.I.M BURLEIGH</figcaption>
+            </figure>
+            <figure class="own-partner-quote">
+              <blockquote>
+                “The hard work, the pre-sales, the build and getting to opening is so rewarding because in the end your
+                members tell all their friends about it for you and you realise it's not just a fitness/wellness studio,
+                you've created a strong supportive community."
+              </blockquote>
+              <figcaption><strong>Lyndal</strong><br />J.I.M BURLEIGH</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
 
-          <!-- Card 2 -->
-          <div class="obsessed-card">
-            <h4 class="obsessed-card-title">CONVENIENCE</h4>
-            <div class="obsessed-inner-box">
-              <button class="play-btn-circle" aria-label="Play">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+      <!-- =========================================================================
+         12. 4 steps to opening a J.I.M studio (9811 - 10636px)
+         ========================================================================= -->
+      <section class="own-steps">
+        <div class="content-container">
+          <div class="own-steps-head">
+            <h2 class="own-steps-title">4 STEPS TO OPENING A<br /><span class="own-steps-studio">STUDIO</span></h2>
+            <img src="assets/jim_logo_script.webp" alt="J.I.M" class="own-steps-logo" />
+          </div>
+          <div class="own-steps-stack">
+            <article class="own-step own-step--1">
+              <h3 class="own-step-title">STEP 1</h3>
+              <p class="own-step-text">Download the info pack</p>
+            </article>
+            <article class="own-step own-step--2">
+              <h3 class="own-step-title">STEP 2</h3>
+              <p class="own-step-text">Book a Partner Fit Call</p>
+            </article>
+            <article class="own-step own-step--3">
+              <h3 class="own-step-title">STEP 3</h3>
+              <p class="own-step-text">Submit Application</p>
+            </article>
+            <article class="own-step own-step--4">
+              <h3 class="own-step-title">STEP 4</h3>
+              <p class="own-step-text">Complete A Studio Tour &amp; Founders Meeting</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         13. As-seen-in ticker (10761 - 11126px)
+         ========================================================================= -->
+      <section class="press-ticker-band own-ticker-band">
+        <img
+          src="assets/press_ticker_logos.webp"
+          alt="As seen in Australian and business press"
+          class="press-ticker-img"
+        />
+      </section>
+
+      <!-- =========================================================================
+         14. Faces banner (11213 - 12025px)
+         ========================================================================= -->
+      <section class="section-photo-banner own-faces">
+        <div class="banner-frame banner-frame--812">
+          <img src="assets/own_faces.webp" alt="J.I.M members smiling together" class="banner-photo-img" />
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         15. Get started - prospectus card (12207 - 13083px)
+         ========================================================================= -->
+      <section class="own-prospectus">
+        <div class="content-container">
+          <h2 class="own-prospectus-heading">GET STARTED</h2>
+          <div class="own-prospectus-card">
+            <h3 class="own-prospectus-title">DOWNLOAD<br />THE PROSPECTUS</h3>
+            <p class="own-prospectus-desc">
+              Get the full investment breakdown, studio performance models, and available territories sent straight to
+              your inbox.
+            </p>
+            <a href="#prospectus" class="own-pill own-pill--more">MORE INFORMATION</a>
+            <p class="own-prospectus-included">
+              <strong>What’s Included:</strong> Investment costs, territory availability, partner journey overview,
+              indicative performance model, FAQs
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         16. Learn more - #242424 band (13264 - 14007px)
+         ========================================================================= -->
+      <section class="own-learn-band">
+        <div class="content-container">
+          <h2 class="own-learn-title">LEARN MORE</h2>
+          <div class="own-learn-grid">
+            <div class="own-learn-item">
+              <img src="assets/own_learn_1.webp" alt="" class="own-learn-img" />
+            </div>
+            <div class="own-learn-item">
+              <img src="assets/own_learn_2.webp" alt="" class="own-learn-img" />
+              <button type="button" class="video-play-center-btn own-learn-play" aria-label="Play video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
               </button>
             </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="obsessed-card">
-            <h4 class="obsessed-card-title">SLEEP</h4>
-            <div class="obsessed-inner-box">
-              <button class="play-btn-circle" aria-label="Play">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="obsessed-card">
-            <h4 class="obsessed-card-title">LOW IMPACT</h4>
-            <div class="obsessed-inner-box">
-              <button class="play-btn-circle" aria-label="Play">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="#F04E36"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+            <div class="own-learn-item">
+              <img src="assets/own_learn_3.webp" alt="" class="own-learn-img" />
+              <button type="button" class="video-play-center-btn own-learn-play" aria-label="Play video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
               </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- =========================================================================
+      <!-- =========================================================================
+         17. FAQ's (14112 - 14764px)
+         ========================================================================= -->
+      <section class="own-faq" id="faqs">
+        <div class="content-container own-faq-inner">
+          <img src="assets/own_faq_man.webp" alt="" class="own-faq-img" />
+          <div class="own-faq-list">
+            <h2 class="faq-section-title own-faq-title">FAQ’S</h2>
+            <details class="faq-pill-details">
+              <summary class="faq-pill-summary">
+                <span class="faq-question-text">What is the upfront investment?</span>
+                <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                  <path
+                    d="M1 1.5L8 8.5L15 1.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+              <div class="faq-answer-drawer">
+                <p>
+                  A typical J.I.M studio investment ranges from $200,000 to $250,000, which includes turnkey fit-out,
+                  certified infrared equipment, pre-sale launch marketing, and working capital.
+                </p>
+              </div>
+            </details>
+            <details class="faq-pill-details">
+              <summary class="faq-pill-summary">
+                <span class="faq-question-text">What are the ongoing fees?</span>
+                <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                  <path
+                    d="M1 1.5L8 8.5L15 1.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+              <div class="faq-answer-drawer">
+                <p>
+                  Our competitive franchise royalty and marketing fund contributions are designed to ensure head office
+                  continuously drives customer acquisition and software improvements.
+                </p>
+              </div>
+            </details>
+            <details class="faq-pill-details">
+              <summary class="faq-pill-summary">
+                <span class="faq-question-text">What support do I receive?</span>
+                <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                  <path
+                    d="M1 1.5L8 8.5L15 1.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+              <div class="faq-answer-drawer">
+                <p>
+                  You receive complete end-to-end guidance from real estate selection and lease negotiation to studio
+                  construction, staff hiring, instructor training, and automated systems.
+                </p>
+              </div>
+            </details>
+            <details class="faq-pill-details">
+              <summary class="faq-pill-summary">
+                <span class="faq-question-text">What kind of return can I expect?</span>
+                <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                  <path
+                    d="M1 1.5L8 8.5L15 1.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+              <div class="faq-answer-drawer">
+                <p>
+                  Historical mature studios operate with strong 30-35% cash operating margins with rapid member
+                  acquisition through our pre-sale methodology.
+                </p>
+              </div>
+            </details>
+            <details class="faq-pill-details">
+              <summary class="faq-pill-summary">
+                <span class="faq-question-text">I’ve never done sculpt, stretch and strengthen. Does that matter?</span>
+                <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                  <path
+                    d="M1 1.5L8 8.5L15 1.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+              <div class="faq-answer-drawer">
+                <p>
+                  Not at all! We provide exhaustive instructor training and class format playbooks so your studio
+                  delivers exceptional, consistent experiences from day one.
+                </p>
+              </div>
+            </details>
+            <details class="faq-pill-details">
+              <summary class="faq-pill-summary">
+                <span class="faq-question-text">Do I need previous fitness industry experience?</span>
+                <svg class="faq-arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                  <path
+                    d="M1 1.5L8 8.5L15 1.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+              <div class="faq-answer-drawer">
+                <p>
+                  No. Many of our highest-performing franchise owners come from corporate, sales, hospitality, or
+                  management backgrounds with a passion for people and wellness.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+         18. Why members are obsessed with J.I.M (14948 - 16064px)
+         ========================================================================= -->
+      <section class="obsessed-section about-obsessed own-obsessed">
+        <div class="content-container">
+          <div class="obsessed-heading">
+            <h2 class="obsessed-title">WHY MEMBERS<br />ARE OBSESSED WITH</h2>
+            <img src="assets/jim_logo_script.webp" alt="J.I.M" class="obsessed-logo" />
+          </div>
+          <div class="obsessed-track">
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">MENTAL HEALTH</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play mental health video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">CONVENIENCE</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play convenience video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">SLEEP</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play sleep video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+            <div class="obsessed-item">
+              <h4 class="obsessed-tag">LOW IMPACT</h4>
+              <button type="button" class="obsessed-card obsessed-play-btn" aria-label="Play low impact video">
+                <svg width="74" height="86" viewBox="0 0 74 86" aria-hidden="true">
+                  <polygon points="0,0 74,43 0,86" fill="#F04E36" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================================
        18. Footer
        ========================================================================= -->
-  <footer class="jim-footer">
-    <div class="content-container">
-      <div class="footer-divider-red"></div>
-      <div class="footer-layout-flex">
-        <!-- Red Brand Badge -->
-        <div class="footer-badge-wrap">
-          <img src="assets/footer_badge_logo.png" alt="JOY IN MOVEMENT" class="footer-badge-img">
-        </div>
-
-        <!-- Links Column 1 -->
-        <div class="footer-nav-col">
-          <ul class="footer-links">
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="infrared.html">Infrared Workouts</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="articles.html">Articles</a></li>
-          </ul>
-        </div>
-
-        <!-- Links Column 2 -->
-        <div class="footer-nav-col">
-          <ul class="footer-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="press.html">Press</a></li>
-            <li><a href="own-a-jim.html">Franchise</a></li>
-            <li><a href="#store">Store</a></li>
-            <li><a href="classes.html#classes-faqs">FAQ’s</a></li>
-          </ul>
-        </div>
-
-        <!-- Social Icons & Copyright -->
-        <div class="footer-meta-col">
-          <div class="footer-social-icons">
-            <a href="#instagram" class="social-icon-link" aria-label="Instagram">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F04E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-            <a href="#facebook" class="social-icon-link" aria-label="Facebook">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="#F04E36">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
-            <a href="#youtube" class="social-icon-link" aria-label="YouTube">
-              <svg width="28" height="20" viewBox="0 0 28 20" fill="none">
-                <rect width="28" height="20" rx="5" fill="#F04E36"/>
-                <polygon points="11,14.5 18,10 11,5.5" fill="#000000"/>
-              </svg>
-            </a>
+    <footer class="jim-footer jim-footer--own">
+      <div class="content-container">
+        <div class="footer-divider-red"></div>
+        <div class="footer-layout-flex">
+          <!-- Red Brand Badge -->
+          <div class="footer-badge-wrap">
+            <img src="assets/footer_badge_logo.webp" alt="JOY IN MOVEMENT" class="footer-badge-img" />
           </div>
-          <p class="footer-copy-text">© JOY IN MOVEMENT 2025. ALL RIGHTS RESERVED</p>
-          <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+
+          <!-- Links Column 1 -->
+          <div class="footer-nav-col">
+            <ul class="footer-links">
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="infrared.html">Infrared Workouts</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="articles.html">Articles</a></li>
+            </ul>
+          </div>
+
+          <!-- Links Column 2 -->
+          <div class="footer-nav-col">
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="press.html">Press</a></li>
+              <li><a href="own-a-jim.html">Franchise</a></li>
+              <li><a href="#store">Store</a></li>
+              <li><a href="classes.html#classes-faqs">FAQ’s</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Icons & Copyright -->
+          <div class="footer-meta-col">
+            <div class="footer-social-icons">
+              <a href="#instagram" class="social-icon-link social-icon-link--ig" aria-label="Instagram">
+                <img src="assets/social_instagram.webp" alt="" width="25" height="25" />
+              </a>
+              <a href="#facebook" class="social-icon-link social-icon-link--fb" aria-label="Facebook">
+                <img src="assets/social_facebook.webp" alt="" width="23" height="23" />
+              </a>
+              <a href="#youtube" class="social-icon-link social-icon-link--yt" aria-label="YouTube">
+                <svg width="32" height="21" viewBox="0 0 32 21" fill="none">
+                  <rect width="32" height="21" rx="5" fill="#F04E36" />
+                  <polygon points="13,15 20.5,10.5 13,6" fill="#000000" />
+                </svg>
+              </a>
+            </div>
+            <p class="footer-copy-text">© JOY IN MOVEMENT 2025.<br />ALL RIGHTS RESERVED</p>
+            <a href="#privacy" class="footer-policy-link">PRIVACY POLICY</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
